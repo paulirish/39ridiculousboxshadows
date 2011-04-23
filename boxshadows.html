@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://www.viget.com/uploads/file/boxshadows/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>39 Box Shadows</title>
+		
+		<meta charset="utf-8">		
+
+		<!--
+			This code is OFFICIALLY LICENSED under the WTFPL specification,
+			To read more about WTFPL, see this link: http://sam.zoy.org/wtfpl/
+		-->
+		
+		<style type="text/css" media="screen">
+
+			@font-face {
+				font-family: 'FranchiseRegular';
+				src: url('franchise-bold-webfont.eot');
+				src: local('☺'), url('franchise-bold-webfont.woff') format('woff'), url('franchise-bold-webfont.ttf') format('truetype'), url('franchise-bold-webfont.svg#webfontF0kODBxj') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				-webkit-transition: all .25s ease-in-out;
+			}
+
+			html,
+			body {
+				height: 100%;
+				-webkit-transition: none;
+			}
+
+			body {
+				background: #333;
+				font-family: FranchiseRegular;
+				overflow-x: hidden;
+				font-weight: normal;
+				text-align: center;
+			}
+      
+			article {
+				padding: 170px 0 50px;
+			}
+			
+			article:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+
+			em {
+				color: #fff;
+				display: block;
+				font-family: Georgia, "Times New Roman", sans-serif;
+				font-size: 20px;
+				font-style: italic;
+				font-weight: normal;
+				text-transform: lowercase;
+			}
+
+			li {
+				background: -webkit-gradient(
+					radial, 
+					75 25, 
+					75, 
+					75 20, 
+					40, 
+					from(#444), 
+					to(#777)
+				) #777;
+				color: #fff;
+				display: table;
+				float: left;
+				list-style-type: none;
+				margin: 45px;
+				padding: 0;
+				position: relative;
+				text-align: center;
+				top: 0;
+			}
+
+			li,
+			span {
+				-webkit-border-radius: 75px;
+				height: 150px;
+				width: 150px;
+			}
+
+			span {
+				display: block;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+				
+			span:nth-of-type(1) { z-index: -9; }
+			span:nth-of-type(2) { z-index: -8; }
+			span:nth-of-type(3) { z-index: -7; }
+			span:nth-of-type(4) { z-index: -6; }
+			span:nth-of-type(5) { z-index: -5; }
+			span:nth-of-type(6) { z-index: -4; }
+			span:nth-of-type(7) { z-index: -3; }
+			span:nth-of-type(8) { z-index: -2; }
+			span:nth-of-type(9) { z-index: -1; }
+
+			h1,
+			h2 {
+				text-transform: uppercase;
+			}
+
+			h1 {
+				color: #fff;
+				font-size: 75px;
+				padding: 50px 0 0;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			h1 a.post {
+				background: none;
+				color: rgb(81,81,81);
+				display: inline-block;
+				font-size: 31px;
+				padding: 0;
+				text-align: left;
+				width: 160px;
+			}
+			
+			h1 a.post strong {
+				font-size: 20px;
+				font-weight: normal;
+				left: 2px;
+				position: relative;
+				top: -5px;
+			}
+
+			h1 a.post:hover {
+				color: #fff;
+			}
+
+			h1 em {
+				padding: 20px 0 0;
+			}
+
+			h2 {
+				display: table-cell;
+				font-size: 30px;
+				font-weight: normal;
+				padding: 0 20px 10px;
+				text-shadow: 
+					1px 1px 0 rgba(0,0,0,.2),
+					2px 2px 0 rgba(0,0,0,.2),
+					3px 3px 0 rgba(0,0,0,.2);
+				vertical-align: middle;
+			}
+
+			h2 em {
+				font-size: 15px;
+				padding: 0 0 10px;
+			}
+			
+			@-webkit-keyframes unviel {
+				0% {
+					height: 100%;
+					background: #222;
+				}
+				90% {
+					background: #222;
+				}
+				99% {
+					height: 100%;
+					background: transparent;
+				}
+				100% {
+					height: auto%;
+				}
+			}
+
+			header {
+				-webkit-animation-name: unviel;
+				-webkit-animation-duration: 1.2s;
+				-webkit-animation-timing-function: ease-out;
+				background: transparent;
+				height: auto;
+				left: 0;
+				position: absolute;
+				top: 0;
+				-webkit-transition: none;
+				width: 100%;
+				z-index: 9999;
+			}
+
+			ul {
+				display: none;
+				-webkit-transition: none;
+				margin: 0;
+				padding: 25px 0;
+			}
+
+			ul.show {
+				display: block;
+			}
+
+			a { 
+				background: rgb(31,31,31);
+				-webkit-border-radius: 15px;
+			  color: rgb(81,81,81);
+				margin: 0 5px;
+				padding: 4px 10px 6px;
+				text-decoration: none;
+			}
+
+			a:hover { 
+				color: #fff;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1>
+				39 Box Shadows, No Good Reason
+				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <strong>»</strong></a>
+				<em>
+					<a href="./boxshadows_files/boxshadows.html" id="previous">« Previous 10</a>
+					<a href="./boxshadows_files/boxshadows.html" id="next"> Next 10 »</a>
+				</em>
+			</h1>
+		</header>
+
+		<article>
+
+			<ul class="">
+
+				<li class="source" style="background-image: -webkit-gradient(radial, 113.92761394101876 26.794258373205743, 75, 113.92761394101876 26.794258373205743, 40, from(rgb(68, 68, 68)), to(rgb(119, 119, 119))); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; ">
+					<h2><em>The</em> Light Source</h2>
+					<span style="left: -12.975871313672922px; top: 19.150717703349283px; "></span>
+					<style type="text/css" media="screen">
+						.source span {
+							-webkit-box-shadow:
+								0 150px 20px -20px rgba(0,0,0,.2);
+							top: 10px;
+							-webkit-transform: 
+								scaleY(.4);
+							z-index: -1;
+						}
+					</style>
+					<script>
+
+						function objectPosition(obj) {
+							var curleft = 0;
+							var curtop = 0;
+							if (obj.offsetParent) {
+								do {
+									curleft += obj.offsetLeft;
+									curtop += obj.offsetTop;
+								} while (obj = obj.offsetParent);
+							}
+							return [curleft,curtop];
+						}
+
+						window.box = document.getElementsByClassName('source')[0];
+						window.boxshadow = box.getElementsByTagName('span')[0];
+						window.boxLeft = objectPosition(box)[0];
+						window.boxTop = objectPosition(box)[1];
+						window.canvasWidth = window.innerWidth;
+						window.canvasHeight = window.innerHeight; 
+						window.timer = 0;
+
+						document.body.addEventListener('mousemove', function(movement){
+
+							function moveShadows(){
+
+								var mouseLeft = movement.pageX,
+									mouseTop = movement.pageY,
+									distanceFromBoxX = mouseLeft - boxLeft - 75,
+									distanceFromBoxY = mouseTop - boxTop - 75,
+									normalizedDistanceX = (distanceFromBoxX / canvasWidth),
+									normalizedDistanceY = (distanceFromBoxY / canvasHeight),
+
+									//shadow
+									shadowLeftMultiplier = -40,
+									shadowTopMultiplier = -10,
+									shadowTopOffset = 20,
+									newShadowLeft = normalizedDistanceX * shadowLeftMultiplier + 'px',
+									newShadowTop = normalizedDistanceY * shadowTopMultiplier + shadowTopOffset + 'px',
+
+									// gradient
+									gradientLeftMultiplier = 120,
+									gradientTopMultiplier = 80,
+									gradientLeftOffset = 75,
+									gradientTopOffset = 20,
+									newGradientLeft = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
+									newGradientTop = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
+									gradient = '-webkit-gradient(';
+								
+								gradient += 'radial, ';
+								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
+								gradient += '75, ';
+								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
+								gradient += '40, ';
+								gradient += 'from(#444), ';
+								gradient += 'to(#777)';
+								gradient += ')';
+              	
+								if(distanceFromBoxY !== 0 && distanceFromBoxX !== 0){
+									window.boxshadow.style.left = newShadowLeft;
+									window.boxshadow.style.top = newShadowTop;
+									window.box.style.background = gradient;
+								}
+
+							}
+
+							if (timer) {
+								clearTimeout(timer);
+							}
+							timer = setTimeout(moveShadows, 10);
+
+						});
+
+					</script>
+				</li>
+
+				<li class="stadium">
+					<h2><em>The</em> Stadium</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.stadium span:nth-of-type(1) {
+							-webkit-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(-10deg);
+							-webkit-box-shadow: -15px 220px 20px -25px rgba(0,0,0,.25);
+						}
+						.stadium span:nth-of-type(2) {
+							-webkit-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+							-webkit-box-shadow: -15px 290px 20px -25px rgba(0,0,0,.25);
+						}
+						.stadium span:nth-of-type(3) {
+							-webkit-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(10deg);
+							-webkit-box-shadow: 15px 220px 20px -25px rgba(0,0,0,.25);
+						}
+						.stadium span:nth-of-type(4) {
+							-webkit-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(-10deg);
+							-webkit-box-shadow: 15px 290px 20px -25px rgba(0,0,0,.25);
+						}
+					</style>
+				</li>
+				
+				<li class="lilguy">
+					<h2><em>The</em> Lil‘ Guy</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.lilguy span {
+							-webkit-transform:
+								scaleY(.3);
+							-webkit-box-shadow: 0px 250px 20px -25px rgba(0,0,0,.25);
+						}
+					</style>
+				</li>
+				
+				<li class="softfocus">
+					<h2><em>The</em> Soft Focus</h2>
+					<style type="text/css" media="screen">
+						.softfocus {
+							-webkit-box-shadow: 
+								inset 0 50px 20px -30px #777,
+								0 -20px 10px -20px #777,
+								inset 0 0 40px 5px #444,
+								0 0 20px 5px #444,
+								0 0 20px 5px #444;
+							-webkit-background-clip: padding-box;
+						}
+						.softfocus em,
+						.softfocus h2 {
+							color: transparent;
+							text-shadow: 0 0 2px #fff;
+						}
+					</style>
+				</li>
+
+				<li class="slippy">
+					<h2><em>The</em> Slip</h2>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.slippy {
+							-webkit-box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
+						}
+						.slippy span:nth-of-type(1) {
+							background-image: -webkit-gradient(
+								radial, 
+								center -50,
+								0, 
+								center -40,
+								80, 
+								from(rgba(101,101,101,1)), 
+								to(rgba(51,51,51,1))
+							);
+							-webkit-border-radius: 0;
+							left: -25px;
+							top: 100px;
+							height: 100px;
+							width: 200px;
+							z-index: 5;
+						}
+						.slippy span:nth-of-type(2) {
+							-webkit-box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
+							left: -25px;
+							top: 40px;
+							width: 200px;
+							-webkit-transform: 
+								scaleX(.8)
+								scaleY(.2);
+							z-index: 4;
+						}
+					</style>
+				</li>
+
+				<li class="glowcamedownfromthehills">
+					<h2><em>The</em> Glow</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.glowcamedownfromthehills span:nth-of-type(1) {
+							-webkit-box-shadow: 
+								0px 0px 90px 0px rgba(255,255,240,1),
+								10px 10px 140px 0px rgba(200,255,255,1),
+								0px 0px 10px 5px rgba(180,255,255,.3);
+						}
+						.glowcamedownfromthehills span:nth-of-type(2) {
+							-webkit-box-shadow: -30px -15px 15px rgba(195,255,255,.8);
+							-webkit-transform: scale(.8);
+						}
+						.glowcamedownfromthehills span:nth-of-type(3) {
+							-webkit-box-shadow: 30px 190px 30px rgba(255,255,195,.8);
+							-webkit-transform: scale(.3);
+						}
+						.glowcamedownfromthehills span:nth-of-type(4) {
+							-webkit-box-shadow: 90px 30px 30px rgba(195,255,195,1);
+							-webkit-transform: scale(.5);
+						}
+						.glowcamedownfromthehills span:nth-of-type(5) {
+							-webkit-box-shadow: -650px -350px 100px rgba(255,235,255,1);
+							-webkit-transform: scale(.1);
+							z-index: 1;
+						}
+						.glowcamedownfromthehills span:nth-of-type(5) {
+							-webkit-box-shadow: -650px -350px 300px rgba(255,255,255,3);
+							-webkit-transform: scale(.1);
+							z-index: 1;
+						}
+					</style>
+				</li>
+
+				<li class="fog">
+					<h2><em>The</em> Fog</h2>
+					<style type="text/css" media="screen">
+						.fog {
+							overflow: hidden;
+						}
+						.fog h2 {
+							left: 150px;
+							position: absolute;
+							top: 150px;
+							text-shadow: -112px -103px 3px rgba(0,0,0,.5);
+						}
+					</style>
+				</li>
+
+				<li class="looksshooped">
+					<h2><em>The</em> My First Photoshop</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.looksshooped span {
+							z-index: 1;
+						}
+						.looksshooped span:nth-of-type(1) {
+							background: rgba(220,255,255,.1);
+							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							left: -80px;
+							top: -80px;
+							-webkit-transform: scale(.1);
+						}
+						.looksshooped span:nth-of-type(2) {
+							-webkit-box-shadow: -150px -150px 40px rgba(220,255,255,.1);
+							-webkit-transform: scale(.4);
+						}
+						.looksshooped span:nth-of-type(3) {
+							background: rgba(220,255,255,.07);
+							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.2);
+							left: -20px;
+							top: -20px;
+							-webkit-transform: scale(.7);
+						}
+						.looksshooped span:nth-of-type(1) {
+							background: rgba(220,255,255,.1);
+							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							left: 20px;
+							top: 20px;
+							-webkit-transform: scale(.3);
+						}
+						.looksshooped span:nth-of-type(1) {
+							background: rgba(220,255,255,.1);
+							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							left: 40px;
+							top: 40px;
+							-webkit-transform: scale(.15);
+						}
+						.looksshooped span:nth-of-type(1) {
+							background: rgba(220,255,255,.1);
+							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							left: 60px;
+							top: 60px;
+							-webkit-transform: scale(.12);
+						}
+					</style>
+				</li>
+
+				<li class="tacobell">
+					<h2><em>The</em> Late Night</h2>
+					<style type="text/css" media="screen">
+						.tacobell {
+							background: transparent;
+							-webkit-box-shadow:
+								0 0 3px 0 rgba(51,51,51,1),
+								8px 5px 2px 3px rgba(255,255,255,1),
+								15px 10px 20px 3px rgba(255,255,255,.2);
+							z-index: 2;
+						}
+					</style>
+				</li>
+
+				<li class="derp">
+					<h2><em>The</em> Doing It Wrong</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.derp span:nth-of-type(1) {
+							background: rgba(0,0,0,.4);
+							-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+							left: 5px;
+							top: 5px;
+							z-index: 1;
+						}
+					</style>
+				</li>
+
+			</ul>
+
+			<ul class="show">
+
+				<li class="youknowthatmikewhitemovie">
+					<h2><em>The</em> Good Girl</h2>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.youknowthatmikewhitemovie span {
+							background: rgba(255,255,255,.01);
+							-webkit-box-shadow: 
+								inset 0  10px 20px 10px rgba(255,255,255,1),
+								inset 0 -10px 20px 10px rgba(255,255,255,1),
+								0  10px 20px 10px rgba(255,255,255,1),
+								0 -10px 20px 10px rgba(255,255,255,1);
+							-webkit-transform:
+								scaleX(.65)
+								scaleY(.2);
+							top: -80px;
+							z-index: 1;
+						}
+						.youknowthatmikewhitemovie span:nth-of-type(2) {
+							top: -81px;
+						}
+					</style>
+				</li>
+				
+				<li class="theorist">
+					<h2><em>The</em> Color Theorist</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.theorist {
+							-webkit-box-shadow: 
+								0px 0px 1px 0px rgba(255,255,255,.7),
+								0px 0px 20px 2px rgba(255,255,255,.8);
+						}
+						.theorist span:nth-of-type(1) {
+							-webkit-box-shadow: 0px -10px 3px 2px rgba(0,255,0,1);
+						}
+						.theorist span:nth-of-type(2) {
+							-webkit-box-shadow: 10px 10px 3px 2px rgba(0,0,255,1);
+						}
+						.theorist span:nth-of-type(3) {
+							-webkit-box-shadow: -10px 10px 3px 2px rgba(255,0,0,1);
+						}
+						.theorist span:nth-of-type(4) {
+							-webkit-transform:
+								skewX(-10deg)
+								scale(.8);
+							-webkit-box-shadow: 18px -11px 3px 0px rgba(0,255,255,1);
+						}
+						.theorist span:nth-of-type(5) {
+							-webkit-transform:
+								scaleX(.7)
+								scaleY(.8);
+							-webkit-box-shadow: 0 33px 3px 0px rgba(255,0,255,1);
+						}
+						.theorist span:nth-of-type(6) {
+							-webkit-transform:
+								skewX(10deg)
+								scale(.8);
+							-webkit-box-shadow: -18px -11px 3px 0px rgba(255,255,0,1);
+						}
+					</style>
+				</li>
+				
+				<li class="dialer">
+					<h2><em>The</em> Dialer</h2>
+					<style type="text/css" media="screen">
+						.dialer em {
+							-webkit-border-radius: 20px;
+							-webkit-box-shadow: 
+								45px -19px 0 -3px rgba(51,51,51,1),
+								45px -20px 0 -2px rgba(41,41,41,1),
+								25px -34px 0 -3px rgba(51,51,51,1),
+								25px -35px 0 -2px rgba(41,41,41,1),
+								0 -39px 0 -3px rgba(51,51,51,1),
+								0 -40px 0 -2px rgba(41,41,41,1),
+								-25px -33px 0 -3px rgba(51,51,51,1),
+								-25px -34px 0 -2px rgba(41,41,41,1),
+								-45px -17px 0 -3px rgba(51,51,51,1),
+								-45px -18px 0 -2px rgba(41,41,41,1),
+								-57px 6px 0 -3px rgba(51,51,51,1),
+								-57px 5px 0 -2px rgba(41,41,41,1),
+								-57px 33px 0 -3px rgba(51,51,51,1),
+								-57px 32px 0 -2px rgba(41,41,41,1),
+								-45px 58px 0 -3px rgba(51,51,51,1),
+								-45px 57px 0 -2px rgba(41,41,41,1),
+								-25px 75px 0 -3px rgba(51,51,51,1),
+								-25px 74px 0 -2px rgba(41,41,41,1),
+								0 81px 0 -3px rgba(51,51,51,1),
+								0 80px 0 -2px rgba(41,41,41,1);
+							display: block;
+							overflow: visible;
+							margin: 0 auto;
+							text-align: center;
+							width: 27px;
+						}
+					</style>
+				</li>
+
+				<li class="wehavetogodeeper">
+					<h2><em>The</em> In Deep</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.wehavetogodeeper {
+							background-image: -webkit-gradient(
+								radial, 
+								center 150,
+								0, 
+								center 150,
+								100, 
+								from(rgba(16,16,16,1)),
+								to(rgba(31,31,31,1)) 
+							);
+						}
+						.wehavetogodeeper h2 {
+							display: block;
+							-webkit-border-radius: 75px;
+							-webkit-box-shadow: 0 120px 0 -20px rgba(11,11,11,1); 
+							padding: 75px 0 10px;
+							top: -35px;
+							width: 150px;
+						}
+						.wehavetogodeeper span {
+							z-index: 30;
+							-webkit-box-shadow: 0 0 0 70px rgba(51,51,51,1); 
+						}
+					</style>
+				</li>
+
+				<li class="cheshire">
+					<h2><em>The</em> Cheshire</h2>
+					<style type="text/css" media="screen">
+						.cheshire {
+							-webkit-box-shadow:
+								 1px  1px 0 #777,
+								 2px  2px 0 #777,
+								 3px  3px 0 #777,
+								 3px  4px 0 #777,
+								 4px  5px 0 #777,
+								 4px  6px 0 #444,
+								 5px  7px 0 #444,
+								 5px  8px 0 #444,
+								 5px  9px 0 #444,
+								 6px 10px 0 #444,
+								 6px 11px 0 #777,
+								 6px 12px 0 #777,
+								 7px 13px 0 #777,
+								 7px 14px 0 #777,
+								 8px 15px 0 #777,
+								 8px 16px 0 #444,
+								 8px 17px 0 #444,
+								 7px 18px 0 #444,
+								 7px 19px 0 #444,
+								 6px 20px 0 #444,
+								 6px 21px 0 #777,
+								 6px 22px 0 #777,
+								 5px 23px 0 #777,
+								 5px 24px 0 #777,
+								 5px 25px 0 #777,
+								 4px 26px 0 #444,
+								 4px 27px 0 #444,
+								 3px 28px 0 #444,
+								 2px 29px 0 #444,
+								 1px 30px 0 #444;
+						}  
+					</style>
+				</li>
+				
+				<li class="theoldrazzledazzle">
+					<h2><em>The</em> Dazzler</h2>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes dazzle {
+							0% {
+								-webkit-box-shadow: 
+									-50px  40px  2px -13px rgba(255,255,255,0), 
+									-60px  60px  2px -13px rgba(255,255,255,1), 
+									-35px -20px  2px -12px rgba(255,255,255,0), 
+									 40px  60px  3px -13px rgba(235,255,255,1), 
+									 30px -50px  2px -13px rgba(255,255,255,0), 
+									-50px  35px  3px -11px rgba(255,255,235,1), 
+									-25px -20px  3px -13px rgba(235,255,235,0), 
+									-40px  10px  4px -11px rgba(255,255,255,1), 
+									-40px -65px  1px -13px rgba(255,245,255,0), 
+									-10px  50px  3px -12px rgba(255,255,255,1), 
+									 10px -30px  3px -12px rgba(235,255,255,0), 
+									-30px -20px  2px -12px rgba(255,245,255,1), 
+									 70px  40px  3px -13px rgba(255,255,255,0), 
+									 20px  50px  2px -13px rgba(205,255,255,1), 
+									-40px  45px  6px -11px rgba(255,255,255,0), 
+									-35px -60px  3px -13px rgba(255,255,225,1), 
+									-30px  40px  4px -11px rgba(255,255,255,0), 
+									-70px -55px  1px -13px rgba(255,255,255,1), 
+									-10px  50px  3px -12px rgba(235,255,255,0), 
+									 20px -40px  3px -12px rgba(225,255,255,1), 
+									-20px -10px  2px -13px rgba(255,255,255,0), 
+									-50px -20px  5px -12px rgba(245,255,255,1), 
+									 70px  30px  3px -13px rgba(215,255,245,0), 
+									 40px  90px  2px -13px rgba(255,255,255,1), 
+									-40px  35px  3px -11px rgba(165,235,215,0), 
+									 35px -40px  3px -13px rgba(245,255,255,1), 
+									-70px  20px  4px -11px rgba(215,215,235,0), 
+									-40px -25px  1px -13px rgba(255,245,255,1), 
+									 10px -60px  3px -12px rgba(255,225,245,0), 
+									-20px  70px  3px -12px rgba(255,255,255,1), 
+									-25px  80px  2px -13px rgba(245,255,255,0), 
+									-40px  90px  2px -12px rgba(170,235,255,1), 
+									-35px  20px  3px -13px rgba(225,215,255,0), 
+									 60px -20px  3px -12px rgba(255,255,255,1), 
+									 20px -80px  2px -13px rgba(255,255,255,0), 
+									 10px  40px  3px -13px rgba(225,255,255,1), 
+									-45px -40px  2px -13px rgba(255,245,255,0), 
+									 40px -10px  3px -12px rgba(255,255,255,1), 
+									 15px  30px  2px -13px rgba(225,235,255,0), 
+									 10px -30px  2px -12px rgba(255,245,245,1), 
+									 40px  50px  2px -13px rgba(255,255,255,0), 
+									-55px  40px  4px -13px rgba(225,245,255,1), 
+									-40px -10px  2px -12px rgba(195,255,175,0), 
+									 30px -20px  2px -13px rgba(255,255,255,1), 
+									 50px  20px  3px -13px rgba(255,255,255,0), 
+									-55px -10px  2px -13px rgba(255,205,255,1), 
+									 10px -30px  7px -12px rgba(255,255,255,0), 
+									 10px  60px  2px -13px rgba(255,255,255,1), 
+									 20px -30px  2px -12px rgba(225,225,225,0), 
+									 40px  50px  2px -13px rgba(195,255,255,1), 
+									 30px  70px  3px -13px rgba(235,255,235,0), 
+									-60px  60px  2px -13px rgba(255,255,255,1), 
+									 10px  70px  3px -12px rgba(225,205,255,0), 
+									 20px  90px  2px -13px rgba(235,255,235,1), 
+									 30px  70px  5px -12px rgba(225,255,225,0), 
+									 10px -40px  2px -12px rgba(195,255,175,1), 
+									 20px -60px  2px -13px rgba(255,255,255,0), 
+									 30px  60px  3px -13px rgba(255,255,255,1), 
+									-75px -30px  2px -13px rgba(255,205,255,0), 
+									 30px -30px  7px -12px rgba(255,255,255,1), 
+									 40px  60px  2px -13px rgba(255,255,255,0), 
+									 20px -30px  2px -12px rgba(225,225,225,1), 
+									 20px  50px  2px -13px rgba(195,255,255,0), 
+									 40px  20px  3px -13px rgba(235,255,235,1), 
+									-40px  30px  2px -13px rgba(255,255,255,0); 
+							}
+							100% {
+								-webkit-box-shadow: 
+									-50px  40px  2px -13px rgba(255,255,255,1), 
+									-60px  60px  2px -13px rgba(255,255,255,0), 
+									-35px -20px  2px -12px rgba(255,255,255,1), 
+									 40px  60px  3px -13px rgba(235,255,255,0), 
+									 30px -50px  2px -13px rgba(255,255,255,1), 
+									-50px  35px  3px -11px rgba(255,255,235,0), 
+									-25px -20px  3px -13px rgba(235,255,235,1), 
+									-40px  10px  4px -11px rgba(255,255,255,0), 
+									-40px -65px  1px -13px rgba(255,245,255,1), 
+									-10px  50px  3px -12px rgba(255,255,255,0), 
+									 10px -30px  3px -12px rgba(235,255,255,1), 
+									-30px -20px  2px -12px rgba(255,245,255,0), 
+									 70px  40px  3px -13px rgba(255,255,255,1), 
+									 20px  50px  2px -13px rgba(205,255,255,0), 
+									-40px  45px  6px -11px rgba(255,255,255,1), 
+									-35px -60px  3px -13px rgba(255,255,225,0), 
+									-30px  40px  4px -11px rgba(255,255,255,1), 
+									-70px -55px  1px -13px rgba(255,255,255,0), 
+									-10px  50px  3px -12px rgba(235,255,255,1), 
+									 20px -40px  3px -12px rgba(225,255,255,0), 
+									-20px -10px  2px -13px rgba(255,255,255,1), 
+									-50px -20px  5px -12px rgba(245,255,255,0), 
+									 70px  30px  3px -13px rgba(215,255,245,1), 
+									 40px  90px  2px -13px rgba(255,255,255,0), 
+									-40px  35px  3px -11px rgba(165,235,215,1), 
+									 35px -40px  3px -13px rgba(245,255,255,0), 
+									-70px  20px  4px -11px rgba(215,215,235,1), 
+									-40px -25px  1px -13px rgba(255,245,255,0), 
+									 10px -60px  3px -12px rgba(255,225,245,1), 
+									-20px  70px  3px -12px rgba(255,255,255,0), 
+									-25px  80px  2px -13px rgba(245,255,255,1), 
+									-40px  90px  2px -12px rgba(170,235,255,0), 
+									-35px  20px  3px -13px rgba(225,215,255,1), 
+									 60px -20px  3px -12px rgba(255,255,255,0), 
+									 20px -80px  2px -13px rgba(255,255,255,1), 
+									 10px  40px  3px -13px rgba(225,255,255,0), 
+									-45px -40px  2px -13px rgba(255,245,255,1), 
+									 40px -10px  3px -12px rgba(255,255,255,0), 
+									 15px  30px  2px -13px rgba(225,235,255,1), 
+									 10px -30px  2px -12px rgba(255,245,245,0), 
+									 40px  50px  2px -13px rgba(255,255,255,1), 
+									-55px  40px  4px -13px rgba(225,245,255,0), 
+									-40px -10px  2px -12px rgba(195,255,175,1), 
+									 30px -20px  2px -13px rgba(255,255,255,0), 
+									 50px  20px  3px -13px rgba(255,255,255,1), 
+									-55px -10px  2px -13px rgba(255,205,255,0), 
+									 10px -30px  7px -12px rgba(255,255,255,1), 
+									 10px  60px  2px -13px rgba(255,255,255,0), 
+									 20px -30px  2px -12px rgba(225,225,225,1), 
+									 40px  50px  2px -13px rgba(195,255,255,0), 
+									 30px  70px  3px -13px rgba(235,255,235,1), 
+									-60px  60px  2px -13px rgba(255,255,255,0), 
+									 10px  70px  3px -12px rgba(225,205,255,1), 
+									 20px  90px  2px -13px rgba(235,255,235,0), 
+									 30px  70px  5px -12px rgba(225,255,225,1), 
+									 10px -40px  2px -12px rgba(195,255,175,0), 
+									 20px -60px  2px -13px rgba(255,255,255,1), 
+									 30px  60px  3px -13px rgba(255,255,255,0), 
+									-75px -30px  2px -13px rgba(255,205,255,1), 
+									 30px -30px  7px -12px rgba(255,255,255,0), 
+									 40px  60px  2px -13px rgba(255,255,255,1), 
+									 20px -30px  2px -12px rgba(225,225,225,0), 
+									 20px  50px  2px -13px rgba(195,255,255,1), 
+									 40px  20px  3px -13px rgba(235,255,235,0), 
+									-40px  30px  2px -13px rgba(255,255,255,1); 
+							}
+						}
+
+						.theoldrazzledazzle em {
+							display: block;
+							-webkit-animation-name: dazzle;
+							-webkit-animation-duration: 1s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-direction: alternate;
+							-webkit-animation-timing-function: ease-in-out;
+							-webkit-border-radius: 25px;
+							margin: 0 auto;
+							width: 27px;
+						}
+					</style>
+				</li>
+
+				<li class="nananananananana">
+					<h2><em>The</em> Batman</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.nananananananana h2 {
+							display: block;
+							padding-top: 45px;
+							position: relative;
+							z-index: 5;
+						}
+						.nananananananana span {
+							background: rgba(51,51,51,1);
+							-webkit-border-radius: 0;
+							left: -30px;
+							top: 100px;
+							-webkit-transform: 
+								scaleX(.2)
+								scaleY(1.5)
+								skew(20deg) 
+								rotate(55deg);
+							z-index: 2;
+						}
+						.nananananananana span:nth-of-type(1) {
+							left: 40px;
+						}
+						.nananananananana span:nth-of-type(2) {
+							-webkit-transform: 
+								scale(.5);
+							height: 250px;
+							left: 0px;
+							top: 5px;
+						}
+						@-webkit-keyframes glow {
+							0% {
+								-webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
+							}
+							50% {
+								-webkit-box-shadow: 0 0 800px 0 rgba(255,255,255,1);
+							}
+							100% {
+								-webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
+							}
+						}
+						.nananananananana span:nth-of-type(3),
+						.nananananananana span:nth-of-type(4) {
+							background: #fff;
+							left: -25px;
+							top: 45px;
+							-webkit-transform: 
+								scaleY(.12)
+								scaleX(.03)
+								skew(60deg) 
+								rotate(50deg);
+							z-index: 8;
+							-webkit-animation-name: glow;
+							-webkit-animation-duration: 2s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-timing-function: linear;
+						}
+						.nananananananana span:nth-of-type(4) {
+							left: 25px;
+							-webkit-transform: 
+								scaleY(.12)
+								scaleX(.03)
+								skew(-60deg) 
+								rotate(-50deg);
+						}
+					</style>
+				</li>
+
+				<li class="googly">
+					<h2><em>The</em> Googly Eyes</h2>
+					<style type="text/css" media="screen">
+						.googly em {
+							-webkit-box-shadow: 
+								-38px -40px 0 -9px rgba(1,1,1,1),
+								32px -35px 0 -9px rgba(1,1,1,1),
+								-38px -42px 3px -10px rgba(255,255,255,.3),
+								32px -37px 3px -10px rgba(255,255,255,.3),
+								-38px -42px 0px -7px rgba(1,1,1,1),
+								32px -37px 0px -7px rgba(1,1,1,1),
+								-35px -40px 0px rgba(255,255,255,1),
+								35px -40px 0px rgba(255,255,255,1),
+								-35px -38px 3px 1px rgba(0,0,0,.3),
+								35px -38px 3px 1px rgba(0,0,0,.3);
+							display: block;
+							-webkit-border-radius: 25px;
+							height: 30px;
+							margin: 0 auto -15px;
+							width: 40px;
+						}
+					</style>
+				</li>
+
+				<li class="cloud">
+					<h2><em>The</em> It’s So Cloud</h2>
+					<style type="text/css" media="screen">
+						.cloud {
+							background: #fff;
+							-webkit-box-shadow:
+								40px 30px 0px -15px #fff,
+								-60px 40px 0px -30px #fff,
+								-70px 0px 0px -50px #fff,
+								-10px 40px 0px -30px #fff,
+								40px 34px 2px -15px rgba(0,0,0,.3),
+								-60px 44px 2px -30px rgba(0,0,0,.3),
+								-70px 4px 2px -50px rgba(0,0,0,.3),
+								-10px 44px 2px -30px rgba(0,0,0,.3),
+								0 2px 4px rgba(0,0,0,.3);
+						}
+						.cloud * {
+							color: rgb(51,51,51);
+							text-shadow: none;
+						}
+					</style>
+				</li>
+
+			</ul>
+
+			<ul class="">
+
+				<li class="allglorytothe">
+					<h2><em>The</em> Hypnotist</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes spin {
+							0% {
+								-webkit-transform: 
+									scale(.4)
+									rotate(0);
+							}
+							50% {
+								-webkit-transform: 
+									scale(.5)
+									rotate(-180deg);
+							}
+							100% {
+								-webkit-transform:
+									scale(.4)
+									rotate(-360deg);
+							}
+						}
+						.allglorytothe {
+							-webkit-animation-name: spin;
+							-webkit-animation-duration: 2s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-timing-function: linear;
+						}
+						.allglorytothe span:nth-of-type(1) {
+							-webkit-box-shadow: 
+								-50px -50px 0 rgba(255,255,255,1),
+								-75px 0px 0 rgba(0,0,0,1),
+								-50px 50px 0 rgba(255,255,255,1),
+								0px 75px 0 rgba(0,0,0,1),
+								50px 50px 0 rgba(255,255,255,1),
+								75px 0px 0 rgba(0,0,0,1), 
+								50px -50px 0 rgba(255,255,255,1),
+								0px -75px 0 rgba(0,0,0,1); 
+							left: 0;
+							top: 0;
+							z-index: 1;
+						}
+						.allglorytothe span:nth-of-type(2) {
+							left: 50px;
+							top: -50px;
+							-webkit-box-shadow: -50px -25px 0 rgba(0,0,0,1); 
+							z-index: 2;
+						}
+						.allglorytothe span:nth-of-type(3) {
+							background: -webkit-gradient(
+								radial, 
+								75 25, 
+								75, 
+								75 20, 
+								40, 
+								from(#444), 
+								to(#777)
+							) #777;
+							z-index: 3;
+						}
+						.allglorytothe h2 {
+							display: block;
+							position: relative;
+							top: 40px;
+							z-index: 4;
+						}
+					</style>
+				</li>
+
+				<li class="bouncer">
+					<h2><em>The</em> Bouncer</h2>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes bounce {
+							0% {
+								-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5);
+								-webkit-transform: scale(.8);
+							}
+							100% {
+								-webkit-box-shadow: 0px 65px 20px -35px rgba(0,0,0,.3);
+								top: -50px;
+								-webkit-transform: scale(1);
+							}
+						}
+						.bouncer {
+							-webkit-animation-name: bounce;
+							-webkit-animation-duration: .5s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-direction: alternate;
+							-webkit-animation-timing-function: ease-out;
+						}
+					</style>
+				</li>
+			
+				<li class="pulse">
+					<h2><em>The</em> Pulse</h2>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes pulse {
+							0% {
+								-webkit-box-shadow: 
+									0 0 5px 0 rgba(51,51,51,1),
+									0 0 0px 0 rgba(140,180,180,.9);
+							}
+							75% {
+								-webkit-box-shadow: 
+									0 0 15px 10px rgba(51,51,51,1),
+									0 0 90px 0 rgba(140,180,180,.9);
+							}
+							100% {
+								-webkit-box-shadow: 
+									0 0 2px 0 rgba(51,51,51,1),
+									0 0 2px 0 rgba(140,180,180,.8);
+							}
+						}
+					
+						.pulse {
+							-webkit-animation-name: pulse;
+							-webkit-animation-duration: .5s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-timing-function: ease-out;
+						}
+					</style>
+				</li>
+
+				<li class="orbiter">
+					<h2><em>The</em> Orbiter</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes orbit {
+							0%   { -webkit-box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
+							10%  { -webkit-box-shadow:   50px  -75px 9px -50px rgba(0,0,0,.6); }
+							20%  { -webkit-box-shadow:  100px  -20px 9px -50px rgba(0,0,0,.6); }
+							30%  { -webkit-box-shadow:  100px   20px 9px -50px rgba(0,0,0,.6); }
+							40%  { -webkit-box-shadow:   50px   75px 9px -50px rgba(0,0,0,.6); }
+							50%  { -webkit-box-shadow:    0px  100px 9px -50px rgba(0,0,0,.6); }
+							60%  { -webkit-box-shadow:  -50px   75px 9px -50px rgba(0,0,0,.6); }
+							70%  { -webkit-box-shadow: -100px   20px 9px -50px rgba(0,0,0,.6); }
+							80%  { -webkit-box-shadow: -100px  -20px 9px -50px rgba(0,0,0,.6); }
+							90%  { -webkit-box-shadow:  -50px  -75px 9px -50px rgba(0,0,0,.6); }
+							100% { -webkit-box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
+						}
+						.orbiter {
+							-webkit-animation-name: orbit;
+							-webkit-animation-duration: 1.5s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-timing-function: linear;
+						}
+					</style>
+				</li>
+
+				<li class="ripplin">
+					<h2><em>The</em> Rippler</h2>
+					<style type="text/css" media="screen">
+						@-webkit-keyframes ripple {
+							0% {
+								-webkit-box-shadow: 
+									0 0 85px 10px rgba(41,41,41,1),
+									0 0 0px 0 rgba(255,255,255,.0),
+									0 0 100px 10px rgba(41,41,41,1);
+							}
+							15% {
+								-webkit-box-shadow: 
+									0 0 25px 0 rgba(41,41,41,1),
+									0 0 0px 0 rgba(255,255,255,.4),
+									0 0 100px 10px rgba(41,41,41,1);
+							}
+							50% {
+								-webkit-box-shadow: 
+									0 0 45px 20px rgba(41,41,41,1),
+									0 0 80px 10px rgba(255,255,255,.4),
+									0 0 100px 10px rgba(41,41,41,1);
+							}
+							95% {
+								-webkit-box-shadow: 
+									0 0 100px 20px rgba(41,41,41,1),
+									0 0 75px 5px rgba(255,255,255,0),
+									0 0 100px 10px rgba(41,41,41,1);
+							}
+							100% {
+								-webkit-box-shadow: 
+									0 0 100px 20px rgba(41,41,41,1),
+									0 0 0 0 rgba(255,255,255,0),
+									0 0 100px 10px rgba(41,41,41,1);
+							}
+						}
+						.ripplin {
+							-webkit-animation-name: ripple;
+							-webkit-animation-duration: 2s;
+							-webkit-animation-iteration-count: infinite;
+							-webkit-animation-direction: normal;
+							-webkit-animation-timing-function: ease-in-out;
+						}
+					</style>
+				</li>
+
+				<li class="secret">
+					<h2><em>The</em> Secret</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.secret h2 {
+							color: #fff;
+							display: block;
+							top: 43px;
+							z-index: -1;
+						}
+						.secret em:before {
+							content: "(";
+						}
+						.secret h2:after {
+							content: ")";
+						}
+						.secret span {
+							background: rgba(0,0,0,.25);
+							-webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,.25);
+							-webkit-transform:
+								scale(.8);
+						}
+						.secret:hover {
+							top: -120px;
+						}
+						.secret:hover h2 {
+							top: 163px;
+						}
+						.secret:hover span {
+							top: 120px;
+						}
+					</style>
+				</li>
+
+				<li class="teamjacob">
+					<h2><em>The</em> Eclipse</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.teamjacob span:nth-of-type(1) {
+							background: #333;
+							-webkit-box-shadow: 0 0 5px #333;
+							left: 5px;
+							top: 5px;
+							z-index: 1;
+						}
+						.teamjacob:hover span:nth-of-type(1) {
+							left: 60px;
+							top: 90px;
+						}
+					</style>
+				</li>
+
+				<li class="fryguy">
+					<h2><em>The</em> Shy Guy</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.fryguy h2 {
+							display: block;
+							height: 80px;
+							top: 165px;
+						}
+						.fryguy span:nth-of-type(1) {
+							background: rgba(20,20,20,.99);
+							-webkit-transform: scaleY(.3);
+							-webkit-box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
+							-webkit-border-bottom-right-radius: 0;
+							-webkit-border-bottom-left-radius: 0;
+							height: 75px;
+							top: 120px;
+						}
+						.fryguy span:nth-of-type(2) {
+							background: #333;
+							-webkit-border-radius: 0;
+							top: 175px;
+							z-index: 1;
+						}
+						.fryguy span:nth-of-type(3) {
+							background: rgba(20,20,20,.99);
+							-webkit-transform: scaleY(.3);
+							-webkit-box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
+							-webkit-border-top-right-radius: 0;
+							-webkit-border-top-left-radius: 0;
+							height: 75px;
+							top: 140px;
+							z-index: 2;
+						}
+						.fryguy:hover h2 {
+							top: -125px;
+						}
+						.fryguy:hover {
+							top: 170px;
+						}
+						.fryguy:hover span:nth-of-type(1) {
+							top: -50px;
+						}
+						.fryguy:hover span:nth-of-type(2) {
+							top: 5px;
+						}
+						.fryguy:hover span:nth-of-type(3) {
+							top: -30px;
+						}
+					</style>
+				</li>
+
+				<li class="dimmer">
+					<h2><em>The</em> Dimmer Switch</h2>
+					<style type="text/css" media="screen">
+						.dimmer {
+							z-index: 1000;
+						}
+						.dimmer h2 {
+							opacity: .01;
+						}
+						.dimmer:hover {
+							-webkit-box-shadow: 
+								0 0 50px rgba(255,255,255,.5),
+								0 0 200px 20px rgba(0,0,0,1),
+								0 0 0 9000px rgba(0,0,0,.6);
+						}
+						.dimmer:hover h2 {
+							opacity: 1;
+						}
+					</style>
+				</li>
+
+				<li class="papapaoohmowmow">
+					<h2><em>The</em> Wipeout</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.papapaoohmowmow {
+							z-index: 1;
+						}
+						.papapaoohmowmow span {
+							background: #333;
+							-webkit-box-shadow: 0 0 25px #333;
+							-webkit-transform: scale(.01);
+							-webkit-transition: all 1.5s ease-in-out;
+							z-index: 2;
+						}
+						.papapaoohmowmow h2 {
+							display: block;
+							height: 115px;
+							opacity: 0;
+							padding: 35px 0 0;
+							position: relative;
+							-webkit-transition: all 1.5s ease-in-out;
+							z-index: 3;
+						}
+						.papapaoohmowmow:hover span {
+							-webkit-transform: scale(1.1);
+						}
+						.papapaoohmowmow:hover h2 {
+							opacity: 1;
+						}
+					</style>
+				</li>
+
+			</ul>
+
+			<ul class="">
+
+				<li class="planetarium">
+					<h2><em>The</em> Planetarium</h2>
+					<style type="text/css" media="screen">
+						.planetarium {
+							background: -webkit-gradient(
+								radial, 
+								50% 50%, 
+								75, 
+								50% 50%, 
+								40, 
+								from(#18191b), 
+								to(#27282a)
+							) #27282a;
+							overflow: hidden;
+						}
+						.planetarium h2 {
+							text-shadow: 
+								0 0 10px rgba(0,0,0,.3);
+						}
+						.planetarium em {
+							display: block;
+							-webkit-border-radius: 25px;
+							-webkit-box-shadow: 
+								-50px  40px  0px -13px rgba(255,255,255,1), 
+								-60px  60px  0px -13px rgba(255,255,255,1), 
+								-35px -20px  0px -13px rgba(255,255,255,1), 
+								 40px  60px  0px -13px rgba(255,255,255,1), 
+								 30px -50px  0px -13px rgba(255,255,255,1), 
+								-50px  35px  0px -13px rgba(255,255,255,1), 
+								-25px -20px  0px -13px rgba(255,255,255,1), 
+								-40px  10px  0px -13px rgba(255,255,255,1), 
+								-40px -65px  0px -13px rgba(255,255,255,1), 
+								-10px  50px  0px -13px rgba(255,255,255,1), 
+								 10px -30px  0px -13px rgba(255,255,255,1), 
+								-30px -20px  0px -12px rgba(255,255,255,1), 
+								 70px  40px  0px -13px rgba(255,255,255,1), 
+								 20px  50px  0px -13px rgba(255,255,255,1), 
+								-40px  45px  0px -12px rgba(255,255,255,1), 
+								-35px -60px  0px -13px rgba(255,255,225,1), 
+								-30px  40px  0px -12px rgba(255,255,255,1), 
+								-10px  50px  0px -13px rgba(255,255,255,1), 
+								 20px -40px  0px -13px rgba(255,255,255,1), 
+								-20px -10px  0px -13px rgba(255,255,255,1), 
+								-50px -20px  0px -13px rgba(255,255,255,1), 
+								 70px  30px  0px -13px rgba(255,255,255,1), 
+								-40px  35px  0px -13px rgba(255,255,255,1), 
+								 35px -40px  0px -13px rgba(255,255,255,1), 
+								-70px  20px  0px -13px rgba(255,255,255,1), 
+								-40px -25px  0px -13px rgba(255,255,255,1), 
+								 10px -60px  0px -13px rgba(255,255,255,1), 
+								-20px  70px  0px -12px rgba(255,255,255,1), 
+								-25px  80px  0px -13px rgba(255,255,255,1), 
+								-35px  20px  0px -13px rgba(255,255,255,1), 
+								 60px -20px  0px -12px rgba(255,255,255,1), 
+								 20px -80px  0px -13px rgba(255,255,255,1), 
+								 10px  40px  0px -13px rgba(255,255,255,1), 
+								-45px -40px  0px -12px rgba(255,255,255,1), 
+								 40px -10px  0px -13px rgba(255,255,255,1), 
+								 15px  30px  0px -13px rgba(255,255,255,1), 
+								 10px -30px  0px -13px rgba(255,255,255,1), 
+								 40px  50px  0px -13px rgba(255,255,255,1), 
+								-55px  40px  0px -13px rgba(255,255,255,1), 
+								-40px -10px  0px -12px rgba(255,255,255,1), 
+								 30px -20px  0px -13px rgba(255,255,255,1), 
+								 50px  20px  0px -13px rgba(255,255,255,1), 
+								-55px -10px  0px -13px rgba(255,255,255,1), 
+								 10px -30px  0px -13px rgba(255,255,255,1), 
+								 10px  60px  0px -12px rgba(255,255,255,1), 
+								 20px -30px  0px -13px rgba(255,255,255,1), 
+								 40px  50px  0px -13px rgba(255,255,255,1), 
+								 30px  70px  0px -13px rgba(255,255,255,1), 
+								-60px  60px  0px -13px rgba(255,255,255,1), 
+								 10px  70px  0px -12px rgba(255,255,255,1), 
+								 30px  70px  0px -13px rgba(255,255,255,1), 
+								 10px -40px  0px -13px rgba(255,255,255,1), 
+								 20px -60px  0px -13px rgba(255,255,255,1), 
+								 30px  60px  0px -12px rgba(255,255,255,1), 
+								 30px -30px  0px -13px rgba(255,255,255,1), 
+								 40px  60px  0px -13px rgba(255,255,255,1), 
+								 20px -30px  0px -13px rgba(255,255,255,1), 
+								 20px  50px  0px -13px rgba(255,255,255,1), 
+								 40px  20px  0px -12px rgba(255,255,255,1), 
+								-40px  30px  0px -13px rgba(255,255,255,1); 
+							-webkit-background-clip: padding-box;
+							margin: 0 auto;
+							width: 27px;
+						}
+					</style>
+				</li>
+
+				<li class="darkside">
+					<h2><em>The</em> Dark Side</h2>
+					<style type="text/css" media="screen">
+						.darkside {
+							-webkit-box-shadow: 
+								inset 10px 0 10px 0 rgba(0,0,0,.9),
+								inset 45px 0 15px -12px rgba(0,0,0,.3),
+								inset 65px 0 10px -15px rgba(0,0,0,.5);
+						}
+						.darkside h2 {
+							color: transparent;
+							background-image: -webkit-linear-gradient(left, rgba(0,0,0,.9), rgba(0,0,0,.9) 30px, #fff 60px, #fff);
+							-webkit-box-shadow: none;
+							-webkit-background-clip: text;
+							text-shadow: none;
+						}
+					</style>
+				</li>
+
+				<li class="sorryaboutthisone">
+					<h2><em>The</em> Pop</h2>
+					<style type="text/css" media="screen">
+						.sorryaboutthisone {
+							background: #fefd03;
+							-webkit-border-radius: 0;
+							-webkit-box-shadow:
+								150px 0 0 #0197f5,
+								150px 150px 0 #24168f,
+								0 150px 0 #f09d03;
+							-webkit-transform: 
+								scale(.5) 
+								translate(-75px, -75px); 
+						}
+						.sorryaboutthisone h2 em {
+							color: inherit;
+							padding-top: 5px;
+						}
+						.sorryaboutthisone h2 {
+							color: #261e95;
+							text-shadow:
+								0 2px 1px #9ecd1f,
+								75px 0 0 #fef900,
+								75px 2px 1px #f10089,
+								75px 75px 0 #92d0ff,
+								75px 77px 1px #e844da,
+								0 75px 0 #f2a2d7,
+								0 77px 1px #ee0115;
+							-webkit-transform: scale(2);
+						}
+					</style>
+				</li>
+
+				<li class="stayaboveit">
+					<h2><em>The</em> Fold</h2>
+					<style type="text/css" media="screen">
+						.stayaboveit {     
+							background: rgba(81,81,81,1);
+							-webkit-border-radius: 0;
+							-webkit-box-shadow: 0px 15px 5px -10px rgba(0,0,0,0.2); 
+							overflow: hidden;
+						}
+						.stayaboveit h2 {     
+							display: block;
+							padding-top: 40px;
+							z-index: 2;
+						}
+						.stayaboveit:before,    
+						.stayaboveit:after {     
+							content: "";
+							display: block;
+							-webkit-box-shadow: 0 0 30px rgba(0,0,0,.5);
+							height: 150px;
+							left: 0;
+							position: absolute;
+							top: 0;
+							width: 150px;
+							z-index: 1;
+						}
+						.stayaboveit:after {     
+							top: 75px;
+						}
+						.stayaboveit:before {     
+							-webkit-box-shadow: 0 0 30px rgba(0,0,0,.2);
+							left: 75px;
+						}
+					</style>
+				</li>
+
+				<li class="matthamm">
+					<h2><em>The</em> Matt Hamm</h2>
+					<style type="text/css" media="screen">
+						.matthamm {
+							-webkit-border-radius: 0;
+						}
+						.matthamm:after,
+						.matthamm:before {
+							bottom: 10px; 
+							content: 'Shamelessly taken from Matt Hamm: http://matthamm.com/box-shadow-curl.html'; 
+							-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .8); 
+							height: 50%; 
+							overflow: hidden;
+							position: absolute; 
+							width: 75%; 
+							z-index: -1; 
+						}	
+						.matthamm:after {
+							right: 15px; 
+							-webkit-transform: 
+								skew(20deg) 
+								rotate(10deg);
+						}
+						.matthamm:before {
+							left: 15px; 
+							-webkit-transform: 
+								skew(-20deg) 
+								rotate(-10deg);
+						}
+					</style>
+				</li>
+
+				<li class="curlzmt">
+					<h2><em>The</em> Olympic Curler</h2>
+					<span></span>
+					<span></span>
+					<style type="text/css" media="screen">
+						.curlzmt {
+							-webkit-border-radius: 0;
+							-webkit-box-shadow: 0 30px 30px -20px #222;
+						}
+						.curlzmt:after,
+						.curlzmt:before {
+							background-color: #333;
+							-webkit-border-radius: 75px;
+							content: 'Wow, you\'re still reading this?';
+							color: transparent;
+							display: block;
+							height: 150px;
+							left: 0;
+							position: absolute;
+							width: 150px;
+							z-index: 1; 
+						}	
+						.curlzmt:before {
+							background-color: #333;
+							-webkit-box-shadow: inset 0 -60px 20px -40px rgba(0,0,0,.1);
+							-webkit-transform: 
+								scaleY(.15)
+								scaleX(1.1);
+							top: -75px;
+						}
+						.curlzmt:after {
+							background: #444;
+							-webkit-transform: 
+								scaleY(.1);
+							bottom: -75px;
+							-webkit-box-shadow: 0 70px 40px -20px #222;
+						}
+						.curlzmt span {
+							background: #333;
+							top: 0;
+							-webkit-transform: 
+								scaleX(.1)
+								scaleY(1.05);
+							z-index: 2;
+						}
+						.curlzmt span:nth-of-type(1) {
+							-webkit-box-shadow: inset -90px 0 20px -60px rgba(0,0,0,.1);
+							left: -75px;
+						}
+						.curlzmt span:nth-of-type(2) {
+							-webkit-box-shadow: inset 90px 0 20px -60px rgba(0,0,0,.1);
+							left: 75px;
+						}
+					</style>
+				</li>
+
+				<li class="nonotthatone">
+					<h2><em>The</em> Gallagher</h2>
+					<style type="text/css" media="screen">
+						.nonotthatone {     
+							-webkit-border-radius: 0;
+							overflow: hidden;
+						}
+						.nonotthatone:before {     
+							border-width: 0 30px 30px 0;
+							border-style: solid;
+							border-color: rgba(91,91,91,1) rgba(51,51,51,1);
+							-webkit-border-radius: 2px;
+							content: "";
+							position: absolute;
+							top: -2px;
+							right: 0;
+							z-index: 2;
+						}
+						.nonotthatone:after {     
+							-webkit-box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
+							content: "Look at this! http://nicolasgallagher.com/pure-css-folded-corner-effect/";
+							display: block;
+							height: 40px;
+							position: absolute;
+							right: -10px;
+							text-indent: -9999px;
+							top: -12px;
+							width: 40px;
+							z-index: 3;
+						}
+					</style>
+				</li>
+
+				<li class="embossy">
+					<h2><em>The</em> Needlessly Embossed</h2>
+					<style type="text/css" media="screen">
+						.embossy {     
+							-webkit-box-shadow: 
+								0 -3px 0 0 rgba(0,0,0,.3),
+								0 2px 0 0 rgba(255,255,255,.3);
+							-webkit-background-clip: padding-box;
+						}
+						.embossy h2 {     
+							text-shadow: 0 -2px 0 rgba(0,0,0,.7);
+						}
+					</style>
+				</li>
+
+				<li class="spatter">
+					<h2><em>The</em> Spatter</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.spatter {
+							overflow: hidden;
+						}
+						.spatter em {
+							display: block;
+							-webkit-border-radius: 25px;
+							-webkit-box-shadow: 
+								5px 55px 0 -10px rgba(56,56,56,1),
+								-10px 65px 0 -11px rgba(56,56,56,1),
+								15px 75px 0 -10px rgba(56,56,56,1),
+								-40px 65px 0 -12px rgba(56,56,56,1),
+								55px 25px 0 -10px rgba(56,56,56,1),
+								-35px 85px 0 -12px rgba(56,56,56,1),
+								-25px 75px 0 -9px rgba(56,56,56,1),
+								-5px 95px 0 -12px rgba(56,56,56,1),
+								15px 55px 0 -9px rgba(56,56,56,1),
+								-5px 65px 0 -12px rgba(56,56,56,1),
+								5px 70px 0 -10px rgba(56,56,56,1),
+								0px 73px 0 -11px rgba(56,56,56,1),
+								-5px 80px 0 -12px rgba(56,56,56,1),
+								-45px 70px 0 -9px rgba(56,56,56,1),
+								45px 55px 0 -9px rgba(56,56,56,1),
+								5px 95px 0 5px rgba(56,56,56,1),
+								35px 85px 0 -1px rgba(56,56,56,1),
+								-20px 85px 0 -5px rgba(56,56,56,1),
+								20px 95px 0 -4px rgba(56,56,56,1),
+								20px 85px 0 -4px rgba(56,56,56,1),
+								50px 95px 0 -5px rgba(56,56,56,1),
+								-65px 75px 0 -2px rgba(56,56,56,1),
+								25px 95px 0 -3px rgba(56,56,56,1),
+								-15px 85px 0 -5px rgba(56,56,56,1),
+								-15px 85px 0 -5px rgba(56,56,56,1),
+								25px 95px 0 5px rgba(56,56,56,1),
+								-35px 85px 0 -1px rgba(56,56,56,1),
+								-50px 85px 0 -5px rgba(56,56,56,1),
+								-20px 65px 0 -4px rgba(56,56,56,1),
+								20px 85px 0 -4px rgba(56,56,56,1),
+								5px 95px 0 -5px rgba(56,56,56,1),
+								60px 75px 0 -2px rgba(56,56,56,1),
+								20px 75px 0 -3px rgba(56,56,56,1),
+								-15px 85px 0 -5px rgba(56,56,56,1),
+								35px 65px 0 -5px rgba(56,56,56,1),
+								-20px 50px 0 -10px rgba(56,56,56,1);
+							margin: 0 auto;
+							width: 27px;
+						}
+						.spatter span {
+							-webkit-border-radius: 75px;
+							-webkit-box-shadow: 
+								0 0 0 20px rgba(51,51,51,1);
+							z-index: 20;
+						}
+					</style>
+				</li>
+
+				<li class="venn">
+					<h2><em>The</em> Venn</h2>
+					<span></span>
+					<style type="text/css" media="screen">
+						.venn {
+							background: rgba(150,60,150,1);
+							-webkit-box-shadow: 
+								0 0 60px rgba(255,195,205,.2),
+								-40px 0 0 rgba(61,21,21,1),
+								0 0 40px rgba(255,195,205,.3);
+							left: 20px;
+							position: relative;
+						}
+						.venn span {
+							-webkit-box-shadow: 
+								0 0 60px rgba(195,195,255,.2),
+								40px 0 0 rgba(21,21,91,1),
+								0 0 40px rgba(195,195,255,.3);
+							left: -40px;
+							z-index: 10;
+						}
+						.venn h2 {
+							display: block;
+							left: -20px;
+							padding-top: 45px;
+							position: relative;
+						}
+					</style>
+				</li>
+
+			</ul>
+
+		</article>
+
+		<script type="text/javascript">
+			
+			function showUl(direction){
+				var current = uls[uls.active],
+					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
+					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,  
+					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,  
+					next = uls[nextPosition];
+				current.className = "";	
+				next.className = "show";	
+			}
+
+			function page(event){
+				showUl(event.target.id);
+			}
+
+			function pageWithKeys(event){
+			  var next = 
+						event.keyCode == 39 ||
+						event.keyCode == 40 ||
+						event.keyCode == 32,
+					previous = 
+						event.keyCode == 37 ||
+						event.keyCode == 38,
+					noModifier = event.altKey !== true && event.metaKey !== true;
+				if (previous && noModifier){
+					showUl('previous');
+				}
+				if (next && noModifier){
+					showUl('next');
+				}
+			}
+
+			uls = document.getElementsByTagName("ul");
+			as = document.getElementsByTagName("a");
+			uls.active = 0;
+
+			for(i = 0; i < as.length; i++){
+				as[i].addEventListener('click', page, false);
+			}
+			
+			window.addEventListener('keydown', pageWithKeys, false);
+
+		</script>
+
+	
+
+
+</body></html>
