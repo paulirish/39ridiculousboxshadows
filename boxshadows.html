@@ -197,13 +197,15 @@
 			}
 
 			ul {
-			
+				display: none;
 				-webkit-transition: none;
 				margin: 0;
 				padding: 25px 0;
 			}
 
-		
+			ul.show {
+				display: block;
+			}
 
 			a { 
 				background: rgb(31,31,31);
@@ -228,7 +230,10 @@
 			<h1>
 				39 Box Shadows, No Good Reason
 				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <strong>»</strong></a>
-			
+				<em>
+					<a href="./boxshadows_files/boxshadows.html" id="previous">« Previous 10</a>
+					<a href="./boxshadows_files/boxshadows.html" id="next"> Next 10 »</a>
+				</em>
 			</h1>
 		</header>
 
@@ -571,7 +576,7 @@
 
 			</ul>
 
-			<ul>
+			<ul class="show">
 
 				<li class="youknowthatmikewhitemovie">
 					<h2><em>The</em> Good Girl</h2>
@@ -1790,6 +1795,51 @@
 			</ul>
 
 		</article>
+
+		<script type="text/javascript">
+			
+			function showUl(direction){
+				var current = uls[uls.active],
+					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
+					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,  
+					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,  
+					next = uls[nextPosition];
+				current.className = "";	
+				next.className = "show";	
+			}
+
+			function page(event){
+				showUl(event.target.id);
+			}
+
+			function pageWithKeys(event){
+			  var next = 
+						event.keyCode == 39 ||
+						event.keyCode == 40 ||
+						event.keyCode == 32,
+					previous = 
+						event.keyCode == 37 ||
+						event.keyCode == 38,
+					noModifier = event.altKey !== true && event.metaKey !== true;
+				if (previous && noModifier){
+					showUl('previous');
+				}
+				if (next && noModifier){
+					showUl('next');
+				}
+			}
+
+			uls = document.getElementsByTagName("ul");
+			as = document.getElementsByTagName("a");
+			uls.active = 0;
+
+			for(i = 0; i < as.length; i++){
+				as[i].addEventListener('click', page, false);
+			}
+			
+			window.addEventListener('keydown', pageWithKeys, false);
+
+		</script>
 
 	
 
