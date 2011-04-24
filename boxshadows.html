@@ -3,14 +3,14 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 		<title>39 Box Shadows</title>
-		
-		<meta charset="utf-8">		
+
+		<meta charset="utf-8">
 
 		<!--
 			This code is OFFICIALLY LICENSED under the WTFPL specification,
 			To read more about WTFPL, see this link: http://sam.zoy.org/wtfpl/
 		-->
-		
+
 		<style type="text/css" media="screen">
 
 			@font-face {
@@ -26,12 +26,20 @@
 				padding: 0;
 				position: relative;
 				-webkit-transition: all .25s ease-in-out;
+				-ms-transition: all .25s ease-in-out;
+				-o-transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				transition: all .25s ease-in-out;
+
 			}
 
 			html,
 			body {
 				height: 100%;
 				-webkit-transition: none;
+				-moz-transition: none;
+				-ms-transition: none;
+				transition: none;
 			}
 
 			body {
@@ -41,11 +49,11 @@
 				font-weight: normal;
 				text-align: center;
 			}
-      
+
 			article {
 				padding: 170px 0 50px;
 			}
-			
+
 			article:after {
 				content: ".";
 				display: block;
@@ -67,12 +75,12 @@
 
 			li {
 				background: -webkit-gradient(
-					radial, 
-					75 25, 
-					75, 
-					75 20, 
-					40, 
-					from(#444), 
+					radial,
+					75 25,
+					75,
+					75 20,
+					40,
+					from(#444),
 					to(#777)
 				) #777;
 				color: #fff;
@@ -88,7 +96,7 @@
 
 			li,
 			span {
-				-webkit-border-radius: 75px;
+				border-radius: 75px;
 				height: 150px;
 				width: 150px;
 			}
@@ -99,7 +107,7 @@
 				position: absolute;
 				top: 0;
 			}
-				
+
 			span:nth-of-type(1) { z-index: -9; }
 			span:nth-of-type(2) { z-index: -8; }
 			span:nth-of-type(3) { z-index: -7; }
@@ -131,7 +139,7 @@
 				text-align: left;
 				width: 160px;
 			}
-			
+
 			h1 a.post strong {
 				font-size: 20px;
 				font-weight: normal;
@@ -153,7 +161,7 @@
 				font-size: 30px;
 				font-weight: normal;
 				padding: 0 20px 10px;
-				text-shadow: 
+				text-shadow:
 					1px 1px 0 rgba(0,0,0,.2),
 					2px 2px 0 rgba(0,0,0,.2),
 					3px 3px 0 rgba(0,0,0,.2);
@@ -164,7 +172,7 @@
 				font-size: 15px;
 				padding: 0 0 10px;
 			}
-			
+
 			@-webkit-keyframes unviel {
 				0% {
 					height: 100%;
@@ -192,6 +200,11 @@
 				position: absolute;
 				top: 0;
 				-webkit-transition: none;
+				-ms-transition: none;
+				-o-transition: none;
+				-moz-transition: none;
+				transition: none;
+
 				width: 100%;
 				z-index: 9999;
 			}
@@ -199,6 +212,9 @@
 			ul {
 				display: none;
 				-webkit-transition: none;
+				-ms-transition: none;
+				-moz-transition: none;
+				transition: none;
 				margin: 0;
 				padding: 25px 0;
 			}
@@ -207,16 +223,16 @@
 				display: block;
 			}
 
-			a { 
+			a {
 				background: rgb(31,31,31);
-				-webkit-border-radius: 15px;
-			  color: rgb(81,81,81);
+				border-radius: 15px;
+			    color: rgb(81,81,81);
 				margin: 0 5px;
 				padding: 4px 10px 6px;
 				text-decoration: none;
 			}
 
-			a:hover { 
+			a:hover {
 				color: #fff;
 			}
 
@@ -246,11 +262,14 @@
 					<span style="left: -12.975871313672922px; top: 19.150717703349283px; "></span>
 					<style type="text/css" media="screen">
 						.source span {
-							-webkit-box-shadow:
+							box-shadow:
 								0 150px 20px -20px rgba(0,0,0,.2);
 							top: 10px;
-							-webkit-transform: 
-								scaleY(.4);
+							-webkit-transform: scaleY(.4);
+							-ms-transform: scaleY(.4);
+							-o-transform: scaleY(.4);
+							-moz-transform: scaleY(.4);
+							transform: scaleY(.4);
 							z-index: -1;
 						}
 					</style>
@@ -273,7 +292,7 @@
 						window.boxLeft = objectPosition(box)[0];
 						window.boxTop = objectPosition(box)[1];
 						window.canvasWidth = window.innerWidth;
-						window.canvasHeight = window.innerHeight; 
+						window.canvasHeight = window.innerHeight;
 						window.timer = 0;
 
 						document.body.addEventListener('mousemove', function(movement){
@@ -302,7 +321,7 @@
 									newGradientLeft = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
 									newGradientTop = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
 									gradient = '-webkit-gradient(';
-								
+
 								gradient += 'radial, ';
 								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
 								gradient += '75, ';
@@ -311,7 +330,7 @@
 								gradient += 'from(#444), ';
 								gradient += 'to(#777)';
 								gradient += ')';
-              	
+
 								if(distanceFromBoxY !== 0 && distanceFromBoxX !== 0){
 									window.boxshadow.style.left = newShadowLeft;
 									window.boxshadow.style.top = newShadowTop;
@@ -342,55 +361,143 @@
 								scaleY(.3)
 								skewX(10deg)
 								skewY(-10deg);
-							-webkit-box-shadow: -15px 220px 20px -25px rgba(0,0,0,.25);
+
+							-ms-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(-10deg);
+
+							-o-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(-10deg);
+
+							-moz-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(-10deg);
+
+							transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(-10deg);
+
+							box-shadow: -15px 220px 20px -25px rgba(0,0,0,.25);
 						}
 						.stadium span:nth-of-type(2) {
 							-webkit-transform:
 								scaleY(.3)
 								skewX(10deg)
 								skewY(10deg);
-							-webkit-box-shadow: -15px 290px 20px -25px rgba(0,0,0,.25);
+							-webkit-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+
+							-ms-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+
+							-o-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+
+							-moz-transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+
+							transform:
+								scaleY(.3)
+								skewX(10deg)
+								skewY(10deg);
+							box-shadow: -15px 290px 20px -25px rgba(0,0,0,.25);
 						}
 						.stadium span:nth-of-type(3) {
 							-webkit-transform:
 								scaleY(.3)
 								skewX(-10deg)
 								skewY(10deg);
-							-webkit-box-shadow: 15px 220px 20px -25px rgba(0,0,0,.25);
+
+							-ms-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(10deg);
+
+							-o-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(10deg);
+
+							-moz-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(10deg);
+
+							transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(10deg);
+							box-shadow: 15px 220px 20px -25px rgba(0,0,0,.25);
 						}
 						.stadium span:nth-of-type(4) {
 							-webkit-transform:
 								scaleY(.3)
 								skewX(-10deg)
 								skewY(-10deg);
-							-webkit-box-shadow: 15px 290px 20px -25px rgba(0,0,0,.25);
+
+							-ms-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(-10deg);
+
+							-o-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(-10deg);
+
+							-moz-transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(-10deg);
+
+							transform:
+								scaleY(.3)
+								skewX(-10deg)
+								skewY(-10deg);
+							box-shadow: 15px 290px 20px -25px rgba(0,0,0,.25);
 						}
 					</style>
 				</li>
-				
+
 				<li class="lilguy">
-					<h2><em>The</em> Lil‘ Guy</h2>
+					<h2><em>The</em> Lil&lsquo; Guy</h2>
 					<span></span>
 					<style type="text/css" media="screen">
 						.lilguy span {
-							-webkit-transform:
-								scaleY(.3);
-							-webkit-box-shadow: 0px 250px 20px -25px rgba(0,0,0,.25);
+							-webkit-transform: scaleY(.3);
+							-ms-transform: scaleY(.3);
+							-o-transform: scaleY(.3);
+							-moz-transform: scaleY(.3);
+							transform: scaleY(.3);
+							box-shadow: 0px 250px 20px -25px rgba(0,0,0,.25);
 						}
 					</style>
 				</li>
-				
+
 				<li class="softfocus">
 					<h2><em>The</em> Soft Focus</h2>
 					<style type="text/css" media="screen">
 						.softfocus {
-							-webkit-box-shadow: 
+							box-shadow:
 								inset 0 50px 20px -30px #777,
 								0 -20px 10px -20px #777,
 								inset 0 0 40px 5px #444,
 								0 0 20px 5px #444,
 								0 0 20px 5px #444;
-							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
 						}
 						.softfocus em,
 						.softfocus h2 {
@@ -406,19 +513,19 @@
 					<span></span>
 					<style type="text/css" media="screen">
 						.slippy {
-							-webkit-box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
+							box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
 						}
 						.slippy span:nth-of-type(1) {
 							background-image: -webkit-gradient(
-								radial, 
+								radial,
 								center -50,
-								0, 
+								0,
 								center -40,
-								80, 
-								from(rgba(101,101,101,1)), 
+								80,
+								from(rgba(101,101,101,1)),
 								to(rgba(51,51,51,1))
 							);
-							-webkit-border-radius: 0;
+							border-radius: 0;
 							left: -25px;
 							top: 100px;
 							height: 100px;
@@ -426,13 +533,15 @@
 							z-index: 5;
 						}
 						.slippy span:nth-of-type(2) {
-							-webkit-box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
+							box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
 							left: -25px;
 							top: 40px;
 							width: 200px;
-							-webkit-transform: 
-								scaleX(.8)
-								scaleY(.2);
+							-webkit-transform: scaleX(.8) scaleY(.2);
+							-ms-transform: scaleX(.8) scaleY(.2);
+							-o-transform: scaleX(.8) scaleY(.2);
+							-moz-transform: scaleX(.8) scaleY(.2);
+							transform: scaleX(.8) scaleY(.2);
 							z-index: 4;
 						}
 					</style>
@@ -447,32 +556,52 @@
 					<span></span>
 					<style type="text/css" media="screen">
 						.glowcamedownfromthehills span:nth-of-type(1) {
-							-webkit-box-shadow: 
+							box-shadow:
 								0px 0px 90px 0px rgba(255,255,240,1),
 								10px 10px 140px 0px rgba(200,255,255,1),
 								0px 0px 10px 5px rgba(180,255,255,.3);
 						}
 						.glowcamedownfromthehills span:nth-of-type(2) {
-							-webkit-box-shadow: -30px -15px 15px rgba(195,255,255,.8);
+							box-shadow: -30px -15px 15px rgba(195,255,255,.8);
 							-webkit-transform: scale(.8);
+							-o-transform: scale(.8);
+							-moz-transform: scale(.8);
+							-ms-transform: scale(.8);
+							transform: scale(.8);
 						}
 						.glowcamedownfromthehills span:nth-of-type(3) {
-							-webkit-box-shadow: 30px 190px 30px rgba(255,255,195,.8);
+							box-shadow: 30px 190px 30px rgba(255,255,195,.8);
 							-webkit-transform: scale(.3);
+							-o-transform: scale(.3);
+							-moz-transform: scale(.3);
+							-ms-transform: scale(.3);
+							transform: scale(.3);
 						}
 						.glowcamedownfromthehills span:nth-of-type(4) {
-							-webkit-box-shadow: 90px 30px 30px rgba(195,255,195,1);
+							box-shadow: 90px 30px 30px rgba(195,255,195,1);
 							-webkit-transform: scale(.5);
+							-ms-transform: scale(.5);
+							-o-transform: scale(.5);
+							-moz-transform: scale(.5);
+							transform: scale(.5);
 						}
 						.glowcamedownfromthehills span:nth-of-type(5) {
-							-webkit-box-shadow: -650px -350px 100px rgba(255,235,255,1);
+							box-shadow: -650px -350px 100px rgba(255,235,255,1);
 							-webkit-transform: scale(.1);
+							-ms-transform: scale(.1);
+							-o-transform: scale(.1);
+							-moz-transform: scale(.1);
+							transform: scale(.1);
 							z-index: 1;
 						}
 						.glowcamedownfromthehills span:nth-of-type(5) {
-							-webkit-box-shadow: -650px -350px 300px rgba(255,255,255,3);
-							-webkit-transform: scale(.1);
+							box-shadow: -650px -350px 300px rgba(255,255,255,3);
 							z-index: 1;
+							-webkit-transform: scale(.1);
+							-ms-transform: scale(.1);
+							-o-transform: scale(.1);
+							-moz-transform: scale(.1);
+							transform: scale(.1);
 						}
 					</style>
 				</li>
@@ -506,42 +635,63 @@
 						}
 						.looksshooped span:nth-of-type(1) {
 							background: rgba(220,255,255,.1);
-							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							box-shadow: 0 0 30px rgba(220,255,255,.35);
 							left: -80px;
 							top: -80px;
 							-webkit-transform: scale(.1);
+							-ms-transform: scale(.1);
+							-o-transform: scale(.1);
+							-moz-transform: scale(.1);
+							transform: scale(.1);
+
 						}
 						.looksshooped span:nth-of-type(2) {
-							-webkit-box-shadow: -150px -150px 40px rgba(220,255,255,.1);
+							box-shadow: -150px -150px 40px rgba(220,255,255,.1);
 							-webkit-transform: scale(.4);
+							-o-transform: scale(.4);
+							-moz-transform: scale(.4);
+							transform: scale(.4);
 						}
 						.looksshooped span:nth-of-type(3) {
 							background: rgba(220,255,255,.07);
-							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.2);
+							box-shadow: 0 0 30px rgba(220,255,255,.2);
 							left: -20px;
 							top: -20px;
 							-webkit-transform: scale(.7);
+							-o-transform: scale(.7);
+							-moz-transform: scale(.7);
+							transform: scale(.7);
 						}
 						.looksshooped span:nth-of-type(1) {
 							background: rgba(220,255,255,.1);
-							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							box-shadow: 0 0 30px rgba(220,255,255,.35);
 							left: 20px;
 							top: 20px;
 							-webkit-transform: scale(.3);
+							-o-transform: scale(.3);
+							-moz-transform: scale(.3);
 						}
 						.looksshooped span:nth-of-type(1) {
 							background: rgba(220,255,255,.1);
-							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							box-shadow: 0 0 30px rgba(220,255,255,.35);
 							left: 40px;
 							top: 40px;
 							-webkit-transform: scale(.15);
+							-ms-transform: scale(.15);
+							-o-transform: scale(.15);
+							-moz-transform: scale(.15);
+							transform: scale(.15);
 						}
 						.looksshooped span:nth-of-type(1) {
 							background: rgba(220,255,255,.1);
-							-webkit-box-shadow: 0 0 30px rgba(220,255,255,.35);
+							box-shadow: 0 0 30px rgba(220,255,255,.35);
 							left: 60px;
 							top: 60px;
 							-webkit-transform: scale(.12);
+							-ms-transform: scale(.12);
+							-o-transform: scale(.12);
+							-moz-transform: scale(.12);
+							transform: scale(.12);
 						}
 					</style>
 				</li>
@@ -551,7 +701,7 @@
 					<style type="text/css" media="screen">
 						.tacobell {
 							background: transparent;
-							-webkit-box-shadow:
+							box-shadow:
 								0 0 3px 0 rgba(51,51,51,1),
 								8px 5px 2px 3px rgba(255,255,255,1),
 								15px 10px 20px 3px rgba(255,255,255,.2);
@@ -566,7 +716,7 @@
 					<style type="text/css" media="screen">
 						.derp span:nth-of-type(1) {
 							background: rgba(0,0,0,.4);
-							-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+							box-shadow: 0 0 5px rgba(0,0,0,.4);
 							left: 5px;
 							top: 5px;
 							z-index: 1;
@@ -585,14 +735,16 @@
 					<style type="text/css" media="screen">
 						.youknowthatmikewhitemovie span {
 							background: rgba(255,255,255,.01);
-							-webkit-box-shadow: 
+							box-shadow:
 								inset 0  10px 20px 10px rgba(255,255,255,1),
 								inset 0 -10px 20px 10px rgba(255,255,255,1),
 								0  10px 20px 10px rgba(255,255,255,1),
 								0 -10px 20px 10px rgba(255,255,255,1);
-							-webkit-transform:
-								scaleX(.65)
-								scaleY(.2);
+							-webkit-transform: scaleX(.65) scaleY(.2);
+							-ms-transform: scaleX(.65) scaleY(.2);
+							-o-transform: scaleX(.65) scaleY(.2);
+							-moz-transform: scaleX(.65) scaleY(.2);
+							transform: scaleX(.65) scaleY(.2);
 							top: -80px;
 							z-index: 1;
 						}
@@ -601,7 +753,7 @@
 						}
 					</style>
 				</li>
-				
+
 				<li class="theorist">
 					<h2><em>The</em> Color Theorist</h2>
 					<span></span>
@@ -612,46 +764,73 @@
 					<span></span>
 					<style type="text/css" media="screen">
 						.theorist {
-							-webkit-box-shadow: 
+							box-shadow:
 								0px 0px 1px 0px rgba(255,255,255,.7),
 								0px 0px 20px 2px rgba(255,255,255,.8);
 						}
 						.theorist span:nth-of-type(1) {
-							-webkit-box-shadow: 0px -10px 3px 2px rgba(0,255,0,1);
+							box-shadow: 0px -10px 3px 2px rgba(0,255,0,1);
 						}
 						.theorist span:nth-of-type(2) {
-							-webkit-box-shadow: 10px 10px 3px 2px rgba(0,0,255,1);
+							box-shadow: 10px 10px 3px 2px rgba(0,0,255,1);
 						}
 						.theorist span:nth-of-type(3) {
-							-webkit-box-shadow: -10px 10px 3px 2px rgba(255,0,0,1);
+							box-shadow: -10px 10px 3px 2px rgba(255,0,0,1);
 						}
 						.theorist span:nth-of-type(4) {
 							-webkit-transform:
 								skewX(-10deg)
 								scale(.8);
-							-webkit-box-shadow: 18px -11px 3px 0px rgba(0,255,255,1);
+							-o-transform:
+								skewX(-10deg)
+								scale(.8);
+							-moz-transform:
+								skewX(-10deg)
+								scale(.8);
+							box-shadow: 18px -11px 3px 0px rgba(0,255,255,1);
 						}
 						.theorist span:nth-of-type(5) {
 							-webkit-transform:
 								scaleX(.7)
 								scaleY(.8);
-							-webkit-box-shadow: 0 33px 3px 0px rgba(255,0,255,1);
+							-o-transform:
+								scaleX(.7)
+								scaleY(.8);
+							-moz-transform:
+								scaleX(.7)
+								scaleY(.8);
+							-ms-transform:
+								scaleX(.7)
+								scaleY(.8);
+							transform:
+								scaleX(.7)
+								scaleY(.8);
+							box-shadow: 0 33px 3px 0px rgba(255,0,255,1);
 						}
 						.theorist span:nth-of-type(6) {
 							-webkit-transform:
 								skewX(10deg)
 								scale(.8);
-							-webkit-box-shadow: -18px -11px 3px 0px rgba(255,255,0,1);
+							-o-transform:
+								skewX(10deg)
+								scale(.8);
+							-moz-transform:
+								skewX(10deg)
+								scale(.8);
+							-ms-transform:
+								skewX(10deg)
+								scale(.8);
+							box-shadow: -18px -11px 3px 0px rgba(255,255,0,1);
 						}
 					</style>
 				</li>
-				
+
 				<li class="dialer">
 					<h2><em>The</em> Dialer</h2>
 					<style type="text/css" media="screen">
 						.dialer em {
-							-webkit-border-radius: 20px;
-							-webkit-box-shadow: 
+							border-radius: 20px;
+							box-shadow:
 								45px -19px 0 -3px rgba(51,51,51,1),
 								45px -20px 0 -2px rgba(41,41,41,1),
 								25px -34px 0 -3px rgba(51,51,51,1),
@@ -687,26 +866,26 @@
 					<style type="text/css" media="screen">
 						.wehavetogodeeper {
 							background-image: -webkit-gradient(
-								radial, 
+								radial,
 								center 150,
-								0, 
+								0,
 								center 150,
-								100, 
+								100,
 								from(rgba(16,16,16,1)),
-								to(rgba(31,31,31,1)) 
+								to(rgba(31,31,31,1))
 							);
 						}
 						.wehavetogodeeper h2 {
 							display: block;
-							-webkit-border-radius: 75px;
-							-webkit-box-shadow: 0 120px 0 -20px rgba(11,11,11,1); 
+							border-radius: 75px;
+							box-shadow: 0 120px 0 -20px rgba(11,11,11,1);
 							padding: 75px 0 10px;
 							top: -35px;
 							width: 150px;
 						}
 						.wehavetogodeeper span {
 							z-index: 30;
-							-webkit-box-shadow: 0 0 0 70px rgba(51,51,51,1); 
+							box-shadow: 0 0 0 70px rgba(51,51,51,1);
 						}
 					</style>
 				</li>
@@ -715,7 +894,7 @@
 					<h2><em>The</em> Cheshire</h2>
 					<style type="text/css" media="screen">
 						.cheshire {
-							-webkit-box-shadow:
+							box-shadow:
 								 1px  1px 0 #777,
 								 2px  2px 0 #777,
 								 3px  3px 0 #777,
@@ -746,149 +925,215 @@
 								 3px 28px 0 #444,
 								 2px 29px 0 #444,
 								 1px 30px 0 #444;
-						}  
+						}
 					</style>
 				</li>
-				
+
 				<li class="theoldrazzledazzle">
 					<h2><em>The</em> Dazzler</h2>
 					<style type="text/css" media="screen">
 						@-webkit-keyframes dazzle {
 							0% {
-								-webkit-box-shadow: 
-									-50px  40px  2px -13px rgba(255,255,255,0), 
-									-60px  60px  2px -13px rgba(255,255,255,1), 
-									-35px -20px  2px -12px rgba(255,255,255,0), 
-									 40px  60px  3px -13px rgba(235,255,255,1), 
-									 30px -50px  2px -13px rgba(255,255,255,0), 
-									-50px  35px  3px -11px rgba(255,255,235,1), 
-									-25px -20px  3px -13px rgba(235,255,235,0), 
-									-40px  10px  4px -11px rgba(255,255,255,1), 
-									-40px -65px  1px -13px rgba(255,245,255,0), 
-									-10px  50px  3px -12px rgba(255,255,255,1), 
-									 10px -30px  3px -12px rgba(235,255,255,0), 
-									-30px -20px  2px -12px rgba(255,245,255,1), 
-									 70px  40px  3px -13px rgba(255,255,255,0), 
-									 20px  50px  2px -13px rgba(205,255,255,1), 
-									-40px  45px  6px -11px rgba(255,255,255,0), 
-									-35px -60px  3px -13px rgba(255,255,225,1), 
-									-30px  40px  4px -11px rgba(255,255,255,0), 
-									-70px -55px  1px -13px rgba(255,255,255,1), 
-									-10px  50px  3px -12px rgba(235,255,255,0), 
-									 20px -40px  3px -12px rgba(225,255,255,1), 
-									-20px -10px  2px -13px rgba(255,255,255,0), 
-									-50px -20px  5px -12px rgba(245,255,255,1), 
-									 70px  30px  3px -13px rgba(215,255,245,0), 
-									 40px  90px  2px -13px rgba(255,255,255,1), 
-									-40px  35px  3px -11px rgba(165,235,215,0), 
-									 35px -40px  3px -13px rgba(245,255,255,1), 
-									-70px  20px  4px -11px rgba(215,215,235,0), 
-									-40px -25px  1px -13px rgba(255,245,255,1), 
-									 10px -60px  3px -12px rgba(255,225,245,0), 
-									-20px  70px  3px -12px rgba(255,255,255,1), 
-									-25px  80px  2px -13px rgba(245,255,255,0), 
-									-40px  90px  2px -12px rgba(170,235,255,1), 
-									-35px  20px  3px -13px rgba(225,215,255,0), 
-									 60px -20px  3px -12px rgba(255,255,255,1), 
-									 20px -80px  2px -13px rgba(255,255,255,0), 
-									 10px  40px  3px -13px rgba(225,255,255,1), 
-									-45px -40px  2px -13px rgba(255,245,255,0), 
-									 40px -10px  3px -12px rgba(255,255,255,1), 
-									 15px  30px  2px -13px rgba(225,235,255,0), 
-									 10px -30px  2px -12px rgba(255,245,245,1), 
-									 40px  50px  2px -13px rgba(255,255,255,0), 
-									-55px  40px  4px -13px rgba(225,245,255,1), 
-									-40px -10px  2px -12px rgba(195,255,175,0), 
-									 30px -20px  2px -13px rgba(255,255,255,1), 
-									 50px  20px  3px -13px rgba(255,255,255,0), 
-									-55px -10px  2px -13px rgba(255,205,255,1), 
-									 10px -30px  7px -12px rgba(255,255,255,0), 
-									 10px  60px  2px -13px rgba(255,255,255,1), 
-									 20px -30px  2px -12px rgba(225,225,225,0), 
-									 40px  50px  2px -13px rgba(195,255,255,1), 
-									 30px  70px  3px -13px rgba(235,255,235,0), 
-									-60px  60px  2px -13px rgba(255,255,255,1), 
-									 10px  70px  3px -12px rgba(225,205,255,0), 
-									 20px  90px  2px -13px rgba(235,255,235,1), 
-									 30px  70px  5px -12px rgba(225,255,225,0), 
-									 10px -40px  2px -12px rgba(195,255,175,1), 
-									 20px -60px  2px -13px rgba(255,255,255,0), 
-									 30px  60px  3px -13px rgba(255,255,255,1), 
-									-75px -30px  2px -13px rgba(255,205,255,0), 
-									 30px -30px  7px -12px rgba(255,255,255,1), 
-									 40px  60px  2px -13px rgba(255,255,255,0), 
-									 20px -30px  2px -12px rgba(225,225,225,1), 
-									 20px  50px  2px -13px rgba(195,255,255,0), 
-									 40px  20px  3px -13px rgba(235,255,235,1), 
-									-40px  30px  2px -13px rgba(255,255,255,0); 
+								box-shadow:
+									-50px  40px  2px -13px rgba(255,255,255,0),
+									-60px  60px  2px -13px rgba(255,255,255,1),
+									-35px -20px  2px -12px rgba(255,255,255,0),
+									 40px  60px  3px -13px rgba(235,255,255,1),
+									 30px -50px  2px -13px rgba(255,255,255,0),
+									-50px  35px  3px -11px rgba(255,255,235,1),
+									-25px -20px  3px -13px rgba(235,255,235,0),
+									-40px  10px  4px -11px rgba(255,255,255,1),
+									-40px -65px  1px -13px rgba(255,245,255,0),
+									-10px  50px  3px -12px rgba(255,255,255,1),
+									 10px -30px  3px -12px rgba(235,255,255,0),
+									-30px -20px  2px -12px rgba(255,245,255,1),
+									 70px  40px  3px -13px rgba(255,255,255,0),
+									 20px  50px  2px -13px rgba(205,255,255,1),
+									-40px  45px  6px -11px rgba(255,255,255,0),
+									-35px -60px  3px -13px rgba(255,255,225,1),
+									-30px  40px  4px -11px rgba(255,255,255,0),
+									-70px -55px  1px -13px rgba(255,255,255,1),
+									-10px  50px  3px -12px rgba(235,255,255,0),
+									 20px -40px  3px -12px rgba(225,255,255,1),
+									-20px -10px  2px -13px rgba(255,255,255,0),
+									-50px -20px  5px -12px rgba(245,255,255,1),
+									 70px  30px  3px -13px rgba(215,255,245,0),
+									 40px  90px  2px -13px rgba(255,255,255,1),
+									-40px  35px  3px -11px rgba(165,235,215,0),
+									 35px -40px  3px -13px rgba(245,255,255,1),
+									-70px  20px  4px -11px rgba(215,215,235,0),
+									-40px -25px  1px -13px rgba(255,245,255,1),
+									 10px -60px  3px -12px rgba(255,225,245,0),
+									-20px  70px  3px -12px rgba(255,255,255,1),
+									-25px  80px  2px -13px rgba(245,255,255,0),
+									-40px  90px  2px -12px rgba(170,235,255,1),
+									-35px  20px  3px -13px rgba(225,215,255,0),
+									 60px -20px  3px -12px rgba(255,255,255,1),
+									 20px -80px  2px -13px rgba(255,255,255,0),
+									 10px  40px  3px -13px rgba(225,255,255,1),
+									-45px -40px  2px -13px rgba(255,245,255,0),
+									 40px -10px  3px -12px rgba(255,255,255,1),
+									 15px  30px  2px -13px rgba(225,235,255,0),
+									 10px -30px  2px -12px rgba(255,245,245,1),
+									 40px  50px  2px -13px rgba(255,255,255,0),
+									-55px  40px  4px -13px rgba(225,245,255,1),
+									-40px -10px  2px -12px rgba(195,255,175,0),
+									 30px -20px  2px -13px rgba(255,255,255,1),
+									 50px  20px  3px -13px rgba(255,255,255,0),
+									-55px -10px  2px -13px rgba(255,205,255,1),
+									 10px -30px  7px -12px rgba(255,255,255,0),
+									 10px  60px  2px -13px rgba(255,255,255,1),
+									 20px -30px  2px -12px rgba(225,225,225,0),
+									 40px  50px  2px -13px rgba(195,255,255,1),
+									 30px  70px  3px -13px rgba(235,255,235,0),
+									-60px  60px  2px -13px rgba(255,255,255,1),
+									 10px  70px  3px -12px rgba(225,205,255,0),
+									 20px  90px  2px -13px rgba(235,255,235,1),
+									 30px  70px  5px -12px rgba(225,255,225,0),
+									 10px -40px  2px -12px rgba(195,255,175,1),
+									 20px -60px  2px -13px rgba(255,255,255,0),
+									 30px  60px  3px -13px rgba(255,255,255,1),
+									-75px -30px  2px -13px rgba(255,205,255,0),
+									 30px -30px  7px -12px rgba(255,255,255,1),
+									 40px  60px  2px -13px rgba(255,255,255,0),
+									 20px -30px  2px -12px rgba(225,225,225,1),
+									 20px  50px  2px -13px rgba(195,255,255,0),
+									 40px  20px  3px -13px rgba(235,255,235,1),
+									-40px  30px  2px -13px rgba(255,255,255,0);
 							}
 							100% {
-								-webkit-box-shadow: 
-									-50px  40px  2px -13px rgba(255,255,255,1), 
-									-60px  60px  2px -13px rgba(255,255,255,0), 
-									-35px -20px  2px -12px rgba(255,255,255,1), 
-									 40px  60px  3px -13px rgba(235,255,255,0), 
-									 30px -50px  2px -13px rgba(255,255,255,1), 
-									-50px  35px  3px -11px rgba(255,255,235,0), 
-									-25px -20px  3px -13px rgba(235,255,235,1), 
-									-40px  10px  4px -11px rgba(255,255,255,0), 
-									-40px -65px  1px -13px rgba(255,245,255,1), 
-									-10px  50px  3px -12px rgba(255,255,255,0), 
-									 10px -30px  3px -12px rgba(235,255,255,1), 
-									-30px -20px  2px -12px rgba(255,245,255,0), 
-									 70px  40px  3px -13px rgba(255,255,255,1), 
-									 20px  50px  2px -13px rgba(205,255,255,0), 
-									-40px  45px  6px -11px rgba(255,255,255,1), 
-									-35px -60px  3px -13px rgba(255,255,225,0), 
-									-30px  40px  4px -11px rgba(255,255,255,1), 
-									-70px -55px  1px -13px rgba(255,255,255,0), 
-									-10px  50px  3px -12px rgba(235,255,255,1), 
-									 20px -40px  3px -12px rgba(225,255,255,0), 
-									-20px -10px  2px -13px rgba(255,255,255,1), 
-									-50px -20px  5px -12px rgba(245,255,255,0), 
-									 70px  30px  3px -13px rgba(215,255,245,1), 
-									 40px  90px  2px -13px rgba(255,255,255,0), 
-									-40px  35px  3px -11px rgba(165,235,215,1), 
-									 35px -40px  3px -13px rgba(245,255,255,0), 
-									-70px  20px  4px -11px rgba(215,215,235,1), 
-									-40px -25px  1px -13px rgba(255,245,255,0), 
-									 10px -60px  3px -12px rgba(255,225,245,1), 
-									-20px  70px  3px -12px rgba(255,255,255,0), 
-									-25px  80px  2px -13px rgba(245,255,255,1), 
-									-40px  90px  2px -12px rgba(170,235,255,0), 
-									-35px  20px  3px -13px rgba(225,215,255,1), 
-									 60px -20px  3px -12px rgba(255,255,255,0), 
-									 20px -80px  2px -13px rgba(255,255,255,1), 
-									 10px  40px  3px -13px rgba(225,255,255,0), 
-									-45px -40px  2px -13px rgba(255,245,255,1), 
-									 40px -10px  3px -12px rgba(255,255,255,0), 
-									 15px  30px  2px -13px rgba(225,235,255,1), 
-									 10px -30px  2px -12px rgba(255,245,245,0), 
-									 40px  50px  2px -13px rgba(255,255,255,1), 
-									-55px  40px  4px -13px rgba(225,245,255,0), 
-									-40px -10px  2px -12px rgba(195,255,175,1), 
-									 30px -20px  2px -13px rgba(255,255,255,0), 
-									 50px  20px  3px -13px rgba(255,255,255,1), 
-									-55px -10px  2px -13px rgba(255,205,255,0), 
-									 10px -30px  7px -12px rgba(255,255,255,1), 
-									 10px  60px  2px -13px rgba(255,255,255,0), 
-									 20px -30px  2px -12px rgba(225,225,225,1), 
-									 40px  50px  2px -13px rgba(195,255,255,0), 
-									 30px  70px  3px -13px rgba(235,255,235,1), 
-									-60px  60px  2px -13px rgba(255,255,255,0), 
-									 10px  70px  3px -12px rgba(225,205,255,1), 
-									 20px  90px  2px -13px rgba(235,255,235,0), 
-									 30px  70px  5px -12px rgba(225,255,225,1), 
-									 10px -40px  2px -12px rgba(195,255,175,0), 
-									 20px -60px  2px -13px rgba(255,255,255,1), 
-									 30px  60px  3px -13px rgba(255,255,255,0), 
-									-75px -30px  2px -13px rgba(255,205,255,1), 
-									 30px -30px  7px -12px rgba(255,255,255,0), 
-									 40px  60px  2px -13px rgba(255,255,255,1), 
-									 20px -30px  2px -12px rgba(225,225,225,0), 
-									 20px  50px  2px -13px rgba(195,255,255,1), 
-									 40px  20px  3px -13px rgba(235,255,235,0), 
-									-40px  30px  2px -13px rgba(255,255,255,1); 
+								box-shadow:
+									-50px  40px  2px -13px rgba(255,255,255,1),
+									-60px  60px  2px -13px rgba(255,255,255,0),
+									-35px -20px  2px -12px rgba(255,255,255,1),
+									 40px  60px  3px -13px rgba(235,255,255,0),
+									 30px -50px  2px -13px rgba(255,255,255,1),
+									-50px  35px  3px -11px rgba(255,255,235,0),
+									-25px -20px  3px -13px rgba(235,255,235,1),
+									-40px  10px  4px -11px rgba(255,255,255,0),
+									-40px -65px  1px -13px rgba(255,245,255,1),
+									-10px  50px  3px -12px rgba(255,255,255,0),
+									 10px -30px  3px -12px rgba(235,255,255,1),
+									-30px -20px  2px -12px rgba(255,245,255,0),
+									 70px  40px  3px -13px rgba(255,255,255,1),
+									 20px  50px  2px -13px rgba(205,255,255,0),
+									-40px  45px  6px -11px rgba(255,255,255,1),
+									-35px -60px  3px -13px rgba(255,255,225,0),
+									-30px  40px  4px -11px rgba(255,255,255,1),
+									-70px -55px  1px -13px rgba(255,255,255,0),
+									-10px  50px  3px -12px rgba(235,255,255,1),
+									 20px -40px  3px -12px rgba(225,255,255,0),
+									-20px -10px  2px -13px rgba(255,255,255,1),
+									-50px -20px  5px -12px rgba(245,255,255,0),
+									 70px  30px  3px -13px rgba(215,255,245,1),
+									 40px  90px  2px -13px rgba(255,255,255,0),
+									-40px  35px  3px -11px rgba(165,235,215,1),
+									 35px -40px  3px -13px rgba(245,255,255,0),
+									-70px  20px  4px -11px rgba(215,215,235,1),
+									-40px -25px  1px -13px rgba(255,245,255,0),
+									 10px -60px  3px -12px rgba(255,225,245,1),
+									-20px  70px  3px -12px rgba(255,255,255,0),
+									-25px  80px  2px -13px rgba(245,255,255,1),
+									-40px  90px  2px -12px rgba(170,235,255,0),
+									-35px  20px  3px -13px rgba(225,215,255,1),
+									 60px -20px  3px -12px rgba(255,255,255,0),
+									 20px -80px  2px -13px rgba(255,255,255,1),
+									 10px  40px  3px -13px rgba(225,255,255,0),
+									-45px -40px  2px -13px rgba(255,245,255,1),
+									 40px -10px  3px -12px rgba(255,255,255,0),
+									 15px  30px  2px -13px rgba(225,235,255,1),
+									 10px -30px  2px -12px rgba(255,245,245,0),
+									 40px  50px  2px -13px rgba(255,255,255,1),
+									-55px  40px  4px -13px rgba(225,245,255,0),
+									-40px -10px  2px -12px rgba(195,255,175,1),
+									 30px -20px  2px -13px rgba(255,255,255,0),
+									 50px  20px  3px -13px rgba(255,255,255,1),
+									-55px -10px  2px -13px rgba(255,205,255,0),
+									 10px -30px  7px -12px rgba(255,255,255,1),
+									 10px  60px  2px -13px rgba(255,255,255,0),
+									 20px -30px  2px -12px rgba(225,225,225,1),
+									 40px  50px  2px -13px rgba(195,255,255,0),
+									 30px  70px  3px -13px rgba(235,255,235,1),
+									-60px  60px  2px -13px rgba(255,255,255,0),
+									 10px  70px  3px -12px rgba(225,205,255,1),
+									 20px  90px  2px -13px rgba(235,255,235,0),
+									 30px  70px  5px -12px rgba(225,255,225,1),
+									 10px -40px  2px -12px rgba(195,255,175,0),
+									 20px -60px  2px -13px rgba(255,255,255,1),
+									 30px  60px  3px -13px rgba(255,255,255,0),
+									-75px -30px  2px -13px rgba(255,205,255,1),
+									 30px -30px  7px -12px rgba(255,255,255,0),
+									 40px  60px  2px -13px rgba(255,255,255,1),
+									 20px -30px  2px -12px rgba(225,225,225,0),
+									 20px  50px  2px -13px rgba(195,255,255,1),
+									 40px  20px  3px -13px rgba(235,255,235,0),
+									-40px  30px  2px -13px rgba(255,255,255,1);
+								box-shadow:
+									-50px  40px  2px -13px rgba(255,255,255,1),
+									-60px  60px  2px -13px rgba(255,255,255,0),
+									-35px -20px  2px -12px rgba(255,255,255,1),
+									 40px  60px  3px -13px rgba(235,255,255,0),
+									 30px -50px  2px -13px rgba(255,255,255,1),
+									-50px  35px  3px -11px rgba(255,255,235,0),
+									-25px -20px  3px -13px rgba(235,255,235,1),
+									-40px  10px  4px -11px rgba(255,255,255,0),
+									-40px -65px  1px -13px rgba(255,245,255,1),
+									-10px  50px  3px -12px rgba(255,255,255,0),
+									 10px -30px  3px -12px rgba(235,255,255,1),
+									-30px -20px  2px -12px rgba(255,245,255,0),
+									 70px  40px  3px -13px rgba(255,255,255,1),
+									 20px  50px  2px -13px rgba(205,255,255,0),
+									-40px  45px  6px -11px rgba(255,255,255,1),
+									-35px -60px  3px -13px rgba(255,255,225,0),
+									-30px  40px  4px -11px rgba(255,255,255,1),
+									-70px -55px  1px -13px rgba(255,255,255,0),
+									-10px  50px  3px -12px rgba(235,255,255,1),
+									 20px -40px  3px -12px rgba(225,255,255,0),
+									-20px -10px  2px -13px rgba(255,255,255,1),
+									-50px -20px  5px -12px rgba(245,255,255,0),
+									 70px  30px  3px -13px rgba(215,255,245,1),
+									 40px  90px  2px -13px rgba(255,255,255,0),
+									-40px  35px  3px -11px rgba(165,235,215,1),
+									 35px -40px  3px -13px rgba(245,255,255,0),
+									-70px  20px  4px -11px rgba(215,215,235,1),
+									-40px -25px  1px -13px rgba(255,245,255,0),
+									 10px -60px  3px -12px rgba(255,225,245,1),
+									-20px  70px  3px -12px rgba(255,255,255,0),
+									-25px  80px  2px -13px rgba(245,255,255,1),
+									-40px  90px  2px -12px rgba(170,235,255,0),
+									-35px  20px  3px -13px rgba(225,215,255,1),
+									 60px -20px  3px -12px rgba(255,255,255,0),
+									 20px -80px  2px -13px rgba(255,255,255,1),
+									 10px  40px  3px -13px rgba(225,255,255,0),
+									-45px -40px  2px -13px rgba(255,245,255,1),
+									 40px -10px  3px -12px rgba(255,255,255,0),
+									 15px  30px  2px -13px rgba(225,235,255,1),
+									 10px -30px  2px -12px rgba(255,245,245,0),
+									 40px  50px  2px -13px rgba(255,255,255,1),
+									-55px  40px  4px -13px rgba(225,245,255,0),
+									-40px -10px  2px -12px rgba(195,255,175,1),
+									 30px -20px  2px -13px rgba(255,255,255,0),
+									 50px  20px  3px -13px rgba(255,255,255,1),
+									-55px -10px  2px -13px rgba(255,205,255,0),
+									 10px -30px  7px -12px rgba(255,255,255,1),
+									 10px  60px  2px -13px rgba(255,255,255,0),
+									 20px -30px  2px -12px rgba(225,225,225,1),
+									 40px  50px  2px -13px rgba(195,255,255,0),
+									 30px  70px  3px -13px rgba(235,255,235,1),
+									-60px  60px  2px -13px rgba(255,255,255,0),
+									 10px  70px  3px -12px rgba(225,205,255,1),
+									 20px  90px  2px -13px rgba(235,255,235,0),
+									 30px  70px  5px -12px rgba(225,255,225,1),
+									 10px -40px  2px -12px rgba(195,255,175,0),
+									 20px -60px  2px -13px rgba(255,255,255,1),
+									 30px  60px  3px -13px rgba(255,255,255,0),
+									-75px -30px  2px -13px rgba(255,205,255,1),
+									 30px -30px  7px -12px rgba(255,255,255,0),
+									 40px  60px  2px -13px rgba(255,255,255,1),
+									 20px -30px  2px -12px rgba(225,225,225,0),
+									 20px  50px  2px -13px rgba(195,255,255,1),
+									 40px  20px  3px -13px rgba(235,255,235,0),
+									-40px  30px  2px -13px rgba(255,255,255,1);
 							}
 						}
 
@@ -922,13 +1167,33 @@
 						}
 						.nananananananana span {
 							background: rgba(51,51,51,1);
-							-webkit-border-radius: 0;
+							border-radius: 0;
 							left: -30px;
 							top: 100px;
-							-webkit-transform: 
+							-webkit-transform:
 								scaleX(.2)
 								scaleY(1.5)
-								skew(20deg) 
+								skew(20deg)
+								rotate(55deg);
+							-moz-transform:
+								scaleX(.2)
+								scaleY(1.5)
+								skew(20deg)
+								rotate(55deg);
+							-o-transform:
+								scaleX(.2)
+								scaleY(1.5)
+								skew(20deg)
+								rotate(55deg);
+							-ms-transform:
+								scaleX(.2)
+								scaleY(1.5)
+								skew(20deg)
+								rotate(55deg);
+							transform:
+								scaleX(.2)
+								scaleY(1.5)
+								skew(20deg)
 								rotate(55deg);
 							z-index: 2;
 						}
@@ -936,7 +1201,15 @@
 							left: 40px;
 						}
 						.nananananananana span:nth-of-type(2) {
-							-webkit-transform: 
+							-webkit-transform:
+								scale(.5);
+							-o-transform:
+								scale(.5);
+							-moz-transform:
+								scale(.5);
+							-ms-transform:
+								scale(.5);
+							transform:
 								scale(.5);
 							height: 250px;
 							left: 0px;
@@ -944,13 +1217,13 @@
 						}
 						@-webkit-keyframes glow {
 							0% {
-								-webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
+								box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
 							}
 							50% {
-								-webkit-box-shadow: 0 0 800px 0 rgba(255,255,255,1);
+								box-shadow: 0 0 800px 0 rgba(255,255,255,1);
 							}
 							100% {
-								-webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
+								box-shadow: 0 0 300px 0 rgba(255,255,255,.5);
 							}
 						}
 						.nananananananana span:nth-of-type(3),
@@ -958,10 +1231,30 @@
 							background: #fff;
 							left: -25px;
 							top: 45px;
-							-webkit-transform: 
+							-webkit-transform:
 								scaleY(.12)
 								scaleX(.03)
-								skew(60deg) 
+								skew(60deg)
+								rotate(50deg);
+							-o-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(60deg)
+								rotate(50deg);
+							-moz-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(60deg)
+								rotate(50deg);
+							-ms-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(60deg)
+								rotate(50deg);
+							transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(60deg)
 								rotate(50deg);
 							z-index: 8;
 							-webkit-animation-name: glow;
@@ -971,10 +1264,30 @@
 						}
 						.nananananananana span:nth-of-type(4) {
 							left: 25px;
-							-webkit-transform: 
+							-webkit-transform:
 								scaleY(.12)
 								scaleX(.03)
-								skew(-60deg) 
+								skew(-60deg)
+								rotate(-50deg);
+							-o-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(-60deg)
+								rotate(-50deg);
+							-moz-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(-60deg)
+								rotate(-50deg);
+							-ms-transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(-60deg)
+								rotate(-50deg);
+							transform:
+								scaleY(.12)
+								scaleX(.03)
+								skew(-60deg)
 								rotate(-50deg);
 						}
 					</style>
@@ -984,7 +1297,7 @@
 					<h2><em>The</em> Googly Eyes</h2>
 					<style type="text/css" media="screen">
 						.googly em {
-							-webkit-box-shadow: 
+							box-shadow:
 								-38px -40px 0 -9px rgba(1,1,1,1),
 								32px -35px 0 -9px rgba(1,1,1,1),
 								-38px -42px 3px -10px rgba(255,255,255,.3),
@@ -996,7 +1309,7 @@
 								-35px -38px 3px 1px rgba(0,0,0,.3),
 								35px -38px 3px 1px rgba(0,0,0,.3);
 							display: block;
-							-webkit-border-radius: 25px;
+							border-radius: 25px;
 							height: 30px;
 							margin: 0 auto -15px;
 							width: 40px;
@@ -1005,11 +1318,11 @@
 				</li>
 
 				<li class="cloud">
-					<h2><em>The</em> It’s So Cloud</h2>
+					<h2><em>The</em> It&rsquo;s So Cloud</h2>
 					<style type="text/css" media="screen">
 						.cloud {
-							background: #fff;
-							-webkit-box-shadow:
+							background:#fff;
+							box-shadow:
 								40px 30px 0px -15px #fff,
 								-60px 40px 0px -30px #fff,
 								-70px 0px 0px -50px #fff,
@@ -1039,12 +1352,12 @@
 					<style type="text/css" media="screen">
 						@-webkit-keyframes spin {
 							0% {
-								-webkit-transform: 
+								-webkit-transform:
 									scale(.4)
 									rotate(0);
 							}
 							50% {
-								-webkit-transform: 
+								-webkit-transform:
 									scale(.5)
 									rotate(-180deg);
 							}
@@ -1061,15 +1374,15 @@
 							-webkit-animation-timing-function: linear;
 						}
 						.allglorytothe span:nth-of-type(1) {
-							-webkit-box-shadow: 
+							box-shadow:
 								-50px -50px 0 rgba(255,255,255,1),
 								-75px 0px 0 rgba(0,0,0,1),
 								-50px 50px 0 rgba(255,255,255,1),
 								0px 75px 0 rgba(0,0,0,1),
 								50px 50px 0 rgba(255,255,255,1),
-								75px 0px 0 rgba(0,0,0,1), 
+								75px 0px 0 rgba(0,0,0,1),
 								50px -50px 0 rgba(255,255,255,1),
-								0px -75px 0 rgba(0,0,0,1); 
+								0px -75px 0 rgba(0,0,0,1);
 							left: 0;
 							top: 0;
 							z-index: 1;
@@ -1077,17 +1390,17 @@
 						.allglorytothe span:nth-of-type(2) {
 							left: 50px;
 							top: -50px;
-							-webkit-box-shadow: -50px -25px 0 rgba(0,0,0,1); 
+							box-shadow: -50px -25px 0 rgba(0,0,0,1);
 							z-index: 2;
 						}
 						.allglorytothe span:nth-of-type(3) {
 							background: -webkit-gradient(
-								radial, 
-								75 25, 
-								75, 
-								75 20, 
-								40, 
-								from(#444), 
+								radial,
+								75 25,
+								75,
+								75 20,
+								40,
+								from(#444),
 								to(#777)
 							) #777;
 							z-index: 3;
@@ -1106,11 +1419,11 @@
 					<style type="text/css" media="screen">
 						@-webkit-keyframes bounce {
 							0% {
-								-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5);
+								box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5);
 								-webkit-transform: scale(.8);
 							}
 							100% {
-								-webkit-box-shadow: 0px 65px 20px -35px rgba(0,0,0,.3);
+								box-shadow: 0px 65px 20px -35px rgba(0,0,0,.3);
 								top: -50px;
 								-webkit-transform: scale(1);
 							}
@@ -1124,28 +1437,28 @@
 						}
 					</style>
 				</li>
-			
+
 				<li class="pulse">
 					<h2><em>The</em> Pulse</h2>
 					<style type="text/css" media="screen">
 						@-webkit-keyframes pulse {
 							0% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 5px 0 rgba(51,51,51,1),
 									0 0 0px 0 rgba(140,180,180,.9);
 							}
 							75% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 15px 10px rgba(51,51,51,1),
 									0 0 90px 0 rgba(140,180,180,.9);
 							}
 							100% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 2px 0 rgba(51,51,51,1),
 									0 0 2px 0 rgba(140,180,180,.8);
 							}
 						}
-					
+
 						.pulse {
 							-webkit-animation-name: pulse;
 							-webkit-animation-duration: .5s;
@@ -1160,17 +1473,17 @@
 					<span></span>
 					<style type="text/css" media="screen">
 						@-webkit-keyframes orbit {
-							0%   { -webkit-box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
-							10%  { -webkit-box-shadow:   50px  -75px 9px -50px rgba(0,0,0,.6); }
-							20%  { -webkit-box-shadow:  100px  -20px 9px -50px rgba(0,0,0,.6); }
-							30%  { -webkit-box-shadow:  100px   20px 9px -50px rgba(0,0,0,.6); }
-							40%  { -webkit-box-shadow:   50px   75px 9px -50px rgba(0,0,0,.6); }
-							50%  { -webkit-box-shadow:    0px  100px 9px -50px rgba(0,0,0,.6); }
-							60%  { -webkit-box-shadow:  -50px   75px 9px -50px rgba(0,0,0,.6); }
-							70%  { -webkit-box-shadow: -100px   20px 9px -50px rgba(0,0,0,.6); }
-							80%  { -webkit-box-shadow: -100px  -20px 9px -50px rgba(0,0,0,.6); }
-							90%  { -webkit-box-shadow:  -50px  -75px 9px -50px rgba(0,0,0,.6); }
-							100% { -webkit-box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
+							0%   { box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
+							10%  { box-shadow:   50px  -75px 9px -50px rgba(0,0,0,.6); }
+							20%  { box-shadow:  100px  -20px 9px -50px rgba(0,0,0,.6); }
+							30%  { box-shadow:  100px   20px 9px -50px rgba(0,0,0,.6); }
+							40%  { box-shadow:   50px   75px 9px -50px rgba(0,0,0,.6); }
+							50%  { box-shadow:    0px  100px 9px -50px rgba(0,0,0,.6); }
+							60%  { box-shadow:  -50px   75px 9px -50px rgba(0,0,0,.6); }
+							70%  { box-shadow: -100px   20px 9px -50px rgba(0,0,0,.6); }
+							80%  { box-shadow: -100px  -20px 9px -50px rgba(0,0,0,.6); }
+							90%  { box-shadow:  -50px  -75px 9px -50px rgba(0,0,0,.6); }
+							100% { box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
 						}
 						.orbiter {
 							-webkit-animation-name: orbit;
@@ -1186,31 +1499,31 @@
 					<style type="text/css" media="screen">
 						@-webkit-keyframes ripple {
 							0% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 85px 10px rgba(41,41,41,1),
 									0 0 0px 0 rgba(255,255,255,.0),
 									0 0 100px 10px rgba(41,41,41,1);
 							}
 							15% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 25px 0 rgba(41,41,41,1),
 									0 0 0px 0 rgba(255,255,255,.4),
 									0 0 100px 10px rgba(41,41,41,1);
 							}
 							50% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 45px 20px rgba(41,41,41,1),
 									0 0 80px 10px rgba(255,255,255,.4),
 									0 0 100px 10px rgba(41,41,41,1);
 							}
 							95% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 100px 20px rgba(41,41,41,1),
 									0 0 75px 5px rgba(255,255,255,0),
 									0 0 100px 10px rgba(41,41,41,1);
 							}
 							100% {
-								-webkit-box-shadow: 
+								box-shadow:
 									0 0 100px 20px rgba(41,41,41,1),
 									0 0 0 0 rgba(255,255,255,0),
 									0 0 100px 10px rgba(41,41,41,1);
@@ -1244,9 +1557,12 @@
 						}
 						.secret span {
 							background: rgba(0,0,0,.25);
-							-webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,.25);
-							-webkit-transform:
-								scale(.8);
+							box-shadow: 0 0 5px 2px rgba(0,0,0,.25);
+							-webkit-transform: scale(.8);
+							-ms-transform: scale(.8);
+							-o-transform: scale(.8);
+							-moz-transform: scale(.8);
+							transform: scale(.8);
 						}
 						.secret:hover {
 							top: -120px;
@@ -1266,7 +1582,7 @@
 					<style type="text/css" media="screen">
 						.teamjacob span:nth-of-type(1) {
 							background: #333;
-							-webkit-box-shadow: 0 0 5px #333;
+							box-shadow: 0 0 5px #333;
 							left: 5px;
 							top: 5px;
 							z-index: 1;
@@ -1291,25 +1607,33 @@
 						}
 						.fryguy span:nth-of-type(1) {
 							background: rgba(20,20,20,.99);
+							box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
+							border-bottom-right-radius: 0;
+							border-bottom-left-radius: 0;
 							-webkit-transform: scaleY(.3);
-							-webkit-box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
-							-webkit-border-bottom-right-radius: 0;
-							-webkit-border-bottom-left-radius: 0;
+							-ms-transform: scaleY(.3);
+							-o-transform: scaleY(.3);
+							-moz-transform: scaleY(.3);
+							transform: scaleY(.3);
 							height: 75px;
 							top: 120px;
 						}
 						.fryguy span:nth-of-type(2) {
 							background: #333;
-							-webkit-border-radius: 0;
+							border-radius: 0;
 							top: 175px;
 							z-index: 1;
 						}
 						.fryguy span:nth-of-type(3) {
 							background: rgba(20,20,20,.99);
+							box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
+							border-top-right-radius: 0;
+							border-top-left-radius: 0;
 							-webkit-transform: scaleY(.3);
-							-webkit-box-shadow: 0px 0 10px 8px rgba(20,20,20,.99);
-							-webkit-border-top-right-radius: 0;
-							-webkit-border-top-left-radius: 0;
+							-ms-transform: scaleY(.3);
+							-o-transform: scaleY(.3);
+							-moz-transform: scaleY(.3);
+							transform: scaleY(.3);
 							height: 75px;
 							top: 140px;
 							z-index: 2;
@@ -1342,7 +1666,7 @@
 							opacity: .01;
 						}
 						.dimmer:hover {
-							-webkit-box-shadow: 
+							box-shadow:
 								0 0 50px rgba(255,255,255,.5),
 								0 0 200px 20px rgba(0,0,0,1),
 								0 0 0 9000px rgba(0,0,0,.6);
@@ -1362,9 +1686,21 @@
 						}
 						.papapaoohmowmow span {
 							background: #333;
-							-webkit-box-shadow: 0 0 25px #333;
+							box-shadow: 0 0 25px #333;
 							-webkit-transform: scale(.01);
 							-webkit-transition: all 1.5s ease-in-out;
+
+							-ms-transform: scale(.01);
+							-ms-transition: all 1.5s ease-in-out;
+
+							-o-transform: scale(.01);
+							-o-transition: all 1.5s ease-in-out;
+
+							-moz-transform: scale(.01);
+							-moz-transition: all 1.5s ease-in-out;
+
+							transform: scale(.01);
+							transition: all 1.5s ease-in-out;
 							z-index: 2;
 						}
 						.papapaoohmowmow h2 {
@@ -1374,10 +1710,18 @@
 							padding: 35px 0 0;
 							position: relative;
 							-webkit-transition: all 1.5s ease-in-out;
+							-ms-transition: all 1.5s ease-in-out;
+							-o-transition: all 1.5s ease-in-out;
+							-moz-transition: all 1.5s ease-in-out;
+							transition: all 1.5s ease-in-out;
 							z-index: 3;
 						}
 						.papapaoohmowmow:hover span {
 							-webkit-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+							-o-transform: scale(1.1);
+							-moz-transform: scale(1.1);
+							transform: scale(1.1);
 						}
 						.papapaoohmowmow:hover h2 {
 							opacity: 1;
@@ -1394,85 +1738,85 @@
 					<style type="text/css" media="screen">
 						.planetarium {
 							background: -webkit-gradient(
-								radial, 
-								50% 50%, 
-								75, 
-								50% 50%, 
-								40, 
-								from(#18191b), 
+								radial,
+								50% 50%,
+								75,
+								50% 50%,
+								40,
+								from(#18191b),
 								to(#27282a)
 							) #27282a;
 							overflow: hidden;
 						}
 						.planetarium h2 {
-							text-shadow: 
+							text-shadow:
 								0 0 10px rgba(0,0,0,.3);
 						}
 						.planetarium em {
 							display: block;
-							-webkit-border-radius: 25px;
-							-webkit-box-shadow: 
-								-50px  40px  0px -13px rgba(255,255,255,1), 
-								-60px  60px  0px -13px rgba(255,255,255,1), 
-								-35px -20px  0px -13px rgba(255,255,255,1), 
-								 40px  60px  0px -13px rgba(255,255,255,1), 
-								 30px -50px  0px -13px rgba(255,255,255,1), 
-								-50px  35px  0px -13px rgba(255,255,255,1), 
-								-25px -20px  0px -13px rgba(255,255,255,1), 
-								-40px  10px  0px -13px rgba(255,255,255,1), 
-								-40px -65px  0px -13px rgba(255,255,255,1), 
-								-10px  50px  0px -13px rgba(255,255,255,1), 
-								 10px -30px  0px -13px rgba(255,255,255,1), 
-								-30px -20px  0px -12px rgba(255,255,255,1), 
-								 70px  40px  0px -13px rgba(255,255,255,1), 
-								 20px  50px  0px -13px rgba(255,255,255,1), 
-								-40px  45px  0px -12px rgba(255,255,255,1), 
-								-35px -60px  0px -13px rgba(255,255,225,1), 
-								-30px  40px  0px -12px rgba(255,255,255,1), 
-								-10px  50px  0px -13px rgba(255,255,255,1), 
-								 20px -40px  0px -13px rgba(255,255,255,1), 
-								-20px -10px  0px -13px rgba(255,255,255,1), 
-								-50px -20px  0px -13px rgba(255,255,255,1), 
-								 70px  30px  0px -13px rgba(255,255,255,1), 
-								-40px  35px  0px -13px rgba(255,255,255,1), 
-								 35px -40px  0px -13px rgba(255,255,255,1), 
-								-70px  20px  0px -13px rgba(255,255,255,1), 
-								-40px -25px  0px -13px rgba(255,255,255,1), 
-								 10px -60px  0px -13px rgba(255,255,255,1), 
-								-20px  70px  0px -12px rgba(255,255,255,1), 
-								-25px  80px  0px -13px rgba(255,255,255,1), 
-								-35px  20px  0px -13px rgba(255,255,255,1), 
-								 60px -20px  0px -12px rgba(255,255,255,1), 
-								 20px -80px  0px -13px rgba(255,255,255,1), 
-								 10px  40px  0px -13px rgba(255,255,255,1), 
-								-45px -40px  0px -12px rgba(255,255,255,1), 
-								 40px -10px  0px -13px rgba(255,255,255,1), 
-								 15px  30px  0px -13px rgba(255,255,255,1), 
-								 10px -30px  0px -13px rgba(255,255,255,1), 
-								 40px  50px  0px -13px rgba(255,255,255,1), 
-								-55px  40px  0px -13px rgba(255,255,255,1), 
-								-40px -10px  0px -12px rgba(255,255,255,1), 
-								 30px -20px  0px -13px rgba(255,255,255,1), 
-								 50px  20px  0px -13px rgba(255,255,255,1), 
-								-55px -10px  0px -13px rgba(255,255,255,1), 
-								 10px -30px  0px -13px rgba(255,255,255,1), 
-								 10px  60px  0px -12px rgba(255,255,255,1), 
-								 20px -30px  0px -13px rgba(255,255,255,1), 
-								 40px  50px  0px -13px rgba(255,255,255,1), 
-								 30px  70px  0px -13px rgba(255,255,255,1), 
-								-60px  60px  0px -13px rgba(255,255,255,1), 
-								 10px  70px  0px -12px rgba(255,255,255,1), 
-								 30px  70px  0px -13px rgba(255,255,255,1), 
-								 10px -40px  0px -13px rgba(255,255,255,1), 
-								 20px -60px  0px -13px rgba(255,255,255,1), 
-								 30px  60px  0px -12px rgba(255,255,255,1), 
-								 30px -30px  0px -13px rgba(255,255,255,1), 
-								 40px  60px  0px -13px rgba(255,255,255,1), 
-								 20px -30px  0px -13px rgba(255,255,255,1), 
-								 20px  50px  0px -13px rgba(255,255,255,1), 
-								 40px  20px  0px -12px rgba(255,255,255,1), 
-								-40px  30px  0px -13px rgba(255,255,255,1); 
-							-webkit-background-clip: padding-box;
+							border-radius: 25px;
+							box-shadow:
+								-50px  40px  0px -13px rgba(255,255,255,1),
+								-60px  60px  0px -13px rgba(255,255,255,1),
+								-35px -20px  0px -13px rgba(255,255,255,1),
+								 40px  60px  0px -13px rgba(255,255,255,1),
+								 30px -50px  0px -13px rgba(255,255,255,1),
+								-50px  35px  0px -13px rgba(255,255,255,1),
+								-25px -20px  0px -13px rgba(255,255,255,1),
+								-40px  10px  0px -13px rgba(255,255,255,1),
+								-40px -65px  0px -13px rgba(255,255,255,1),
+								-10px  50px  0px -13px rgba(255,255,255,1),
+								 10px -30px  0px -13px rgba(255,255,255,1),
+								-30px -20px  0px -12px rgba(255,255,255,1),
+								 70px  40px  0px -13px rgba(255,255,255,1),
+								 20px  50px  0px -13px rgba(255,255,255,1),
+								-40px  45px  0px -12px rgba(255,255,255,1),
+								-35px -60px  0px -13px rgba(255,255,225,1),
+								-30px  40px  0px -12px rgba(255,255,255,1),
+								-10px  50px  0px -13px rgba(255,255,255,1),
+								 20px -40px  0px -13px rgba(255,255,255,1),
+								-20px -10px  0px -13px rgba(255,255,255,1),
+								-50px -20px  0px -13px rgba(255,255,255,1),
+								 70px  30px  0px -13px rgba(255,255,255,1),
+								-40px  35px  0px -13px rgba(255,255,255,1),
+								 35px -40px  0px -13px rgba(255,255,255,1),
+								-70px  20px  0px -13px rgba(255,255,255,1),
+								-40px -25px  0px -13px rgba(255,255,255,1),
+								 10px -60px  0px -13px rgba(255,255,255,1),
+								-20px  70px  0px -12px rgba(255,255,255,1),
+								-25px  80px  0px -13px rgba(255,255,255,1),
+								-35px  20px  0px -13px rgba(255,255,255,1),
+								 60px -20px  0px -12px rgba(255,255,255,1),
+								 20px -80px  0px -13px rgba(255,255,255,1),
+								 10px  40px  0px -13px rgba(255,255,255,1),
+								-45px -40px  0px -12px rgba(255,255,255,1),
+								 40px -10px  0px -13px rgba(255,255,255,1),
+								 15px  30px  0px -13px rgba(255,255,255,1),
+								 10px -30px  0px -13px rgba(255,255,255,1),
+								 40px  50px  0px -13px rgba(255,255,255,1),
+								-55px  40px  0px -13px rgba(255,255,255,1),
+								-40px -10px  0px -12px rgba(255,255,255,1),
+								 30px -20px  0px -13px rgba(255,255,255,1),
+								 50px  20px  0px -13px rgba(255,255,255,1),
+								-55px -10px  0px -13px rgba(255,255,255,1),
+								 10px -30px  0px -13px rgba(255,255,255,1),
+								 10px  60px  0px -12px rgba(255,255,255,1),
+								 20px -30px  0px -13px rgba(255,255,255,1),
+								 40px  50px  0px -13px rgba(255,255,255,1),
+								 30px  70px  0px -13px rgba(255,255,255,1),
+								-60px  60px  0px -13px rgba(255,255,255,1),
+								 10px  70px  0px -12px rgba(255,255,255,1),
+								 30px  70px  0px -13px rgba(255,255,255,1),
+								 10px -40px  0px -13px rgba(255,255,255,1),
+								 20px -60px  0px -13px rgba(255,255,255,1),
+								 30px  60px  0px -12px rgba(255,255,255,1),
+								 30px -30px  0px -13px rgba(255,255,255,1),
+								 40px  60px  0px -13px rgba(255,255,255,1),
+								 20px -30px  0px -13px rgba(255,255,255,1),
+								 20px  50px  0px -13px rgba(255,255,255,1),
+								 40px  20px  0px -12px rgba(255,255,255,1),
+								-40px  30px  0px -13px rgba(255,255,255,1);
+							background-clip: padding-box;
 							margin: 0 auto;
 							width: 27px;
 						}
@@ -1483,7 +1827,7 @@
 					<h2><em>The</em> Dark Side</h2>
 					<style type="text/css" media="screen">
 						.darkside {
-							-webkit-box-shadow: 
+							box-shadow:
 								inset 10px 0 10px 0 rgba(0,0,0,.9),
 								inset 45px 0 15px -12px rgba(0,0,0,.3),
 								inset 65px 0 10px -15px rgba(0,0,0,.5);
@@ -1491,8 +1835,10 @@
 						.darkside h2 {
 							color: transparent;
 							background-image: -webkit-linear-gradient(left, rgba(0,0,0,.9), rgba(0,0,0,.9) 30px, #fff 60px, #fff);
-							-webkit-box-shadow: none;
-							-webkit-background-clip: text;
+							background-image: -o-linear-gradient(left, rgba(0,0,0,.9), rgba(0,0,0,.9) 30px, #fff 60px, #fff);
+							box-shadow: none;
+							background-clip: text;
+							box-shadow: none;
 							text-shadow: none;
 						}
 					</style>
@@ -1503,14 +1849,16 @@
 					<style type="text/css" media="screen">
 						.sorryaboutthisone {
 							background: #fefd03;
-							-webkit-border-radius: 0;
-							-webkit-box-shadow:
+							border-radius: 0;
+							box-shadow:
 								150px 0 0 #0197f5,
 								150px 150px 0 #24168f,
 								0 150px 0 #f09d03;
-							-webkit-transform: 
-								scale(.5) 
-								translate(-75px, -75px); 
+							-webkit-transform: scale(.5) translate(-75px, -75px);
+							-ms-transform: scale(.5) translate(-75px, -75px);
+							-o-transform: scale(.5) translate(-75px, -75px);
+							-moz-transform: scale(.5) translate(-75px, -75px);
+							transform: scale(.5) translate(-75px, -75px);
 						}
 						.sorryaboutthisone h2 em {
 							color: inherit;
@@ -1527,6 +1875,10 @@
 								0 75px 0 #f2a2d7,
 								0 77px 1px #ee0115;
 							-webkit-transform: scale(2);
+							-ms-transform: scale(2);
+							-o-transform: scale(2);
+							-moz-transform: scale(2);
+							transform: scale(2);
 						}
 					</style>
 				</li>
@@ -1534,22 +1886,22 @@
 				<li class="stayaboveit">
 					<h2><em>The</em> Fold</h2>
 					<style type="text/css" media="screen">
-						.stayaboveit {     
+						.stayaboveit {
 							background: rgba(81,81,81,1);
-							-webkit-border-radius: 0;
-							-webkit-box-shadow: 0px 15px 5px -10px rgba(0,0,0,0.2); 
+							border-radius: 0;
+							box-shadow: 0px 15px 5px -10px rgba(0,0,0,0.2);
 							overflow: hidden;
 						}
-						.stayaboveit h2 {     
+						.stayaboveit h2 {
 							display: block;
 							padding-top: 40px;
 							z-index: 2;
 						}
-						.stayaboveit:before,    
-						.stayaboveit:after {     
+						.stayaboveit:before,
+						.stayaboveit:after {
 							content: "";
 							display: block;
-							-webkit-box-shadow: 0 0 30px rgba(0,0,0,.5);
+							box-shadow: 0 0 30px rgba(0,0,0,.5);
 							height: 150px;
 							left: 0;
 							position: absolute;
@@ -1557,11 +1909,11 @@
 							width: 150px;
 							z-index: 1;
 						}
-						.stayaboveit:after {     
+						.stayaboveit:after {
 							top: 75px;
 						}
-						.stayaboveit:before {     
-							-webkit-box-shadow: 0 0 30px rgba(0,0,0,.2);
+						.stayaboveit:before {
+							box-shadow: 0 0 30px rgba(0,0,0,.2);
 							left: 75px;
 						}
 					</style>
@@ -1571,29 +1923,29 @@
 					<h2><em>The</em> Matt Hamm</h2>
 					<style type="text/css" media="screen">
 						.matthamm {
-							-webkit-border-radius: 0;
+							border-radius: 0;
 						}
 						.matthamm:after,
 						.matthamm:before {
-							bottom: 10px; 
-							content: 'Shamelessly taken from Matt Hamm: http://matthamm.com/box-shadow-curl.html'; 
-							-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .8); 
-							height: 50%; 
+							bottom: 10px;
+							content: 'Shamelessly taken from Matt Hamm: http://matthamm.com/box-shadow-curl.html';
+							box-shadow: 0 8px 16px rgba(0, 0, 0, .8);
+							height: 50%;
 							overflow: hidden;
-							position: absolute; 
-							width: 75%; 
-							z-index: -1; 
-						}	
+							position: absolute;
+							width: 75%;
+							z-index: -1;
+						}
 						.matthamm:after {
-							right: 15px; 
-							-webkit-transform: 
-								skew(20deg) 
+							right: 15px;
+							-webkit-transform:
+								skew(20deg)
 								rotate(10deg);
 						}
 						.matthamm:before {
-							left: 15px; 
-							-webkit-transform: 
-								skew(-20deg) 
+							left: 15px;
+							-webkit-transform:
+								skew(-20deg)
 								rotate(-10deg);
 						}
 					</style>
@@ -1605,13 +1957,13 @@
 					<span></span>
 					<style type="text/css" media="screen">
 						.curlzmt {
-							-webkit-border-radius: 0;
-							-webkit-box-shadow: 0 30px 30px -20px #222;
+							border-radius: 0;
+							box-shadow: 0 30px 30px -20px #222;
 						}
 						.curlzmt:after,
 						.curlzmt:before {
 							background-color: #333;
-							-webkit-border-radius: 75px;
+							border-radius: 75px;
 							content: 'Wow, you\'re still reading this?';
 							color: transparent;
 							display: block;
@@ -1619,37 +1971,42 @@
 							left: 0;
 							position: absolute;
 							width: 150px;
-							z-index: 1; 
-						}	
+							z-index: 1;
+						}
 						.curlzmt:before {
 							background-color: #333;
-							-webkit-box-shadow: inset 0 -60px 20px -40px rgba(0,0,0,.1);
-							-webkit-transform: 
+							box-shadow: inset 0 -60px 20px -40px rgba(0,0,0,.1);
+							-webkit-transform:
 								scaleY(.15)
 								scaleX(1.1);
 							top: -75px;
 						}
 						.curlzmt:after {
 							background: #444;
-							-webkit-transform: 
-								scaleY(.1);
+							-webkit-transform: scaleY(.1);
+							-ms-transform: scaleY(.1);
+							-o-transform: scaleY(.1);
+							-moz-transform: scaleY(.1);
+							transform: scaleY(.1);
 							bottom: -75px;
-							-webkit-box-shadow: 0 70px 40px -20px #222;
+							box-shadow: 0 70px 40px -20px #222;
 						}
 						.curlzmt span {
 							background: #333;
 							top: 0;
-							-webkit-transform: 
-								scaleX(.1)
-								scaleY(1.05);
+							-webkit-transform: scaleX(.1) scaleY(1.05);
+							-ms-transform: scaleX(.1) scaleY(1.05);
+							-o-transform: scaleX(.1) scaleY(1.05);
+							-moz-transform: scaleX(.1) scaleY(1.05);
+							transform: scaleX(.1) scaleY(1.05);
 							z-index: 2;
 						}
 						.curlzmt span:nth-of-type(1) {
-							-webkit-box-shadow: inset -90px 0 20px -60px rgba(0,0,0,.1);
+							box-shadow: inset -90px 0 20px -60px rgba(0,0,0,.1);
 							left: -75px;
 						}
 						.curlzmt span:nth-of-type(2) {
-							-webkit-box-shadow: inset 90px 0 20px -60px rgba(0,0,0,.1);
+							box-shadow: inset 90px 0 20px -60px rgba(0,0,0,.1);
 							left: 75px;
 						}
 					</style>
@@ -1658,23 +2015,23 @@
 				<li class="nonotthatone">
 					<h2><em>The</em> Gallagher</h2>
 					<style type="text/css" media="screen">
-						.nonotthatone {     
-							-webkit-border-radius: 0;
+						.nonotthatone {
+							border-radius: 0;
 							overflow: hidden;
 						}
-						.nonotthatone:before {     
+						.nonotthatone:before {
 							border-width: 0 30px 30px 0;
 							border-style: solid;
 							border-color: rgba(91,91,91,1) rgba(51,51,51,1);
-							-webkit-border-radius: 2px;
+							border-radius: 2px;
 							content: "";
 							position: absolute;
 							top: -2px;
 							right: 0;
 							z-index: 2;
 						}
-						.nonotthatone:after {     
-							-webkit-box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
+						.nonotthatone:after {
+							box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
 							content: "Look at this! http://nicolasgallagher.com/pure-css-folded-corner-effect/";
 							display: block;
 							height: 40px;
@@ -1691,13 +2048,13 @@
 				<li class="embossy">
 					<h2><em>The</em> Needlessly Embossed</h2>
 					<style type="text/css" media="screen">
-						.embossy {     
-							-webkit-box-shadow: 
+						.embossy {
+							box-shadow:
 								0 -3px 0 0 rgba(0,0,0,.3),
 								0 2px 0 0 rgba(255,255,255,.3);
-							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
 						}
-						.embossy h2 {     
+						.embossy h2 {
 							text-shadow: 0 -2px 0 rgba(0,0,0,.7);
 						}
 					</style>
@@ -1712,8 +2069,8 @@
 						}
 						.spatter em {
 							display: block;
-							-webkit-border-radius: 25px;
-							-webkit-box-shadow: 
+							border-radius: 25px;
+							box-shadow:
 								5px 55px 0 -10px rgba(56,56,56,1),
 								-10px 65px 0 -11px rgba(56,56,56,1),
 								15px 75px 0 -10px rgba(56,56,56,1),
@@ -1754,8 +2111,8 @@
 							width: 27px;
 						}
 						.spatter span {
-							-webkit-border-radius: 75px;
-							-webkit-box-shadow: 
+							border-radius: 75px;
+							box-shadow:
 								0 0 0 20px rgba(51,51,51,1);
 							z-index: 20;
 						}
@@ -1768,7 +2125,7 @@
 					<style type="text/css" media="screen">
 						.venn {
 							background: rgba(150,60,150,1);
-							-webkit-box-shadow: 
+							box-shadow:
 								0 0 60px rgba(255,195,205,.2),
 								-40px 0 0 rgba(61,21,21,1),
 								0 0 40px rgba(255,195,205,.3);
@@ -1776,7 +2133,7 @@
 							position: relative;
 						}
 						.venn span {
-							-webkit-box-shadow: 
+							box-shadow:
 								0 0 60px rgba(195,195,255,.2),
 								40px 0 0 rgba(21,21,91,1),
 								0 0 40px rgba(195,195,255,.3);
@@ -1797,15 +2154,15 @@
 		</article>
 
 		<script type="text/javascript">
-			
+
 			function showUl(direction){
 				var current = uls[uls.active],
 					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
-					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,  
-					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,  
+					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,
+					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,
 					next = uls[nextPosition];
-				current.className = "";	
-				next.className = "show";	
+				current.className = "";
+				next.className = "show";
 			}
 
 			function page(event){
@@ -1813,11 +2170,11 @@
 			}
 
 			function pageWithKeys(event){
-			  var next = 
+			  var next =
 						event.keyCode == 39 ||
 						event.keyCode == 40 ||
 						event.keyCode == 32,
-					previous = 
+					previous =
 						event.keyCode == 37 ||
 						event.keyCode == 38,
 					noModifier = event.altKey !== true && event.metaKey !== true;
@@ -1836,12 +2193,12 @@
 			for(i = 0; i < as.length; i++){
 				as[i].addEventListener('click', page, false);
 			}
-			
+
 			window.addEventListener('keydown', pageWithKeys, false);
 
 		</script>
 
-	
+
 
 
 </body></html>
