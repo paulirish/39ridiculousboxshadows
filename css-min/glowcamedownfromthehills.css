@@ -1,0 +1,6 @@
+.glowcamedownfromthehills span:nth-of-type(1){box-shadow:0 0 90px 0 #fffff0,10px 10px 140px 0 #c8ffff,0 0 10px 5px rgba(180,255,255,0.3)}
+.glowcamedownfromthehills span:nth-of-type(2){box-shadow:-30px -15px 15px rgba(195,255,255,0.8);transform:scale(.8)}
+.glowcamedownfromthehills span:nth-of-type(3){box-shadow:30px 190px 30px rgba(255,255,195,0.8);transform:scale(.3)}
+.glowcamedownfromthehills span:nth-of-type(4){box-shadow:90px 30px 30px #c3ffc3;transform:scale(.5)}
+.glowcamedownfromthehills span:nth-of-type(5){box-shadow:-650px -350px 100px #ffebff;transform:scale(.1);z-index:1}
+.glowcamedownfromthehills span:nth-of-type(5){box-shadow:-650px -350px 300px #fff;transform:scale(.1);z-index:1}

@@ -1,0 +1,39 @@
+@keyframes spin
+	0% 
+		transform scale(.4) rotate(0)
+	
+	50% 
+		transform scale(.5) rotate(-180deg)
+	
+	100% 
+		transform scale(.4) rotate(-360deg)
+	
+
+.allglorytothe
+	animation-name spin
+	animation-duration 2s
+	animation-iteration-count infinite
+	animation-timing-function linear
+	
+	span
+		&:nth-of-type(1)
+			box-shadow -50px -50px 0 rgba(255,255,255,1), -75px 0px 0 rgba(0,0,0,1), -50px 50px 0 rgba(255,255,255,1), 0px 75px 0 rgba(0,0,0,1), 50px 50px 0 rgba(255,255,255,1), 75px 0px 0 rgba(0,0,0,1), 50px -50px 0 rgba(255,255,255,1), 0px -75px 0 rgba(0,0,0,1)
+			left 0
+			top 0
+			z-index 1
+	
+		&:nth-of-type(2)
+			left 50px
+			top -50px
+			box-shadow -50px -25px 0 rgba(0,0,0,1)
+			z-index 2
+	
+		&:nth-of-type(3)
+			background gradient( radial, 75 25, 75, 75 20, 40, from(#444), to(#777) ) #777
+			z-index 3
+	
+	h2
+		display block
+		position relative
+		top 40px
+		z-index 4

@@ -1,0 +1,9 @@
+@-webkit-keyframes glow{0%{box-shadow:0 0 300px 0 rgba(255,255,255,0.5)}
+50%{box-shadow:0 0 800px 0 #fff}
+100%{box-shadow:0 0 300px 0 rgba(255,255,255,0.5)}
+}.nananananananana h2{display:block;padding-top:45px;position:relative;z-index:5}
+.nananananananana span{background:#333;border-radius:0;left:-30px;top:100px;transform:scaleX(.2) scaleY(1.5) skew(20deg) rotate(55deg);z-index:2;}
+.nananananananana span:nth-of-type(1){left:40px}
+.nananananananana span:nth-of-type(2){transform:scale(.5);height:250px;left:0;top:5px}
+.nananananananana span:nth-of-type(3),.nananananananana span:nth-of-type(4){background:#fff;left:-25px;top:45px;transform:scaleY(.12) scaleX(.03) skew(60deg) rotate(50deg);z-index:8;animation-name:glow;animation-duration:2s;animation-iteration-count:infinite;animation-timing-function:linear}
+.nananananananana span:nth-of-type(4){left:25px;transform:scaleY(.12) scaleX(.03) skew(-60deg) rotate(-50deg)}
