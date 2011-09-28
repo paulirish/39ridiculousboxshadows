@@ -1,0 +1,23 @@
+/*
+ *  The Slip  
+ */
+.slippy
+	box-shadow 0 20px 20px 0 rgba(0,0,0,.3)
+	
+	span
+		&:nth-of-type(1)
+			background-image gradient( radial, center -50, 0, center -40, 80, from(rgba(101,101,101,1)), to(rgba(51,51,51,1)) )
+			border-radius 0
+			left -25px
+			top 100px
+			height 100px
+			width 200px
+			z-index 5
+		
+		&:nth-of-type(2)
+			box-shadow 0 0 180px 0 rgba(0,0,0,.7)
+			left -25px
+			top 40px
+			width 200px
+			transform scaleX(.8) scaleY(.2)
+			z-index 4
