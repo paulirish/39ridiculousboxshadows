@@ -1,0 +1,19 @@
+@-webkit-keyframes pulse {
+  0% {
+        box-shadow: 0 0 5px 0 #333, 0 0 0px 0 rgba(140,180,180,0.9);
+    }
+
+  75% {
+        box-shadow: 0 0 15px 10px #333, 0 0 90px 0 rgba(140,180,180,0.9);
+    }
+
+  100% {
+        box-shadow: 0 0 2px 0 #333, 0 0 2px 0 rgba(140,180,180,0.8);
+    }
+}
+.pulse {
+    animation-name: pulse;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}

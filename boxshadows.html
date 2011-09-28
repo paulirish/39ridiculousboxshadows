@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://www.viget.com/uploads/file/boxshadows/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 		<title>39 Box Shadows</title>
 
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 
 		<!--
 			This code is OFFICIALLY LICENSED under the WTFPL specification,
 			To read more about WTFPL, see this link: http://sam.zoy.org/wtfpl/
 		-->
-
 		<style type="text/css" media="screen">
 
 			@font-face {
@@ -30,7 +29,6 @@
 				-o-transition: all .25s ease-in-out;
 				-moz-transition: all .25s ease-in-out;
 				transition: all .25s ease-in-out;
-
 			}
 
 			html,
@@ -54,7 +52,7 @@
 				padding: 170px 0 50px;
 			}
 
-			article:after {
+			article::after {
 				content: ".";
 				display: block;
 				clear: both;
@@ -238,6 +236,56 @@
 
 		</style>
 
+
+		<script type="text/javascript">
+			
+			//	Switch the currently displayed <ul>
+			function showUl(direction){
+				var current = uls[uls.active],
+					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
+					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,
+					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,
+					next = uls[nextPosition];
+				current.className = "";
+				next.className = "show";
+			}
+
+			//	Called to show even target
+			function page(event){
+				showUl(event.target.id);
+			}
+
+			//	Keyboard listeners
+			function pageWithKeys(event){
+			  var next =
+						event.keyCode == 39 ||
+						event.keyCode == 40 ||
+						event.keyCode == 32,
+					previous =
+						event.keyCode == 37 ||
+						event.keyCode == 38,
+					noModifier = event.altKey !== true && event.metaKey !== true;
+				if (previous && noModifier){
+					showUl('previous');
+				}
+				if (next && noModifier){
+					showUl('next');
+				}
+			}
+
+			uls = document.getElementsByTagName("ul");
+			as = document.getElementsByTagName("a");
+			uls.active = 0;
+
+			//	Attach click listeners
+			for(i = 0; i < as.length; i++){
+				as[i].addEventListener('click', page, false);
+			}
+
+			//	Attach keyboard listeners
+			window.addEventListener('keydown', pageWithKeys, false);
+
+		</script>
 	</head>
 
 	<body>
@@ -245,10 +293,10 @@
 		<header>
 			<h1>
 				39 Box Shadows, No Good Reason
-				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <strong>»</strong></a>
+				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <b>»</b></a>
 				<em>
-					<a href="./boxshadows_files/boxshadows.html" id="previous">« Previous 10</a>
-					<a href="./boxshadows_files/boxshadows.html" id="next"> Next 10 »</a>
+					<a href="#" id="previous">« Previous 10</a>
+					<a href="#" id="next"> Next 10 »</a>
 				</em>
 			</h1>
 		</header>
@@ -726,7 +774,7 @@
 
 			</ul>
 
-			<ul class="show">
+			<ul class="">
 
 				<li class="youknowthatmikewhitemovie">
 					<h2><em>The</em> Good Girl</h2>
@@ -1731,7 +1779,7 @@
 
 			</ul>
 
-			<ul class="">
+			<ul class="show">
 
 				<li class="planetarium">
 					<h2><em>The</em> Planetarium</h2>
@@ -2152,51 +2200,6 @@
 			</ul>
 
 		</article>
-
-		<script type="text/javascript">
-
-			function showUl(direction){
-				var current = uls[uls.active],
-					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
-					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,
-					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,
-					next = uls[nextPosition];
-				current.className = "";
-				next.className = "show";
-			}
-
-			function page(event){
-				showUl(event.target.id);
-			}
-
-			function pageWithKeys(event){
-			  var next =
-						event.keyCode == 39 ||
-						event.keyCode == 40 ||
-						event.keyCode == 32,
-					previous =
-						event.keyCode == 37 ||
-						event.keyCode == 38,
-					noModifier = event.altKey !== true && event.metaKey !== true;
-				if (previous && noModifier){
-					showUl('previous');
-				}
-				if (next && noModifier){
-					showUl('next');
-				}
-			}
-
-			uls = document.getElementsByTagName("ul");
-			as = document.getElementsByTagName("a");
-			uls.active = 0;
-
-			for(i = 0; i < as.length; i++){
-				as[i].addEventListener('click', page, false);
-			}
-
-			window.addEventListener('keydown', pageWithKeys, false);
-
-		</script>
 
 
 
