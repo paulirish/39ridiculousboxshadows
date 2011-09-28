@@ -1,0 +1,3 @@
+@-webkit-keyframes bounce{0%{box-shadow:0 2px 5px 0 rgba(0,0,0,0.5);transform:scale(.8)}
+100%{box-shadow:0 65px 20px -35px rgba(0,0,0,0.3);top:-50px;transform:scale(1)}
+}.bouncer{animation-name:bounce;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-out}

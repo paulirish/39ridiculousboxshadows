@@ -1,0 +1,15 @@
+.spatter {
+    overflow: hidden;
+}
+.spatter em {
+    display: block;
+    border-radius: 25px;
+    box-shadow: 5px 55px 0 -10px #383838, -10px 65px 0 -11px #383838, 15px 75px 0 -10px #383838, -40px 65px 0 -12px #383838, 55px 25px 0 -10px #383838, -35px 85px 0 -12px #383838, -25px 75px 0 -9px #383838, -5px 95px 0 -12px #383838, 15px 55px 0 -9px #383838, -5px 65px 0 -12px #383838, 5px 70px 0 -10px #383838, 0px 73px 0 -11px #383838, -5px 80px 0 -12px #383838, -45px 70px 0 -9px #383838, 45px 55px 0 -9px #383838, 5px 95px 0 5px #383838, 35px 85px 0 -1px #383838, -20px 85px 0 -5px #383838, 20px 95px 0 -4px #383838, 20px 85px 0 -4px #383838, 50px 95px 0 -5px #383838, -65px 75px 0 -2px #383838, 25px 95px 0 -3px #383838, -15px 85px 0 -5px #383838, -15px 85px 0 -5px #383838, 25px 95px 0 5px #383838, -35px 85px 0 -1px #383838, -50px 85px 0 -5px #383838, -20px 65px 0 -4px #383838, 20px 85px 0 -4px #383838, 5px 95px 0 -5px #383838, 60px 75px 0 -2px #383838, 20px 75px 0 -3px #383838, -15px 85px 0 -5px #383838, 35px 65px 0 -5px #383838, -20px 50px 0 -10px #383838;
+    margin: 0 auto;
+    width: 27px;
+}
+.spatter span {
+    border-radius: 75px;
+    box-shadow: 0 0 0 20px #333;
+    z-index: 20;
+}

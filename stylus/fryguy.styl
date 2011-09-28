@@ -1,0 +1,52 @@
+/*
+ *  The Shy Guy
+ */
+.fryguy 
+	h2
+		display block
+		height 80px
+		top 165px
+		
+	span
+		&:nth-of-type(1)
+			background rgba(20,20,20,.99)
+			transform scaleY(.3)
+			box-shadow 0px 0 10px 8px rgba(20,20,20,.99)
+			border-bottom-right-radius 0
+			border-bottom-left-radius 0
+			height 75px
+			top 120px
+		
+		&:nth-of-type(2)
+			background #333
+			border-radius 0
+			top 175px
+			z-index 1
+		
+		&:nth-of-type(3)
+			background rgba(20,20,20,.99)
+			transform scaleY(.3)
+			box-shadow 0px 0 10px 8px rgba(20,20,20,.99)
+			border-top-right-radius 0
+			border-top-left-radius 0
+			height 75px
+			top 140px
+			z-index 2
+	
+	
+	
+	&:hover
+		top 170px
+
+		h2
+			top -125px
+
+		span
+			&:nth-of-type(1)
+				top -50px
+		
+			&:nth-of-type(2)
+				top 5px
+		
+			&:nth-of-type(3)
+				top -30px
