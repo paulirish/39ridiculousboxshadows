@@ -1,0 +1,7 @@
+.looksshooped span{z-index:1;}
+.looksshooped span:nth-of-type(1){background:rgba(220,255,255,0.1);box-shadow:0 0 30px rgba(220,255,255,0.35);left:-80px;top:-80px;transform:scale(.1)}
+.looksshooped span:nth-of-type(2){box-shadow:-150px -150px 40px rgba(220,255,255,0.1);transform:scale(.4)}
+.looksshooped span:nth-of-type(3){background:rgba(220,255,255,0.07);box-shadow:0 0 30px rgba(220,255,255,0.2);left:-20px;top:-20px;transform:scale(.7)}
+.looksshooped span:nth-of-type(1){background:rgba(220,255,255,0.1);box-shadow:0 0 30px rgba(220,255,255,0.35);left:20px;top:20px;transform:scale(.3)}
+.looksshooped span:nth-of-type(1){background:rgba(220,255,255,0.1);box-shadow:0 0 30px rgba(220,255,255,0.35);left:40px;top:40px;transform:scale(.15)}
+.looksshooped span:nth-of-type(1){background:rgba(220,255,255,0.1);box-shadow:0 0 30px rgba(220,255,255,0.35);left:60px;top:60px;transform:scale(.12)}

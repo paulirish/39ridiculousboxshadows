@@ -1,0 +1,25 @@
+.papapaoohmowmow {
+    z-index: 1;
+}
+.papapaoohmowmow span {
+    background: #333;
+    box-shadow: 0 0 25px #333;
+    transform: scale(0.01);
+    transition: all 1.5s ease-in-out;
+    z-index: 2;
+}
+.papapaoohmowmow h2 {
+    display: block;
+    height: 115px;
+    opacity: 0;
+    padding: 35px 0 0;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    z-index: 3;
+}
+.papapaoohmowmow:hover span {
+    transform: scale(1.1);
+}
+.papapaoohmowmow:hover h2 {
+    opacity: 1;
+}

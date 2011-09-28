@@ -1,0 +1,4 @@
+.dimmer{z-index:1000;}
+.dimmer h2{opacity:.01}
+.dimmer:hover{box-shadow:0 0 50px rgba(255,255,255,0.5),0 0 200px 20px #000,0 0 0 9000px rgba(0,0,0,0.6);}
+.dimmer:hover h2{opacity:1}
