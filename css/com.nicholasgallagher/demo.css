@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+body {
+  padding: 20px 0 30px;
+  font: 14px/1.5 Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  background: #faf0d9;
+}
+a {
+  font-weight: bold;
+  color: #346aa8;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  background: #faf0d9;
+}
+.container:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: '';
+  clear: both;
+  font-size: 0;
+}

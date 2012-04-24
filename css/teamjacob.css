@@ -1,5 +1,10 @@
+/*
+ *  The Eclipse
+ */
 .teamjacob span:nth-of-type(1) {
     background: #333;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
     box-shadow: 0 0 5px #333;
     left: 5px;
     top: 5px;

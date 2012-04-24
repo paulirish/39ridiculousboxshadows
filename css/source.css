@@ -1,6 +1,24 @@
+/*
+ *  The Light Source
+ */
+.source {
+    background-image: gradient(radial, 113.92761394101876 26.794258373205743, 75, 113.92761394101876 26.794258373205743, 40, from(#444), to(#777));
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-position: initial initial;
+    background-repeat: initial initial;
+}
 .source span {
-    box-shadow: 0 150px 20px -20px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 150px 20px -20px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0 150px 20px -20px rgba(0,0,0,0.20);
+    box-shadow: 0 150px 20px -20px rgba(0,0,0,0.20);
     top: 10px;
+    -webkit-transform: scaleY(0.4);
+    -moz-transform: scaleY(0.4);
+    -o-transform: scaleY(0.4);
+    -ms-transform: scaleY(0.4);
     transform: scaleY(0.4);
     z-index: -1;
 }

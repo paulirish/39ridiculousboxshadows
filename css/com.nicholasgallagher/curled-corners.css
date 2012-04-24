@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+/*
+ *  Curled corners 
+ */
+.curled {
+  border: 1px solid #efefef;
+  -webkit-border-radius: 0 0 120px 120px 0 0 6px 6px;
+  -moz-border-radius: 0 0 120px 120px 0 0 6px 6px;
+  border-radius: 0 0 120px 120px 0 0 6px 6px;
+}
+.curled:before,
+.curled:after {
+  bottom: 12px;
+  left: 10px;
+  width: 50%;
+  height: 55%;
+  max-width: 200px;
+  -webkit-box-shadow: 0 8px 12px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0 8px 12px rgba(0,0,0,0.50);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.50);
+  -webkit-transform: skew(-8deg) rotate(-3deg);
+  -moz-transform: skew(-8deg) rotate(-3deg);
+  -o-transform: skew(-8deg) rotate(-3deg);
+  -ms-transform: skew(-8deg) rotate(-3deg);
+  transform: skew(-8deg) rotate(-3deg);
+}
+.curled:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}

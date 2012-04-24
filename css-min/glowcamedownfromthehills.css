@@ -1,6 +1,9 @@
-.glowcamedownfromthehills span:nth-of-type(1){box-shadow:0 0 90px 0 #fffff0,10px 10px 140px 0 #c8ffff,0 0 10px 5px rgba(180,255,255,0.3)}
-.glowcamedownfromthehills span:nth-of-type(2){box-shadow:-30px -15px 15px rgba(195,255,255,0.8);transform:scale(.8)}
-.glowcamedownfromthehills span:nth-of-type(3){box-shadow:30px 190px 30px rgba(255,255,195,0.8);transform:scale(.3)}
-.glowcamedownfromthehills span:nth-of-type(4){box-shadow:90px 30px 30px #c3ffc3;transform:scale(.5)}
-.glowcamedownfromthehills span:nth-of-type(5){box-shadow:-650px -350px 100px #ffebff;transform:scale(.1);z-index:1}
-.glowcamedownfromthehills span:nth-of-type(5){box-shadow:-650px -350px 300px #fff;transform:scale(.1);z-index:1}
+/*
+ *  The Glow
+ */
+.glowcamedownfromthehills span:nth-of-type(1){-webkit-box-shadow:0 0 90px 0 #fffff0,10px 10px 140px 0 #c8ffff,0 0 10px 5px rgba(180,255,255,0.30);-moz-box-shadow:0 0 90px 0 #fffff0,10px 10px 140px 0 #c8ffff,0 0 10px 5px rgba(180,255,255,0.30);box-shadow:0 0 90px 0 #fffff0,10px 10px 140px 0 #c8ffff,0 0 10px 5px rgba(180,255,255,0.30)}
+.glowcamedownfromthehills span:nth-of-type(2){-webkit-box-shadow:-30px -15px 15px rgba(195,255,255,0.80);-moz-box-shadow:-30px -15px 15px rgba(195,255,255,0.80);box-shadow:-30px -15px 15px rgba(195,255,255,0.80);-webkit-transform:scale(.8);-moz-transform:scale(.8);-o-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8)}
+.glowcamedownfromthehills span:nth-of-type(3){-webkit-box-shadow:30px 190px 30px rgba(255,255,195,0.80);-moz-box-shadow:30px 190px 30px rgba(255,255,195,0.80);box-shadow:30px 190px 30px rgba(255,255,195,0.80);-webkit-transform:scale(.3);-moz-transform:scale(.3);-o-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}
+.glowcamedownfromthehills span:nth-of-type(4){-webkit-box-shadow:90px 30px 30px #c3ffc3;-moz-box-shadow:90px 30px 30px #c3ffc3;box-shadow:90px 30px 30px #c3ffc3;-webkit-transform:scale(.5);-moz-transform:scale(.5);-o-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5)}
+.glowcamedownfromthehills span:nth-of-type(5){-webkit-box-shadow:-650px -350px 100px #ffebff;-moz-box-shadow:-650px -350px 100px #ffebff;box-shadow:-650px -350px 100px #ffebff;-webkit-transform:scale(.1);-moz-transform:scale(.1);-o-transform:scale(.1);-ms-transform:scale(.1);transform:scale(.1);z-index:1}
+.glowcamedownfromthehills span:nth-of-type(5){-webkit-box-shadow:-650px -350px 300px #fff;-moz-box-shadow:-650px -350px 300px #fff;box-shadow:-650px -350px 300px #fff;-webkit-transform:scale(.1);-moz-transform:scale(.1);-o-transform:scale(.1);-ms-transform:scale(.1);transform:scale(.1);z-index:1}

@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+/*
+ *  Curved shadows 
+ */
+.curved:before {
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 50%;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.60);
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.60);
+  box-shadow: 0 0 15px rgba(0,0,0,0.60);
+  -webkit-border-radius: 10px/100px;
+  -moz-border-radius: 10px/100px;
+  border-radius: 10px/100px;
+}
+.curved-vt-2:before {
+  right: 0;
+}
+.curved-hz-1:before {
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -webkit-border-radius: 100px/10px;
+  -moz-border-radius: 100px/10px;
+  border-radius: 100px/10px;
+}
+.curved-hz-2:before {
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -webkit-border-radius: 100px/10px;
+  -moz-border-radius: 100px/10px;
+  border-radius: 100px/10px;
+}

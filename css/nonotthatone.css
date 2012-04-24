@@ -1,27 +1,36 @@
+/*
+ *  The Gallagher
+ */
 .nonotthatone {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     overflow: hidden;
 }
-.nonotthatone:before {
+.nonotthatone::before {
     border-width: 0 30px 30px 0;
     border-style: solid;
     border-color: #5b5b5b #333;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
-    content: "";
+    content: '';
     position: absolute;
     top: -2px;
     right: 0;
-    z-index: 2;
+    z-index: 4 !important;
 }
-.nonotthatone:after {
-    box-shadow: 3px 15px 10px -10px rgba(0,0,0,0.2);
-    content: "Look at this! http://nicolasgallagher.com/pure-css-folded-corner-effect/";
+.nonotthatone::after {
+    -webkit-box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
+    -moz-box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
+    box-shadow: 3px 15px 10px -10px rgba(0,0,0,.2);
+    content: 'Look at this! http://nicolasgallagher.com/pure-css-folded-corner-effect/';
     display: block;
     height: 40px;
     position: absolute;
+    top: -12px;
     right: -10px;
     text-indent: -9999px;
-    top: -12px;
     width: 40px;
-    z-index: 3;
+    z-index: 4 !important;
 }

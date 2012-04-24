@@ -1,12 +1,27 @@
+/*
+ *  The Pop
+ */
 .sorryaboutthisone {
     background: #fefd03;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
+    -webkit-box-shadow: 150px 0 0 #0197f5, 150px 150px 0 #24168f, 0 150px 0 #f09d03;
+    -moz-box-shadow: 150px 0 0 #0197f5, 150px 150px 0 #24168f, 0 150px 0 #f09d03;
     box-shadow: 150px 0 0 #0197f5, 150px 150px 0 #24168f, 0 150px 0 #f09d03;
+    -webkit-transform: scale(0.5) translate(-75px, -75px);
+    -moz-transform: scale(0.5) translate(-75px, -75px);
+    -o-transform: scale(0.5) translate(-75px, -75px);
+    -ms-transform: scale(0.5) translate(-75px, -75px);
     transform: scale(0.5) translate(-75px, -75px);
 }
 .sorryaboutthisone h2 {
     color: #261e95;
     text-shadow: 0 2px 1px #9ecd1f, 75px 0 0 #fef900, 75px 2px 1px #f10089, 75px 75px 0 #92d0ff, 75px 77px 1px #e844da, 0 75px 0 #f2a2d7, 0 77px 1px #ee0115;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
     transform: scale(2);
 }
 .sorryaboutthisone h2 em {

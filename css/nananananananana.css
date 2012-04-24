@@ -1,16 +1,6 @@
-@-webkit-keyframes glow {
-  0% {
-        box-shadow: 0 0 300px 0 rgba(255,255,255,0.5);
-    }
-
-  50% {
-        box-shadow: 0 0 800px 0 #fff;
-    }
-
-  100% {
-        box-shadow: 0 0 300px 0 rgba(255,255,255,0.5);
-    }
-}
+/*
+ *  The Bat-Man
+ */
 .nananananananana h2 {
     display: block;
     padding-top: 45px;
@@ -19,9 +9,15 @@
 }
 .nananananananana span {
     background: #333;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     left: -30px;
     top: 100px;
+    -webkit-transform: scaleX(0.2) scaleY(1.5) skew(20deg) rotate(55deg);
+    -moz-transform: scaleX(0.2) scaleY(1.5) skew(20deg) rotate(55deg);
+    -o-transform: scaleX(0.2) scaleY(1.5) skew(20deg) rotate(55deg);
+    -ms-transform: scaleX(0.2) scaleY(1.5) skew(20deg) rotate(55deg);
     transform: scaleX(0.2) scaleY(1.5) skew(20deg) rotate(55deg);
     z-index: 2;
 }
@@ -29,9 +25,13 @@
     left: 40px;
 }
 .nananananananana span:nth-of-type(2) {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
     height: 250px;
-    left: 0px;
+    left: 0;
     top: 5px;
 }
 .nananananananana span:nth-of-type(3),
@@ -39,14 +39,133 @@
     background: #fff;
     left: -25px;
     top: 45px;
+    -webkit-transform: scaleY(0.12) scaleX(0.03) skew(60deg) rotate(50deg);
+    -moz-transform: scaleY(0.12) scaleX(0.03) skew(60deg) rotate(50deg);
+    -o-transform: scaleY(0.12) scaleX(0.03) skew(60deg) rotate(50deg);
+    -ms-transform: scaleY(0.12) scaleX(0.03) skew(60deg) rotate(50deg);
     transform: scaleY(0.12) scaleX(0.03) skew(60deg) rotate(50deg);
     z-index: 8;
+    -webkit-animation-name: glow;
+    -moz-animation-name: glow;
+    -o-animation-name: glow;
+    -ms-animation-name: glow;
     animation-name: glow;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -ms-animation-duration: 2s;
     animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
     animation-timing-function: linear;
 }
 .nananananananana span:nth-of-type(4) {
     left: 25px;
+    -webkit-transform: scaleY(0.12) scaleX(0.03) skew(-60deg) rotate(-50deg);
+    -moz-transform: scaleY(0.12) scaleX(0.03) skew(-60deg) rotate(-50deg);
+    -o-transform: scaleY(0.12) scaleX(0.03) skew(-60deg) rotate(-50deg);
+    -ms-transform: scaleY(0.12) scaleX(0.03) skew(-60deg) rotate(-50deg);
     transform: scaleY(0.12) scaleX(0.03) skew(-60deg) rotate(-50deg);
+}
+@-moz-keyframes glow {
+  0% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+
+  50% {
+        -webkit-box-shadow: 0 0 800px 0 #fff;
+        -moz-box-shadow: 0 0 800px 0 #fff;
+        box-shadow: 0 0 800px 0 #fff;
+    }
+
+  100% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+}
+@-webkit-keyframes glow {
+  0% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+
+  50% {
+        -webkit-box-shadow: 0 0 800px 0 #fff;
+        -moz-box-shadow: 0 0 800px 0 #fff;
+        box-shadow: 0 0 800px 0 #fff;
+    }
+
+  100% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+}
+@-o-keyframes glow {
+  0% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+
+  50% {
+        -webkit-box-shadow: 0 0 800px 0 #fff;
+        -moz-box-shadow: 0 0 800px 0 #fff;
+        box-shadow: 0 0 800px 0 #fff;
+    }
+
+  100% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+}
+@-ms-keyframes glow {
+  0% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+
+  50% {
+        -webkit-box-shadow: 0 0 800px 0 #fff;
+        -moz-box-shadow: 0 0 800px 0 #fff;
+        box-shadow: 0 0 800px 0 #fff;
+    }
+
+  100% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+}
+@keyframes glow {
+  0% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
+
+  50% {
+        -webkit-box-shadow: 0 0 800px 0 #fff;
+        -moz-box-shadow: 0 0 800px 0 #fff;
+        box-shadow: 0 0 800px 0 #fff;
+    }
+
+  100% {
+        -webkit-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        -moz-box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+        box-shadow: 0 0 300px 0 rgba(255,255,255,0.50);
+    }
 }

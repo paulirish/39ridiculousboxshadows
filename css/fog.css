@@ -1,9 +1,12 @@
+/*
+ *  The Fog
+ */
 .fog {
     overflow: hidden;
 }
 .fog h2 {
-    left: 150px;
     position: absolute;
+    left: 150px;
     top: 150px;
-    text-shadow: -112px -103px 3px rgba(0,0,0,0.5);
+    text-shadow: -112px -103px 3px rgba(0,0,0,0.50);
 }

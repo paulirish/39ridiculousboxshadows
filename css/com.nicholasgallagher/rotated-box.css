@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+/*
+ *  Rotated box 
+ */
+.rotated {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.rotated > :first-child:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.30), 0 0 40px rgba(0,0,0,0.10) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.30), 0 0 40px rgba(0,0,0,0.10) inset;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.30), 0 0 40px rgba(0,0,0,0.10) inset;
+}

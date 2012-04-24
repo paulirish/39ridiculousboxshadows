@@ -1,46 +1,47 @@
-/*
+@import 'nib'
+/*!
  *  The Olympic Curler
  */
 .curlzmt
-	border-radius 0
-	box-shadow 0 30px 30px -20px #222
+	border-radius   0
+	box-shadow      0 30px 30px -20px #222
 
-	&::after, 
+	&::after
 	&::before
 		background-color #333
-		border-radius 75px
-		content "Wow, you're still reading this?"
-		color transparent
-		display block
-		height 150px
-		left 0
-		position absolute
-		width 150px
-		z-index 1
+		border-radius   75px
+		content         "Wow, you’re still reading this?"
+		color           transparent
+		display         block
+		height          150px
+		left            0
+		position        absolute
+		width           150px
+		z-index         1
 	
 	&::before
-		background-color #333
-		box-shadow inset 0 -60px 20px -40px rgba(0,0,0,.1)
-		transform scaleY(.15) scaleX(1.1)
-		top -75px
+		background-color    #333
+		box-shadow          inset 0 -60px 20px -40px rgba(0,0,0,.1)
+		transform           scaleY(.15) scaleX(1.1)
+		top                 -75px
 	
 	&::after
-		background #444
-		transform scaleY(.1)
-		bottom -75px
-		box-shadow 0 70px 40px -20px #222
+		background  #444
+		transform   scaleY(.1)
+		bottom      -75px
+		box-shadow  0 70px 40px -20px #222
 	
 	 span
-		background #333
-		top 0
-		transform scaleX(.1) scaleY(1.05)
-		z-index 2
+		background  #333
+		top         0
+		transform   scaleX(.1) scaleY(1.05)
+		z-index     2
 	
 		&:nth-of-type(1)
-			box-shadow inset -90px 0 20px -60px rgba(0,0,0,.1)
-			left -75px
+			box-shadow  inset -90px 0 20px -60px rgba(0,0,0,.1)
+			left       -75px
 		
 		&:nth-of-type(2)
-			box-shadow inset 90px 0 20px -60px rgba(0,0,0,.1)
-			left 75px
+			box-shadow  inset 90px 0 20px -60px rgba(0,0,0,.1)
+			left        75px
 	
