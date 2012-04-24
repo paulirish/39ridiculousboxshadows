@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://www.viget.com/uploads/file/boxshadows/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en-us' xml:lang='en-us'>
+    <head>
+        <meta charset='utf-8' />
 		<title>39 Box Shadows</title>
-
-		<meta charset="utf-8" />
 
 		<!--
 			This code is OFFICIALLY LICENSED under the WTFPL specification,
 			To read more about WTFPL, see this link: http://sam.zoy.org/wtfpl/
 		-->
-		<style type="text/css" media="screen">
-
+		 <style type='text/css' media='screen'>
 			@font-face {
 				font-family: 'FranchiseRegular';
 				src: url('franchise-bold-webfont.eot');
@@ -21,31 +19,31 @@
 			}
 
 			* {
-				margin: 0;
-				padding: 0;
+				margin:     0;
+				padding:    0;
 				position: relative;
-				-webkit-transition: all .25s ease-in-out;
-				-ms-transition: all .25s ease-in-out;
-				-o-transition: all .25s ease-in-out;
-				-moz-transition: all .25s ease-in-out;
-				transition: all .25s ease-in-out;
+				-webkit-transition: all .5s ease-in-out;
+				-ms-transition:     all .5s ease-in-out;
+				-o-transition:      all .5s ease-in-out;
+				-moz-transition:    all .5s ease-in-out;
+				transition:         all .5s ease-in-out;
 			}
 
 			html,
 			body {
 				height: 100%;
 				-webkit-transition: none;
-				-moz-transition: none;
-				-ms-transition: none;
-				transition: none;
+				-moz-transition:    none;
+				-ms-transition:     none;
+				transition:         none;
 			}
 
 			body {
-				background: #333;
-				font-family: FranchiseRegular;
-				overflow-x: hidden;
-				font-weight: normal;
-				text-align: center;
+				background:     #333;
+				font-family:    FranchiseRegular;
+				overflow-x:     hidden;
+				font-weight:    normal;
+				text-align:     center;
 			}
 
 			article {
@@ -53,21 +51,18 @@
 			}
 
 			article::after {
-				content: ".";
-				display: block;
-				clear: both;
+				content:    ".";
+				display:    block;
+				clear:      both;
 				visibility: hidden;
-				line-height: 0;
-				height: 0;
+				line-height:0;
+				height:     0;
 			}
 
 			em {
-				color: #fff;
-				display: block;
-				font-family: Georgia, "Times New Roman", sans-serif;
-				font-size: 20px;
-				font-style: italic;
-				font-weight: normal;
+				color:      #fff;
+				display:    block;
+				font:       normal italic 20px Georgia, "Times New Roman", sans-serif;
 				text-transform: lowercase;
 			}
 
@@ -81,29 +76,29 @@
 					from(#444),
 					to(#777)
 				) #777;
-				color: #fff;
-				display: table;
-				float: left;
-				list-style-type: none;
-				margin: 45px;
-				padding: 0;
-				position: relative;
-				text-align: center;
-				top: 0;
+				color:          #fff;
+				display:        table;
+				float:          left;
+				list-style-type:none;
+				margin:         45px;
+				padding:        0;
+				position:       relative;
+				text-align:     center;
+				top:            0;
 			}
 
 			li,
 			span {
-				border-radius: 75px;
-				height: 150px;
-				width: 150px;
+				border-radius:  75px;
+				height:         150px;
+				width:          150px;
 			}
 
 			span {
-				display: block;
-				left: 0;
-				position: absolute;
-				top: 0;
+				display:    block;
+				left:       0;
+				position:   absolute;
+				top:        0;
 			}
 
 			span:nth-of-type(1) { z-index: -9; }
@@ -122,20 +117,20 @@
 			}
 
 			h1 {
-				color: #fff;
-				font-size: 75px;
-				padding: 50px 0 0;
+				color:      #fff;
+				font-size:  75px;
+				padding:    50px 0 0;
 				-webkit-font-smoothing: antialiased;
 			}
 
 			h1 a.post {
 				background: none;
-				color: rgb(81,81,81);
-				display: inline-block;
-				font-size: 31px;
-				padding: 0;
+				color:      rgb(81,81,81);
+				display:    inline-block;
+				font-size:  31px;
+				padding:    0;
 				text-align: left;
-				width: 160px;
+				width:      160px;
 			}
 
 			h1 a.post strong {
@@ -155,10 +150,10 @@
 			}
 
 			h2 {
-				display: table-cell;
-				font-size: 30px;
-				font-weight: normal;
-				padding: 0 20px 10px;
+				display:    table-cell;
+				font-size:  30px;
+				font-weight:normal;
+				padding:    0 20px 10px;
 				text-shadow:
 					1px 1px 0 rgba(0,0,0,.2),
 					2px 2px 0 rgba(0,0,0,.2),
@@ -167,11 +162,28 @@
 			}
 
 			h2 em {
-				font-size: 15px;
-				padding: 0 0 10px;
+				font-size:  15px;
+				padding:    0 0 10px;
 			}
 
 			@-webkit-keyframes unviel {
+				0% {
+					height:     100%;
+					background: #222;
+				}
+				90% {
+					background: #222;
+				}
+				99% {
+					height:     100%;
+					background: transparent;
+				}
+				100% {
+					height:     auto%;
+				}
+			}
+			
+			@-moz-keyframes unviel {
 				0% {
 					height: 100%;
 					background: #222;
@@ -189,22 +201,24 @@
 			}
 
 			header {
-				-webkit-animation-name: unviel;
-				-webkit-animation-duration: 1.2s;
-				-webkit-animation-timing-function: ease-out;
+				-webkit-animation-name:             unviel;
+				-webkit-animation-duration:         1.2s;
+				-webkit-animation-timing-function:  ease-out;
+				
 				background: transparent;
-				height: auto;
-				left: 0;
-				position: absolute;
-				top: 0;
+				height:     auto;
+				left:       0;
+				position:   absolute;
+				top:        0;
+				
 				-webkit-transition: none;
-				-ms-transition: none;
-				-o-transition: none;
-				-moz-transition: none;
-				transition: none;
+				-ms-transition:     none;
+				-o-transition:      none;
+				-moz-transition:    none;
+				transition:         none;
 
-				width: 100%;
-				z-index: 9999;
+				width:      100%;
+				z-index:    9999;
 			}
 
 			ul {
@@ -218,16 +232,16 @@
 			}
 
 			ul.show {
-				display: block;
+				display:    block;
 			}
 
 			a {
-				background: rgb(31,31,31);
-				border-radius: 15px;
-			    color: rgb(81,81,81);
-				margin: 0 5px;
-				padding: 4px 10px 6px;
-				text-decoration: none;
+				background:     rgb(31,31,31);
+				border-radius:  15px;
+			    color:          rgb(81,81,81);
+				margin:         0 5px;
+				padding:        4px 10px 6px;
+				text-decoration:none;
 			}
 
 			a:hover {
@@ -293,10 +307,10 @@
 		<header>
 			<h1>
 				39 Box Shadows, No Good Reason
-				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <b>»</b></a>
+				<a class='post' href='http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/'>Confused? Read the Post <b>»</b></a>
 				<em>
-					<a href="#" id="previous">« Previous 10</a>
-					<a href="#" id="next"> Next 10 »</a>
+					<a href='#' id='previous'>« Previous 10 </a>
+					<a href='#' id='next'> Next 10 »</a>
 				</em>
 			</h1>
 		</header>
