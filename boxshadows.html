@@ -315,98 +315,16 @@
 
 		<article>
 
-			<ul class="">
-
-				<li class="source" style="background-image: -webkit-gradient(radial, 113.92761394101876 26.794258373205743, 75, 113.92761394101876 26.794258373205743, 40, from(rgb(68, 68, 68)), to(rgb(119, 119, 119))); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; ">
+			<ul class='show'>
+				<li class='source'>
+				    <script
+				        type    ='text/javascript' 
+				        async   ='async' 
+				        defer   ='defer' 
+				        src     ='source.js'> </script>
+					
 					<h2><em>The</em> Light Source</h2>
-					<span style="left: -12.975871313672922px; top: 19.150717703349283px; "></span>
-					<style type="text/css" media="screen">
-						.source span {
-							box-shadow:
-								0 150px 20px -20px rgba(0,0,0,.2);
-							top: 10px;
-							-webkit-transform: scaleY(.4);
-							-ms-transform: scaleY(.4);
-							-o-transform: scaleY(.4);
-							-moz-transform: scaleY(.4);
-							transform: scaleY(.4);
-							z-index: -1;
-						}
-					</style>
-					<script>
-
-						function objectPosition(obj) {
-							var curleft = 0;
-							var curtop = 0;
-							if (obj.offsetParent) {
-								do {
-									curleft += obj.offsetLeft;
-									curtop += obj.offsetTop;
-								} while (obj = obj.offsetParent);
-							}
-							return [curleft,curtop];
-						}
-
-						window.box = document.getElementsByClassName('source')[0];
-						window.boxshadow = box.getElementsByTagName('span')[0];
-						window.boxLeft = objectPosition(box)[0];
-						window.boxTop = objectPosition(box)[1];
-						window.canvasWidth = window.innerWidth;
-						window.canvasHeight = window.innerHeight;
-						window.timer = 0;
-
-						document.body.addEventListener('mousemove', function(movement){
-
-							function moveShadows(){
-
-								var mouseLeft = movement.pageX,
-									mouseTop = movement.pageY,
-									distanceFromBoxX = mouseLeft - boxLeft - 75,
-									distanceFromBoxY = mouseTop - boxTop - 75,
-									normalizedDistanceX = (distanceFromBoxX / canvasWidth),
-									normalizedDistanceY = (distanceFromBoxY / canvasHeight),
-
-									//shadow
-									shadowLeftMultiplier = -40,
-									shadowTopMultiplier = -10,
-									shadowTopOffset = 20,
-									newShadowLeft = normalizedDistanceX * shadowLeftMultiplier + 'px',
-									newShadowTop = normalizedDistanceY * shadowTopMultiplier + shadowTopOffset + 'px',
-
-									// gradient
-									gradientLeftMultiplier = 120,
-									gradientTopMultiplier = 80,
-									gradientLeftOffset = 75,
-									gradientTopOffset = 20,
-									newGradientLeft = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
-									newGradientTop = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
-									gradient = '-webkit-gradient(';
-
-								gradient += 'radial, ';
-								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
-								gradient += '75, ';
-								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
-								gradient += '40, ';
-								gradient += 'from(#444), ';
-								gradient += 'to(#777)';
-								gradient += ')';
-
-								if(distanceFromBoxY !== 0 && distanceFromBoxX !== 0){
-									window.boxshadow.style.left = newShadowLeft;
-									window.boxshadow.style.top = newShadowTop;
-									window.box.style.background = gradient;
-								}
-
-							}
-
-							if (timer) {
-								clearTimeout(timer);
-							}
-							timer = setTimeout(moveShadows, 10);
-
-						});
-
-					</script>
+					<span style='left: -12.975871313672922px; top: 19.150717703349283px; '></span>
 				</li>
 
 				<li class="stadium">
