@@ -10,40 +10,40 @@ function objectPosition(obj) {
 	return [curleft,curtop];
 }
 
-window.box = document.getElementsByClassName('source')[0];
-window.boxshadow = box.getElementsByTagName('span')[0];
-window.boxLeft = objectPosition(box)[0];
-window.boxTop = objectPosition(box)[1];
-window.canvasWidth = window.innerWidth;
+window.box          = document.getElementsByClassName('source')[0];
+window.boxshadow    = box.getElementsByTagName('span')[0];
+window.boxLeft      = objectPosition(box)[0];
+window.boxTop       = objectPosition(box)[1];
+window.canvasWidth  = window.innerWidth;
 window.canvasHeight = window.innerHeight; 
-window.timer = 0;
+window.timer        = 0;
+
 
 document.body.addEventListener('mousemove', function(movement){
 
 	function moveShadows(){
-
-		var mouseLeft = movement.pageX,
-			mouseTop = movement.pageY,
-			distanceFromBoxX = mouseLeft - boxLeft - 75,
-			distanceFromBoxY = mouseTop - boxTop - 75,
+		var mouseLeft           = movement.pageX,
+			mouseTop            = movement.pageY,
+			distanceFromBoxX    = mouseLeft - boxLeft - 75,
+			distanceFromBoxY    = mouseTop  - boxTop  - 75,
 			normalizedDistanceX = (distanceFromBoxX / canvasWidth),
 			normalizedDistanceY = (distanceFromBoxY / canvasHeight),
 
 			//shadow
-			shadowLeftMultiplier = -40,
-			shadowTopMultiplier = -10,
-			shadowTopOffset = 20,
-			newShadowLeft = normalizedDistanceX * shadowLeftMultiplier + 'px',
-			newShadowTop = normalizedDistanceY * shadowTopMultiplier + shadowTopOffset + 'px',
+			shadowLeftMultiplier    = -40,
+			shadowTopMultiplier     = -10,
+			shadowTopOffset         = 20,
+			newShadowLeft           = normalizedDistanceX * shadowLeftMultiplier + 'px',
+			newShadowTop            = normalizedDistanceY * shadowTopMultiplier + shadowTopOffset + 'px',
 
 			// gradient
-			gradientLeftMultiplier = 120,
-			gradientTopMultiplier = 80,
-			gradientLeftOffset = 75,
-			gradientTopOffset = 20,
-			newGradientLeft = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
-			newGradientTop = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
-			gradient = '-webkit-gradient(';
+			gradientLeftMultiplier  = 120,
+			gradientTopMultiplier   = 80,
+			gradientLeftOffset      = 75,
+			gradientTopOffset       = 20,
+			newGradientLeft         = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
+			newGradientTop          = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
+			gradient                = '-webkit-gradient(';
 		
 		gradient += 'radial, ';
 		gradient += newGradientLeft + ' ' + newGradientTop + ', ';
@@ -56,7 +56,7 @@ document.body.addEventListener('mousemove', function(movement){
 
 		if(distanceFromBoxY !== 0 && distanceFromBoxX !== 0){
 			window.boxshadow.style.left = newShadowLeft;
-			window.boxshadow.style.top = newShadowTop;
+			window.boxshadow.style.top  = newShadowTop;
 			window.box.style.background = gradient;
 		}
 
@@ -65,6 +65,6 @@ document.body.addEventListener('mousemove', function(movement){
 	if (timer) {
 		clearTimeout(timer);
 	}
+	
 	timer = setTimeout(moveShadows, 10);
-
 });
