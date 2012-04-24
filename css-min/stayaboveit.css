@@ -1,5 +1,8 @@
-.stayaboveit{background:#515151;border-radius:0;box-shadow:0 15px 5px -10px rgba(0,0,0,0.2);overflow:hidden;}
+/*
+ *  The Fold
+ */
+.stayaboveit{background:#515151;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 15px 5px -10px rgba(0,0,0,0.2);-moz-box-shadow:0 15px 5px -10px rgba(0,0,0,0.2);box-shadow:0 15px 5px -10px rgba(0,0,0,0.2);overflow:hidden;}
 .stayaboveit h2{display:block;padding-top:40px;z-index:2}
-.stayaboveit:before,.stayaboveit:after{content:"";display:block;box-shadow:0 0 30px rgba(0,0,0,0.5);height:150px;left:0;position:absolute;top:0;width:150px;z-index:1}
-.stayaboveit:after{top:75px}
-.stayaboveit:before{box-shadow:0 0 30px rgba(0,0,0,0.2);left:75px}
+.stayaboveit::before,.stayaboveit::after{content:'';display:block;-webkit-box-shadow:0 0 30px rgba(0,0,0,.5);-moz-box-shadow:0 0 30px rgba(0,0,0,.5);box-shadow:0 0 30px rgba(0,0,0,.5);height:150px;position:absolute;top:0;left:0;width:150px;z-index:1}
+.stayaboveit::after{top:75px}
+.stayaboveit::before{-webkit-box-shadow:0 0 30px rgba(0,0,0,0.20);-moz-box-shadow:0 0 30px rgba(0,0,0,0.20);box-shadow:0 0 30px rgba(0,0,0,0.20);left:75px}

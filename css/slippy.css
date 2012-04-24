@@ -1,8 +1,19 @@
+/*
+ *  The Slip  
+ */
 .slippy {
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
 }
 .slippy span:nth-of-type(1) {
+    background-image: -webkit-gradient(radial, center -50, 0, center -40, 80, from(#656565), to(#333));
+    background-image: -moz-gradient(radial, center -50, 0, center -40, 80, from(#656565), to(#333));
+    background-image: -o-gradient(radial, center -50, 0, center -40, 80, from(#656565), to(#333));
+    background-image: -ms-gradient(radial, center -50, 0, center -40, 80, from(#656565), to(#333));
     background-image: gradient(radial, center -50, 0, center -40, 80, from(#656565), to(#333));
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     left: -25px;
     top: 100px;
@@ -11,10 +22,16 @@
     z-index: 5;
 }
 .slippy span:nth-of-type(2) {
-    box-shadow: 0 0 180px 0 rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
+    -moz-box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
+    box-shadow: 0 0 180px 0 rgba(0,0,0,.7);
     left: -25px;
     top: 40px;
     width: 200px;
+    -webkit-transform: scaleX(0.8) scaleY(0.2);
+    -moz-transform: scaleX(0.8) scaleY(0.2);
+    -o-transform: scaleX(0.8) scaleY(0.2);
+    -ms-transform: scaleX(0.8) scaleY(0.2);
     transform: scaleX(0.8) scaleY(0.2);
     z-index: 4;
 }

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0046)http://www.viget.com/uploads/file/boxshadows/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en-us' xml:lang='en-us'>
+    <head>
+        <meta charset='utf-8' />
 		<title>39 Box Shadows</title>
-
-		<meta charset="utf-8" />
 
 		<!--
 			This code is OFFICIALLY LICENSED under the WTFPL specification,
 			To read more about WTFPL, see this link: http://sam.zoy.org/wtfpl/
 		-->
-		<style type="text/css" media="screen">
-
+		 <style type='text/css' media='screen'>
 			@font-face {
 				font-family: 'FranchiseRegular';
 				src: url('franchise-bold-webfont.eot');
@@ -21,31 +19,31 @@
 			}
 
 			* {
-				margin: 0;
-				padding: 0;
+				margin:     0;
+				padding:    0;
 				position: relative;
-				-webkit-transition: all .25s ease-in-out;
-				-ms-transition: all .25s ease-in-out;
-				-o-transition: all .25s ease-in-out;
-				-moz-transition: all .25s ease-in-out;
-				transition: all .25s ease-in-out;
+				-webkit-transition: all .5s ease-in-out;
+				-ms-transition:     all .5s ease-in-out;
+				-o-transition:      all .5s ease-in-out;
+				-moz-transition:    all .5s ease-in-out;
+				transition:         all .5s ease-in-out;
 			}
 
 			html,
 			body {
 				height: 100%;
 				-webkit-transition: none;
-				-moz-transition: none;
-				-ms-transition: none;
-				transition: none;
+				-moz-transition:    none;
+				-ms-transition:     none;
+				transition:         none;
 			}
 
 			body {
-				background: #333;
-				font-family: FranchiseRegular;
-				overflow-x: hidden;
-				font-weight: normal;
-				text-align: center;
+				background:     #333;
+				font-family:    FranchiseRegular;
+				overflow-x:     hidden;
+				font-weight:    normal;
+				text-align:     center;
 			}
 
 			article {
@@ -53,21 +51,18 @@
 			}
 
 			article::after {
-				content: ".";
-				display: block;
-				clear: both;
+				content:    ".";
+				display:    block;
+				clear:      both;
 				visibility: hidden;
-				line-height: 0;
-				height: 0;
+				line-height:0;
+				height:     0;
 			}
 
 			em {
-				color: #fff;
-				display: block;
-				font-family: Georgia, "Times New Roman", sans-serif;
-				font-size: 20px;
-				font-style: italic;
-				font-weight: normal;
+				color:      #fff;
+				display:    block;
+				font:       normal italic 20px Georgia, "Times New Roman", sans-serif;
 				text-transform: lowercase;
 			}
 
@@ -81,29 +76,29 @@
 					from(#444),
 					to(#777)
 				) #777;
-				color: #fff;
-				display: table;
-				float: left;
-				list-style-type: none;
-				margin: 45px;
-				padding: 0;
-				position: relative;
-				text-align: center;
-				top: 0;
+				color:          #fff;
+				display:        table;
+				float:          left;
+				list-style-type:none;
+				margin:         45px;
+				padding:        0;
+				position:       relative;
+				text-align:     center;
+				top:            0;
 			}
 
 			li,
 			span {
-				border-radius: 75px;
-				height: 150px;
-				width: 150px;
+				border-radius:  75px;
+				height:         150px;
+				width:          150px;
 			}
 
 			span {
-				display: block;
-				left: 0;
-				position: absolute;
-				top: 0;
+				display:    block;
+				left:       0;
+				position:   absolute;
+				top:        0;
 			}
 
 			span:nth-of-type(1) { z-index: -9; }
@@ -122,28 +117,29 @@
 			}
 
 			h1 {
-				color: #fff;
-				font-size: 75px;
-				padding: 50px 0 0;
+				color:      #fff;
+				font-size:  75px;
+				padding:    50px 0 0;
 				-webkit-font-smoothing: antialiased;
 			}
 
 			h1 a.post {
 				background: none;
-				color: rgb(81,81,81);
-				display: inline-block;
-				font-size: 31px;
-				padding: 0;
+				color:      rgb(81,81,81);
+				display:    inline-block;
+				font-size:  31px;
+				padding:    0;
 				text-align: left;
-				width: 160px;
+				width:      160px;
 			}
 
-			h1 a.post strong {
-				font-size: 20px;
-				font-weight: normal;
-				left: 2px;
-				position: relative;
-				top: -5px;
+
+			h1 a.post b {
+				font-size:  20px;
+				font-weight:normal;
+				left:       2px;
+				position:   relative;
+				top:        -5px;
 			}
 
 			h1 a.post:hover {
@@ -155,10 +151,10 @@
 			}
 
 			h2 {
-				display: table-cell;
-				font-size: 30px;
-				font-weight: normal;
-				padding: 0 20px 10px;
+				display:    table-cell;
+				font-size:  30px;
+				font-weight:normal;
+				padding:    0 20px 10px;
 				text-shadow:
 					1px 1px 0 rgba(0,0,0,.2),
 					2px 2px 0 rgba(0,0,0,.2),
@@ -167,11 +163,28 @@
 			}
 
 			h2 em {
-				font-size: 15px;
-				padding: 0 0 10px;
+				font-size:  15px;
+				padding:    0 0 10px;
 			}
 
 			@-webkit-keyframes unviel {
+				0% {
+					height:     100%;
+					background: #222;
+				}
+				90% {
+					background: #222;
+				}
+				99% {
+					height:     100%;
+					background: transparent;
+				}
+				100% {
+					height:     auto%;
+				}
+			}
+			
+			@-moz-keyframes unviel {
 				0% {
 					height: 100%;
 					background: #222;
@@ -189,22 +202,24 @@
 			}
 
 			header {
-				-webkit-animation-name: unviel;
-				-webkit-animation-duration: 1.2s;
-				-webkit-animation-timing-function: ease-out;
+				-webkit-animation-name:             unviel;
+				-webkit-animation-duration:         1.2s;
+				-webkit-animation-timing-function:  ease-out;
+				
 				background: transparent;
-				height: auto;
-				left: 0;
-				position: absolute;
-				top: 0;
+				height:     auto;
+				left:       0;
+				position:   absolute;
+				top:        0;
+				
 				-webkit-transition: none;
-				-ms-transition: none;
-				-o-transition: none;
-				-moz-transition: none;
-				transition: none;
+				-ms-transition:     none;
+				-o-transition:      none;
+				-moz-transition:    none;
+				transition:         none;
 
-				width: 100%;
-				z-index: 9999;
+				width:      100%;
+				z-index:    9999;
 			}
 
 			ul {
@@ -218,74 +233,71 @@
 			}
 
 			ul.show {
-				display: block;
+				display:    block;
 			}
 
 			a {
-				background: rgb(31,31,31);
-				border-radius: 15px;
-			    color: rgb(81,81,81);
-				margin: 0 5px;
-				padding: 4px 10px 6px;
-				text-decoration: none;
+				background:     rgb(31,31,31);
+				border-radius:  15px;
+			    color:          rgb(81,81,81);
+				margin:         0 5px;
+				padding:        4px 10px 6px;
+				text-decoration:none;
 			}
 
 			a:hover {
-				color: #fff;
+				color:  #fff;
+				cursor: pointer;
 			}
-
-		</style>
-
-
-		<script type="text/javascript">
-			
-			//	Switch the currently displayed <ul>
-			function showUl(direction){
-				var current = uls[uls.active],
-					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
-					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,
-					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,
-					next = uls[nextPosition];
-				current.className = "";
-				next.className = "show";
-			}
-
-			//	Called to show even target
-			function page(event){
-				showUl(event.target.id);
-			}
-
-			//	Keyboard listeners
-			function pageWithKeys(event){
-			  var next =
-						event.keyCode == 39 ||
-						event.keyCode == 40 ||
-						event.keyCode == 32,
-					previous =
-						event.keyCode == 37 ||
-						event.keyCode == 38,
-					noModifier = event.altKey !== true && event.metaKey !== true;
-				if (previous && noModifier){
-					showUl('previous');
-				}
-				if (next && noModifier){
-					showUl('next');
-				}
-			}
-
-			uls = document.getElementsByTagName("ul");
-			as = document.getElementsByTagName("a");
-			uls.active = 0;
-
-			//	Attach click listeners
-			for(i = 0; i < as.length; i++){
-				as[i].addEventListener('click', page, false);
-			}
-
-			//	Attach keyboard listeners
-			window.addEventListener('keydown', pageWithKeys, false);
-
-		</script>
+		</style>  
+		
+        <link rel='stylesheet' type='text/css' media='screen' href='css/allglorytothe.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/bouncer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/cheshire.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/cloud.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/curlzmt.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/darkside.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/derp.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/dialer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/dimmer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/embossy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/fog.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/fryguy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/glowcamedownfromthehills.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/googly.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/lilguy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/looksshooped.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/matthamm.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/nananananananana.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/nonotthatone.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/orbiter.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/papapaoohmowmow.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/planetarium.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/pulse.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/ripplin.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/secret.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/slippy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/softfocus.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/sorryaboutthisone.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/source.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/spatter.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/stadium.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/stayaboveit.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/tacobell.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/teamjacob.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/theoldrazzledazzle.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/theorist.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/venn.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/wehavetogodeeper.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/youknowthatmikewhitemovie.css' />
+      
+       
+          
+        <script title   ='Javascript Navigation'
+                type    ='text/javascript' 
+                src     ='nav.js' 
+                async   ='async'
+                defer   ='defer'> </script>
 	</head>
 
 	<body>
@@ -293,117 +305,31 @@
 		<header>
 			<h1>
 				39 Box Shadows, No Good Reason
-				<a class="post" href="http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/">Confused? Read the Post <b>»</b></a>
+				<a class='post' href='http://www.viget.com/inspire/39-ridiculous-things-to-do-with-css3-box-shadows/'>Confused? Read the Post <b>»</b></a>
 				<em>
-					<a href="#" id="previous">« Previous 10</a>
-					<a href="#" id="next"> Next 10 »</a>
+					<a href='#' id='previous'>« Previous 10 </a>
+					<a href='#' id='next'> Next 10 »</a>
 				</em>
 			</h1>
 		</header>
 
 		<article>
 
-			<ul class="">
-
-				<li class="source" style="background-image: -webkit-gradient(radial, 113.92761394101876 26.794258373205743, 75, 113.92761394101876 26.794258373205743, 40, from(rgb(68, 68, 68)), to(rgb(119, 119, 119))); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; ">
+			<ul class='show'>
+				<li class='source'>
+				    <script
+				        type    ='text/javascript' 
+				        async   ='async' 
+				        defer   ='defer' 
+				        src     ='source.js'> </script>
+					
 					<h2><em>The</em> Light Source</h2>
-					<span style="left: -12.975871313672922px; top: 19.150717703349283px; "></span>
-					<style type="text/css" media="screen">
-						.source span {
-							box-shadow:
-								0 150px 20px -20px rgba(0,0,0,.2);
-							top: 10px;
-							-webkit-transform: scaleY(.4);
-							-ms-transform: scaleY(.4);
-							-o-transform: scaleY(.4);
-							-moz-transform: scaleY(.4);
-							transform: scaleY(.4);
-							z-index: -1;
-						}
-					</style>
-					<script>
-
-						function objectPosition(obj) {
-							var curleft = 0;
-							var curtop = 0;
-							if (obj.offsetParent) {
-								do {
-									curleft += obj.offsetLeft;
-									curtop += obj.offsetTop;
-								} while (obj = obj.offsetParent);
-							}
-							return [curleft,curtop];
-						}
-
-						window.box = document.getElementsByClassName('source')[0];
-						window.boxshadow = box.getElementsByTagName('span')[0];
-						window.boxLeft = objectPosition(box)[0];
-						window.boxTop = objectPosition(box)[1];
-						window.canvasWidth = window.innerWidth;
-						window.canvasHeight = window.innerHeight;
-						window.timer = 0;
-
-						document.body.addEventListener('mousemove', function(movement){
-
-							function moveShadows(){
-
-								var mouseLeft = movement.pageX,
-									mouseTop = movement.pageY,
-									distanceFromBoxX = mouseLeft - boxLeft - 75,
-									distanceFromBoxY = mouseTop - boxTop - 75,
-									normalizedDistanceX = (distanceFromBoxX / canvasWidth),
-									normalizedDistanceY = (distanceFromBoxY / canvasHeight),
-
-									//shadow
-									shadowLeftMultiplier = -40,
-									shadowTopMultiplier = -10,
-									shadowTopOffset = 20,
-									newShadowLeft = normalizedDistanceX * shadowLeftMultiplier + 'px',
-									newShadowTop = normalizedDistanceY * shadowTopMultiplier + shadowTopOffset + 'px',
-
-									// gradient
-									gradientLeftMultiplier = 120,
-									gradientTopMultiplier = 80,
-									gradientLeftOffset = 75,
-									gradientTopOffset = 20,
-									newGradientLeft = normalizedDistanceX * gradientLeftMultiplier + gradientLeftOffset,
-									newGradientTop = normalizedDistanceY * gradientTopMultiplier + gradientTopOffset,
-									gradient = '-webkit-gradient(';
-
-								gradient += 'radial, ';
-								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
-								gradient += '75, ';
-								gradient += newGradientLeft + ' ' + newGradientTop + ', ';
-								gradient += '40, ';
-								gradient += 'from(#444), ';
-								gradient += 'to(#777)';
-								gradient += ')';
-
-								if(distanceFromBoxY !== 0 && distanceFromBoxX !== 0){
-									window.boxshadow.style.left = newShadowLeft;
-									window.boxshadow.style.top = newShadowTop;
-									window.box.style.background = gradient;
-								}
-
-							}
-
-							if (timer) {
-								clearTimeout(timer);
-							}
-							timer = setTimeout(moveShadows, 10);
-
-						});
-
-					</script>
+					<span style='left: -12.975871313672922px; top: 19.150717703349283px; '></span>
 				</li>
 
 				<li class="stadium">
-					<h2><em>The</em> Stadium</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.stadium span:nth-of-type(1) {
 							-webkit-transform:
 								scaleY(.3)
@@ -518,26 +444,36 @@
 							box-shadow: 15px 290px 20px -25px rgba(0,0,0,.25);
 						}
 					</style>
+ -->
+					
+					<h2><em>The</em> Stadium</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="lilguy">
-					<h2><em>The</em> Lil&lsquo; Guy</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.lilguy span {
-							-webkit-transform: scaleY(.3);
-							-ms-transform: scaleY(.3);
-							-o-transform: scaleY(.3);
-							-moz-transform: scaleY(.3);
-							transform: scaleY(.3);
-							box-shadow: 0px 250px 20px -25px rgba(0,0,0,.25);
+							-webkit-transform:  scaleY(.3);
+							-ms-transform:      scaleY(.3);
+							-o-transform:       scaleY(.3);
+							-moz-transform:     scaleY(.3);
+							transform:          scaleY(.3);
+							box-shadow:         0px 250px 20px -25px rgba(0,0,0,.25);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Lil’ Guy</h2>
+					<span></span>
 				</li>
 
 				<li class="softfocus">
-					<h2><em>The</em> Soft Focus</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.softfocus {
 							box-shadow:
 								inset 0 50px 20px -30px #777,
@@ -553,13 +489,14 @@
 							text-shadow: 0 0 2px #fff;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Soft Focus</h2>
 				</li>
 
 				<li class="slippy">
-					<h2><em>The</em> Slip</h2>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+                    <!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.slippy {
 							box-shadow: 0 20px 20px 0 rgba(0,0,0,.3);
 						}
@@ -593,16 +530,16 @@
 							z-index: 4;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Slip</h2>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="glowcamedownfromthehills">
-					<h2><em>The</em> Glow</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.glowcamedownfromthehills span:nth-of-type(1) {
 							box-shadow:
 								0px 0px 90px 0px rgba(255,255,240,1),
@@ -652,11 +589,19 @@
 							transform: scale(.1);
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Glow</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="fog">
-					<h2><em>The</em> Fog</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.fog {
 							overflow: hidden;
 						}
@@ -667,17 +612,14 @@
 							text-shadow: -112px -103px 3px rgba(0,0,0,.5);
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Fog</h2>
 				</li>
 
 				<li class="looksshooped">
-					<h2><em>The</em> My First Photoshop</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.looksshooped span {
 							z-index: 1;
 						}
@@ -742,11 +684,20 @@
 							transform: scale(.12);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> My First Photoshop</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="tacobell">
-					<h2><em>The</em> Late Night</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.tacobell {
 							background: transparent;
 							box-shadow:
@@ -756,12 +707,14 @@
 							z-index: 2;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Late Night</h2>
 				</li>
 
 				<li class="derp">
-					<h2><em>The</em> Doing It Wrong</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.derp span:nth-of-type(1) {
 							background: rgba(0,0,0,.4);
 							box-shadow: 0 0 5px rgba(0,0,0,.4);
@@ -770,6 +723,10 @@
 							z-index: 1;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Doing It Wrong</h2>
+					<span></span>
 				</li>
 
 			</ul>
@@ -777,17 +734,15 @@
 			<ul class="">
 
 				<li class="youknowthatmikewhitemovie">
-					<h2><em>The</em> Good Girl</h2>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.youknowthatmikewhitemovie span {
 							background: rgba(255,255,255,.01);
 							box-shadow:
 								inset 0  10px 20px 10px rgba(255,255,255,1),
 								inset 0 -10px 20px 10px rgba(255,255,255,1),
-								0  10px 20px 10px rgba(255,255,255,1),
-								0 -10px 20px 10px rgba(255,255,255,1);
+								      0  10px 20px 10px rgba(255,255,255,1),
+								      0 -10px 20px 10px rgba(255,255,255,1);
 							-webkit-transform: scaleX(.65) scaleY(.2);
 							-ms-transform: scaleX(.65) scaleY(.2);
 							-o-transform: scaleX(.65) scaleY(.2);
@@ -800,20 +755,19 @@
 							top: -81px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Good Girl</h2>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="theorist">
-					<h2><em>The</em> Color Theorist</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.theorist {
 							box-shadow:
-								0px 0px 1px 0px rgba(255,255,255,.7),
+								0px 0px  1px 0px rgba(255,255,255,.7),
 								0px 0px 20px 2px rgba(255,255,255,.8);
 						}
 						.theorist span:nth-of-type(1) {
@@ -871,34 +825,43 @@
 							box-shadow: -18px -11px 3px 0px rgba(255,255,0,1);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Color Theorist</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="dialer">
-					<h2><em>The</em> Dialer</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.dialer em {
 							border-radius: 20px;
 							box-shadow:
-								45px -19px 0 -3px rgba(51,51,51,1),
-								45px -20px 0 -2px rgba(41,41,41,1),
-								25px -34px 0 -3px rgba(51,51,51,1),
-								25px -35px 0 -2px rgba(41,41,41,1),
-								0 -39px 0 -3px rgba(51,51,51,1),
-								0 -40px 0 -2px rgba(41,41,41,1),
-								-25px -33px 0 -3px rgba(51,51,51,1),
-								-25px -34px 0 -2px rgba(41,41,41,1),
-								-45px -17px 0 -3px rgba(51,51,51,1),
-								-45px -18px 0 -2px rgba(41,41,41,1),
-								-57px 6px 0 -3px rgba(51,51,51,1),
-								-57px 5px 0 -2px rgba(41,41,41,1),
-								-57px 33px 0 -3px rgba(51,51,51,1),
-								-57px 32px 0 -2px rgba(41,41,41,1),
-								-45px 58px 0 -3px rgba(51,51,51,1),
-								-45px 57px 0 -2px rgba(41,41,41,1),
-								-25px 75px 0 -3px rgba(51,51,51,1),
-								-25px 74px 0 -2px rgba(41,41,41,1),
-								0 81px 0 -3px rgba(51,51,51,1),
-								0 80px 0 -2px rgba(41,41,41,1);
+								45px  -19px 0 -3px rgba(51,51,51,1),
+								45px  -20px 0 -2px rgba(41,41,41,1),
+								25px  -34px 0 -3px rgba(51,51,51,1),
+								25px  -35px 0 -2px rgba(41,41,41,1),
+							     0    -39px 0 -3px rgba(51,51,51,1),
+								 0    -40px 0 -2px rgba(41,41,41,1),
+							   -25px -33px  0 -3px rgba(51,51,51,1),
+							   -25px -34px  0 -2px rgba(41,41,41,1),
+			                   -45px -17px  0 -3px rgba(51,51,51,1),
+			                   -45px -18px  0 -2px rgba(41,41,41,1),
+			                   -57px   6px  0 -3px rgba(51,51,51,1),
+			                   -57px   5px  0 -2px rgba(41,41,41,1),
+			                   -57px  33px  0 -3px rgba(51,51,51,1),
+			                   -57px  32px  0 -2px rgba(41,41,41,1),
+			                   -45px  58px  0 -3px rgba(51,51,51,1),
+			                   -45px  57px  0 -2px rgba(41,41,41,1),
+			                   -25px  75px  0 -3px rgba(51,51,51,1),
+			                   -25px  74px  0 -2px rgba(41,41,41,1),
+								 0    81px  0 -3px rgba(51,51,51,1),
+								 0    80px  0 -2px rgba(41,41,41,1);
 							display: block;
 							overflow: visible;
 							margin: 0 auto;
@@ -906,12 +869,14 @@
 							width: 27px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Dialer</h2>
 				</li>
 
 				<li class="wehavetogodeeper">
-					<h2><em>The</em> In Deep</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.wehavetogodeeper {
 							background-image: -webkit-gradient(
 								radial,
@@ -936,11 +901,15 @@
 							box-shadow: 0 0 0 70px rgba(51,51,51,1);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> In Deep</h2>
+					<span></span>
 				</li>
 
 				<li class="cheshire">
-					<h2><em>The</em> Cheshire</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.cheshire {
 							box-shadow:
 								 1px  1px 0 #777,
@@ -975,11 +944,14 @@
 								 1px 30px 0 #444;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Cheshire</h2>
 				</li>
 
 				<li class="theoldrazzledazzle">
-					<h2><em>The</em> Dazzler</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes dazzle {
 							0% {
 								box-shadow:
@@ -1197,16 +1169,14 @@
 							width: 27px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Dazzler</h2>
 				</li>
 
 				<li class="nananananananana">
-					<h2><em>The</em> Batman</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.nananananananana h2 {
 							display: block;
 							padding-top: 45px;
@@ -1339,11 +1309,19 @@
 								rotate(-50deg);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Batman</h2>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="googly">
-					<h2><em>The</em> Googly Eyes</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.googly em {
 							box-shadow:
 								-38px -40px 0 -9px rgba(1,1,1,1),
@@ -1363,11 +1341,14 @@
 							width: 40px;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Googly Eyes</h2>
 				</li>
 
 				<li class="cloud">
-					<h2><em>The</em> It&rsquo;s So Cloud</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.cloud {
 							background:#fff;
 							box-shadow:
@@ -1385,7 +1366,10 @@
 							color: rgb(51,51,51);
 							text-shadow: none;
 						}
+ -->
 					</style>
+				    
+					<h2><em>The</em> It’s So Cloud</h2>
 				</li>
 
 			</ul>
@@ -1393,11 +1377,8 @@
 			<ul class="">
 
 				<li class="allglorytothe">
-					<h2><em>The</em> Hypnotist</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes spin {
 							0% {
 								-webkit-transform:
@@ -1460,11 +1441,17 @@
 							z-index: 4;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Hypnotist</h2>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="bouncer">
-					<h2><em>The</em> Bouncer</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes bounce {
 							0% {
 								box-shadow: 0px 2px 5px 0px rgba(0,0,0,.5);
@@ -1484,11 +1471,14 @@
 							-webkit-animation-timing-function: ease-out;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Bouncer</h2>
 				</li>
 
 				<li class="pulse">
-					<h2><em>The</em> Pulse</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes pulse {
 							0% {
 								box-shadow:
@@ -1514,12 +1504,14 @@
 							-webkit-animation-timing-function: ease-out;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Pulse</h2>
 				</li>
 
 				<li class="orbiter">
-					<h2><em>The</em> Orbiter</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes orbit {
 							0%   { box-shadow:    0px -100px 9px -50px rgba(0,0,0,.6); }
 							10%  { box-shadow:   50px  -75px 9px -50px rgba(0,0,0,.6); }
@@ -1540,11 +1532,15 @@
 							-webkit-animation-timing-function: linear;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Orbiter</h2>
+					<span></span>
 				</li>
 
 				<li class="ripplin">
-					<h2><em>The</em> Rippler</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						@-webkit-keyframes ripple {
 							0% {
 								box-shadow:
@@ -1585,12 +1581,14 @@
 							-webkit-animation-timing-function: ease-in-out;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Rippler</h2>
 				</li>
 
 				<li class="secret">
-					<h2><em>The</em> Secret</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.secret h2 {
 							color: #fff;
 							display: block;
@@ -1622,12 +1620,15 @@
 							top: 120px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Secret</h2>
+					<span></span>
 				</li>
 
 				<li class="teamjacob">
-					<h2><em>The</em> Eclipse</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.teamjacob span:nth-of-type(1) {
 							background: #333;
 							box-shadow: 0 0 5px #333;
@@ -1640,14 +1641,15 @@
 							top: 90px;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Eclipse</h2>
+					<span></span>
 				</li>
 
 				<li class="fryguy">
-					<h2><em>The</em> Shy Guy</h2>
-					<span></span>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.fryguy h2 {
 							display: block;
 							height: 80px;
@@ -1702,11 +1704,17 @@
 							top: -30px;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Shy Guy</h2>
+					<span></span>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="dimmer">
-					<h2><em>The</em> Dimmer Switch</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.dimmer {
 							z-index: 1000;
 						}
@@ -1723,12 +1731,14 @@
 							opacity: 1;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Dimmer Switch</h2>
 				</li>
 
 				<li class="papapaoohmowmow">
-					<h2><em>The</em> Wipeout</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.papapaoohmowmow {
 							z-index: 1;
 						}
@@ -1775,15 +1785,19 @@
 							opacity: 1;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Wipeout</h2>
+					<span></span>
 				</li>
 
 			</ul>
 
-			<ul class="show">
+			<ul class="">
 
 				<li class="planetarium">
-					<h2><em>The</em> Planetarium</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.planetarium {
 							background: -webkit-gradient(
 								radial,
@@ -1869,32 +1883,55 @@
 							width: 27px;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Planetarium</h2>
 				</li>
 
 				<li class="darkside">
-					<h2><em>The</em> Dark Side</h2>
-					<style type="text/css" media="screen">
-						.darkside {
-							box-shadow:
-								inset 10px 0 10px 0 rgba(0,0,0,.9),
-								inset 45px 0 15px -12px rgba(0,0,0,.3),
-								inset 65px 0 10px -15px rgba(0,0,0,.5);
-						}
-						.darkside h2 {
-							color: transparent;
-							background-image: -webkit-linear-gradient(left, rgba(0,0,0,.9), rgba(0,0,0,.9) 30px, #fff 60px, #fff);
-							background-image: -o-linear-gradient(left, rgba(0,0,0,.9), rgba(0,0,0,.9) 30px, #fff 60px, #fff);
-							box-shadow: none;
-							background-clip: text;
-							box-shadow: none;
-							text-shadow: none;
-						}
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
+						/*
+                         *  The Dark Side
+                         */
+                        .darkside {
+                            -webkit-box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
+                            -moz-box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
+                            box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
+                        }
+                        
+                        .darkside h2 {
+                            color: transparent;
+                            
+                            background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.90)), color-stop(0.3, rgba(0,0,0,0.90)), color-stop(0.6, #fff), color-stop(1, #fff));
+                            background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+                            background-image: -moz-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+                            background-image: -o-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+                            background-image: -ms-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+                            background-image: linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+                            
+                            -webkit-box-shadow: none;
+                            -moz-box-shadow: none;
+                            box-shadow: none;
+                            
+                            -webkit-background-clip(box, args): text;
+                            -moz-background-clip(box, args): text;
+                            -o-background-clip(box, args): text;
+                            -ms-background-clip(box, args): text;
+                            -webkit-background-clip: text;
+                            
+                            background-clip: text;
+                            text-shadow: none;
+                        }
 					</style>
+				    
+ -->
+					<h2><em>The</em> Dark Side</h2>
 				</li>
 
 				<li class="sorryaboutthisone">
-					<h2><em>The</em> Pop</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.sorryaboutthisone {
 							background: #fefd03;
 							border-radius: 0;
@@ -1929,11 +1966,14 @@
 							transform: scale(2);
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Pop</h2>
 				</li>
 
 				<li class="stayaboveit">
-					<h2><em>The</em> Fold</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.stayaboveit {
 							background: rgba(81,81,81,1);
 							border-radius: 0;
@@ -1965,11 +2005,14 @@
 							left: 75px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Fold</h2>
 				</li>
 
 				<li class="matthamm">
-					<h2><em>The</em> Matt Hamm</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.matthamm {
 							border-radius: 0;
 						}
@@ -1997,13 +2040,14 @@
 								rotate(-10deg);
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Matt Hamm</h2>
 				</li>
 
 				<li class="curlzmt">
-					<h2><em>The</em> Olympic Curler</h2>
-					<span></span>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.curlzmt {
 							border-radius: 0;
 							box-shadow: 0 30px 30px -20px #222;
@@ -2058,11 +2102,16 @@
 							left: 75px;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Olympic Curler</h2>
+					<span></span>
+					<span></span>
 				</li>
 
 				<li class="nonotthatone">
-					<h2><em>The</em> Gallagher</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.nonotthatone {
 							border-radius: 0;
 							overflow: hidden;
@@ -2091,11 +2140,14 @@
 							z-index: 3;
 						}
 					</style>
+				    
+ -->
+					<h2><em>The</em> Gallagher</h2>
 				</li>
 
 				<li class="embossy">
-					<h2><em>The</em> Needlessly Embossed</h2>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.embossy {
 							box-shadow:
 								0 -3px 0 0 rgba(0,0,0,.3),
@@ -2106,12 +2158,14 @@
 							text-shadow: 0 -2px 0 rgba(0,0,0,.7);
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Needlessly Embossed</h2>
 				</li>
 
 				<li class="spatter">
-					<h2><em>The</em> Spatter</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.spatter {
 							overflow: hidden;
 						}
@@ -2165,12 +2219,15 @@
 							z-index: 20;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Spatter</h2>
+					<span></span>
 				</li>
 
 				<li class="venn">
-					<h2><em>The</em> Venn</h2>
-					<span></span>
-					<style type="text/css" media="screen">
+					<!-- 
+<style type="text/css" media="screen" scoped="scoped">
 						.venn {
 							background: rgba(150,60,150,1);
 							box-shadow:
@@ -2195,6 +2252,10 @@
 							position: relative;
 						}
 					</style>
+ -->
+				    
+					<h2><em>The</em> Venn</h2>
+					<span></span>
 				</li>
 
 			</ul>

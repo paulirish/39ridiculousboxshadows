@@ -1,7 +1,10 @@
-.curlzmt{border-radius:0;box-shadow:0 30px 30px -20px #222;}
-.curlzmt:after,.curlzmt:before{background-color:#333;border-radius:75px;content:"Wow, you're still reading this?";color:transparent;display:block;height:150px;left:0;position:absolute;width:150px;z-index:1}
-.curlzmt:before{background-color:#333;box-shadow:inset 0 -60px 20px -40px rgba(0,0,0,0.1);transform:scaleY(.15) scaleX(1.1);top:-75px}
-.curlzmt:after{background:#444;transform:scaleY(.1);bottom:-75px;box-shadow:0 70px 40px -20px #222}
-.curlzmt span{background:#333;top:0;transform:scaleX(.1) scaleY(1.05);z-index:2;}
-.curlzmt span:nth-of-type(1){box-shadow:inset -90px 0 20px -60px rgba(0,0,0,0.1);left:-75px}
-.curlzmt span:nth-of-type(2){box-shadow:inset 90px 0 20px -60px rgba(0,0,0,0.1);left:75px}
+/*
+ *  The Olympic Curler
+ */
+.curlzmt{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 30px 30px -20px #222;-moz-box-shadow:0 30px 30px -20px #222;box-shadow:0 30px 30px -20px #222;}
+.curlzmt::after,.curlzmt::before{background-color:#333;-webkit-border-radius:75px;-moz-border-radius:75px;border-radius:75px;content:"Wow, you’re still reading this?";color:transparent;display:block;height:150px;left:0;position:absolute;width:150px;z-index:1}
+.curlzmt::before{background-color:#333;-webkit-box-shadow:inset 0 -60px 20px -40px rgba(0,0,0,0.10);-moz-box-shadow:inset 0 -60px 20px -40px rgba(0,0,0,0.10);box-shadow:inset 0 -60px 20px -40px rgba(0,0,0,0.10);-webkit-transform:scaleY(.15) scaleX(1.1);-moz-transform:scaleY(.15) scaleX(1.1);-o-transform:scaleY(.15) scaleX(1.1);-ms-transform:scaleY(.15) scaleX(1.1);transform:scaleY(.15) scaleX(1.1);top:-75px}
+.curlzmt::after{background:#444;-webkit-transform:scaleY(.1);-moz-transform:scaleY(.1);-o-transform:scaleY(.1);-ms-transform:scaleY(.1);transform:scaleY(.1);bottom:-75px;-webkit-box-shadow:0 70px 40px -20px #222;-moz-box-shadow:0 70px 40px -20px #222;box-shadow:0 70px 40px -20px #222}
+.curlzmt span{background:#333;top:0;-webkit-transform:scaleX(.1) scaleY(1.05);-moz-transform:scaleX(.1) scaleY(1.05);-o-transform:scaleX(.1) scaleY(1.05);-ms-transform:scaleX(.1) scaleY(1.05);transform:scaleX(.1) scaleY(1.05);z-index:2;}
+.curlzmt span:nth-of-type(1){-webkit-box-shadow:inset -90px 0 20px -60px rgba(0,0,0,0.10);-moz-box-shadow:inset -90px 0 20px -60px rgba(0,0,0,0.10);box-shadow:inset -90px 0 20px -60px rgba(0,0,0,0.10);left:-75px}
+.curlzmt span:nth-of-type(2){-webkit-box-shadow:inset 90px 0 20px -60px rgba(0,0,0,0.10);-moz-box-shadow:inset 90px 0 20px -60px rgba(0,0,0,0.10);box-shadow:inset 90px 0 20px -60px rgba(0,0,0,0.10);left:75px}

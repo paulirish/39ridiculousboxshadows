@@ -1,25 +1,60 @@
+/*
+ *  The Glow
+ */
 .glowcamedownfromthehills span:nth-of-type(1) {
-    box-shadow: 0px 0px 90px 0px #fffff0, 10px 10px 140px 0px #c8ffff, 0px 0px 10px 5px rgba(180,255,255,0.3);
+    -webkit-box-shadow: 0px 0px 90px 0px #fffff0, 10px 10px 140px 0px #c8ffff, 0px 0px 10px 5px rgba(180,255,255,0.30);
+    -moz-box-shadow: 0px 0px 90px 0px #fffff0, 10px 10px 140px 0px #c8ffff, 0px 0px 10px 5px rgba(180,255,255,0.30);
+    box-shadow: 0px 0px 90px 0px #fffff0, 10px 10px 140px 0px #c8ffff, 0px 0px 10px 5px rgba(180,255,255,0.30);
 }
 .glowcamedownfromthehills span:nth-of-type(2) {
-    box-shadow: -30px -15px 15px rgba(195,255,255,0.8);
+    -webkit-box-shadow: -30px -15px 15px rgba(195,255,255,0.80);
+    -moz-box-shadow: -30px -15px 15px rgba(195,255,255,0.80);
+    box-shadow: -30px -15px 15px rgba(195,255,255,0.80);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
 .glowcamedownfromthehills span:nth-of-type(3) {
-    box-shadow: 30px 190px 30px rgba(255,255,195,0.8);
+    -webkit-box-shadow: 30px 190px 30px rgba(255,255,195,0.80);
+    -moz-box-shadow: 30px 190px 30px rgba(255,255,195,0.80);
+    box-shadow: 30px 190px 30px rgba(255,255,195,0.80);
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    -ms-transform: scale(0.3);
     transform: scale(0.3);
 }
 .glowcamedownfromthehills span:nth-of-type(4) {
+    -webkit-box-shadow: 90px 30px 30px #c3ffc3;
+    -moz-box-shadow: 90px 30px 30px #c3ffc3;
     box-shadow: 90px 30px 30px #c3ffc3;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
 }
 .glowcamedownfromthehills span:nth-of-type(5) {
+    -webkit-box-shadow: -650px -350px 100px #ffebff;
+    -moz-box-shadow: -650px -350px 100px #ffebff;
     box-shadow: -650px -350px 100px #ffebff;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    -ms-transform: scale(0.1);
     transform: scale(0.1);
     z-index: 1;
 }
 .glowcamedownfromthehills span:nth-of-type(5) {
+    -webkit-box-shadow: -650px -350px 300px #fff;
+    -moz-box-shadow: -650px -350px 300px #fff;
     box-shadow: -650px -350px 300px #fff;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    -ms-transform: scale(0.1);
     transform: scale(0.1);
     z-index: 1;
 }
