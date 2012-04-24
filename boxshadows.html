@@ -246,61 +246,58 @@
 			}
 
 			a:hover {
-				color: #fff;
+				color:  #fff;
+				cursor: pointer;
 			}
-
-		</style>
-
-
-		<script type="text/javascript">
-			
-			//	Switch the currently displayed <ul>
-			function showUl(direction){
-				var current = uls[uls.active],
-					nextPosition = (direction == "next") ? uls.active + 1 : uls.active - 1,
-					nextPosition = (nextPosition < 0) ? uls.length - 1 : nextPosition,
-					nextPosition = uls.active = (nextPosition >= uls.length) ? 0 : nextPosition,
-					next = uls[nextPosition];
-				current.className = "";
-				next.className = "show";
-			}
-
-			//	Called to show even target
-			function page(event){
-				showUl(event.target.id);
-			}
-
-			//	Keyboard listeners
-			function pageWithKeys(event){
-			  var next =
-						event.keyCode == 39 ||
-						event.keyCode == 40 ||
-						event.keyCode == 32,
-					previous =
-						event.keyCode == 37 ||
-						event.keyCode == 38,
-					noModifier = event.altKey !== true && event.metaKey !== true;
-				if (previous && noModifier){
-					showUl('previous');
-				}
-				if (next && noModifier){
-					showUl('next');
-				}
-			}
-
-			uls = document.getElementsByTagName("ul");
-			as = document.getElementsByTagName("a");
-			uls.active = 0;
-
-			//	Attach click listeners
-			for(i = 0; i < as.length; i++){
-				as[i].addEventListener('click', page, false);
-			}
-
-			//	Attach keyboard listeners
-			window.addEventListener('keydown', pageWithKeys, false);
-
-		</script>
+		</style>  
+		
+        <link rel='stylesheet' type='text/css' media='screen' href='css/allglorytothe.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/bouncer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/cheshire.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/cloud.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/curlzmt.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/darkside.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/derp.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/dialer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/dimmer.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/embossy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/fog.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/fryguy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/glowcamedownfromthehills.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/googly.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/lilguy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/looksshooped.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/matthamm.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/nananananananana.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/nonotthatone.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/orbiter.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/papapaoohmowmow.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/planetarium.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/pulse.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/ripplin.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/secret.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/slippy.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/softfocus.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/sorryaboutthisone.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/source.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/spatter.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/stadium.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/stayaboveit.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/tacobell.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/teamjacob.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/theoldrazzledazzle.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/theorist.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/venn.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/wehavetogodeeper.css' />
+        <link rel='stylesheet' type='text/css' media='screen' href='css/youknowthatmikewhitemovie.css' />
+      
+       
+          
+        <script title   ='Javascript Navigation'
+                type    ='text/javascript' 
+                src     ='nav.js' 
+                async   ='async'
+                defer   ='defer'> </script>
 	</head>
 
 	<body>
