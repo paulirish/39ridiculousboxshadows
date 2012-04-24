@@ -1,32 +1,31 @@
-/*
+@import 'nib'
+/*!
  *  The Fold
  */
 .stayaboveit
-	background rgba(81,81,81,1)
-	border-radius 0
-	box-shadow 0px 15px 5px -10px rgba(0,0,0,0.2)
-	overflow hidden
+	background      rgba(81,81,81,1)
+	border-radius   0
+	box-shadow      @css{ 0 15px 5px -10px rgba(0,0,0,0.2) }
+	overflow        hidden
 
 	h2
-		display block
+		display     block
 		padding-top 40px
-		z-index 2
+		z-index     2
 	
 	&::before
 	&::after
-		content ""
-		display block
-		box-shadow 0 0 30px rgba(0,0,0,.5)
-		height 150px
-		left 0
-		position absolute
-		top 0
-		width 150px
-		z-index 1
+		content     ''
+		display     block
+		box-shadow  @css{ 0 0 30px rgba(0,0,0,.5) }
+		height      150px
+		absolute    top left
+		width       150px
+		z-index     1
 	
 	&::after
-		top 75px
+		top         75px
 	
 	&::before
-		box-shadow 0 0 30px rgba(0,0,0,.2)
-		left 75px
+		box-shadow  0 0 30px rgba(0,0,0,.2)
+		left        75px

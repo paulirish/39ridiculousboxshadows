@@ -1,3 +1,6 @@
-.wehavetogodeeper{background-image:gradient(radial,center 150,0,center 150,100,from(#101010),to(#1f1f1f));}
-.wehavetogodeeper h2{display:block;border-radius:75px;box-shadow:0 120px 0 -20px #0b0b0b;padding:75px 0 10px;top:-35px;width:150px}
-.wehavetogodeeper span{z-index:30;box-shadow:0 0 0 70px #333}
+/*
+ *  The In Deep
+ */
+.wehavetogodeeper{background-image:-webkit-gradient(radial, center 150, 0, center 150, 100, from(#101010), to(#1f1f1f));background-image:-moz-gradient(radial, center 150, 0, center 150, 100, from(#101010), to(#1f1f1f));background-image:-o-gradient(radial, center 150, 0, center 150, 100, from(#101010), to(#1f1f1f));background-image:-ms-gradient(radial, center 150, 0, center 150, 100, from(#101010), to(#1f1f1f));background-image:gradient(radial,center 150,0,center 150,100,from(#101010),to(#1f1f1f));}
+.wehavetogodeeper h2{display:block;-webkit-border-radius:75px;-moz-border-radius:75px;border-radius:75px;-webkit-box-shadow:0 120px 0 -20px #0b0b0b;-moz-box-shadow:0 120px 0 -20px #0b0b0b;box-shadow:0 120px 0 -20px #0b0b0b;padding:75px 0 10px;top:-35px;width:150px}
+.wehavetogodeeper span{z-index:30;-webkit-box-shadow:0 0 0 70px #333;-moz-box-shadow:0 0 0 70px #333;box-shadow:0 0 0 70px #333}

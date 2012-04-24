@@ -1,7 +1,14 @@
+/*
+ *  The Needlessly Embossed
+ */
 .embossy {
-    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.3), 0 2px 0 0 rgba(255,255,255,0.3);
+    -webkit-box-shadow: 0 -3px 0 0 rgba(0,0,0,0.30), 0 2px 0 0 rgba(255,255,255,0.30);
+    -moz-box-shadow: 0 -3px 0 0 rgba(0,0,0,0.30), 0 2px 0 0 rgba(255,255,255,0.30);
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,0.30), 0 2px 0 0 rgba(255,255,255,0.30);
+    -webkit-background-clip: padding ;
+    -moz-background-clip: padding ;
     background-clip: padding-box;
 }
 .embossy h2 {
-    text-shadow: 0 -2px 0 rgba(0,0,0,0.7);
+    text-shadow: 0 -2px 0 rgba(0,0,0,0.70);
 }

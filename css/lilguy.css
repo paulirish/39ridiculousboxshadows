@@ -1,4 +1,13 @@
+/*
+ *  The Lil Guy
+ */
 .lilguy span {
+    -webkit-transform: scaleY(0.3);
+    -moz-transform: scaleY(0.3);
+    -o-transform: scaleY(0.3);
+    -ms-transform: scaleY(0.3);
     transform: scaleY(0.3);
+    -webkit-box-shadow: 0px 250px 20px -25px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 250px 20px -25px rgba(0,0,0,0.25);
     box-shadow: 0px 250px 20px -25px rgba(0,0,0,0.25);
 }

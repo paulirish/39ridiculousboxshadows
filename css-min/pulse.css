@@ -1,4 +1,20 @@
-@-webkit-keyframes pulse{0%{box-shadow:0 0 5px 0 #333,0 0 0 0 rgba(140,180,180,0.9)}
-75%{box-shadow:0 0 15px 10px #333,0 0 90px 0 rgba(140,180,180,0.9)}
-100%{box-shadow:0 0 2px 0 #333,0 0 2px 0 rgba(140,180,180,0.8)}
-}.pulse{animation-name:pulse;animation-duration:.5s;animation-iteration-count:infinite;animation-timing-function:ease-out}
+/*
+ *  The Pulse
+ */
+.pulse{-webkit-animation-name:pulse;-moz-animation-name:pulse;-o-animation-name:pulse;-ms-animation-name:pulse;animation-name:pulse;-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;-ms-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;-o-animation-timing-function:ease-out;-ms-animation-timing-function:ease-out;animation-timing-function:ease-out}
+@-moz-keyframes pulse{0%{-webkit-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90)}
+75%{-webkit-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90)}
+100%{-webkit-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);-moz-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80)}
+}@-webkit-keyframes pulse{0%{-webkit-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90)}
+75%{-webkit-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90)}
+100%{-webkit-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);-moz-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80)}
+}@-o-keyframes pulse{0%{-webkit-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90)}
+75%{-webkit-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90)}
+100%{-webkit-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);-moz-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80)}
+}@-ms-keyframes pulse{0%{-webkit-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90)}
+75%{-webkit-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90)}
+100%{-webkit-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);-moz-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80)}
+}@keyframes pulse{0%{-webkit-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90);box-shadow:0 0 5px 0 #333 0 0 0 0 rgba(140,180,180,0.90)}
+75%{-webkit-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);-moz-box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90);box-shadow:0 0 15px 10px #333 0 0 90px 0 rgba(140,180,180,0.90)}
+100%{-webkit-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);-moz-box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80);box-shadow:0 0 2px 0 #333 0 0 2px 0 rgba(140,180,180,0.80)}
+}

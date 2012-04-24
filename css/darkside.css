@@ -1,10 +1,27 @@
+/*
+ *  The Dark Side
+ */
 .darkside {
-    box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.9), inset 45px 0 15px -12px rgba(0,0,0,0.3), inset 65px 0 10px -15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
+    -moz-box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
+    box-shadow: inset 10px 0 10px 0 rgba(0,0,0,0.90), inset 45px 0 15px -12px rgba(0,0,0,0.30), inset 65px 0 10px -15px rgba(0,0,0,0.50);
 }
 .darkside h2 {
     color: transparent;
-    background-image: linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.9) 30px, #fff 60px, #fff);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.90)), color-stop(0.3, rgba(0,0,0,0.90)), color-stop(0.6, #fff), color-stop(1, #fff));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+    background-image: linear-gradient(left, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.90) 30px, #fff 60px, #fff 100%);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
+    -webkit-background-clip(box, args): text;
+    -moz-background-clip(box, args): text;
+    -o-background-clip(box, args): text;
+    -ms-background-clip(box, args): text;
+    -webkit-background-clip: text;
     background-clip: text;
     text-shadow: none;
 }

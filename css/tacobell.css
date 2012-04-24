@@ -1,5 +1,10 @@
+/*
+ *  The Late Night
+ */
 .tacobell {
     background: transparent;
-    box-shadow: 0 0 3px 0 #333, 8px 5px 2px 3px #fff, 15px 10px 20px 3px rgba(255,255,255,0.2);
+    -webkit-box-shadow: 0 0 3px 0 #333, 8px 5px 2px 3px #fff, 15px 10px 20px 3px rgba(255,255,255,0.20);
+    -moz-box-shadow: 0 0 3px 0 #333, 8px 5px 2px 3px #fff, 15px 10px 20px 3px rgba(255,255,255,0.20);
+    box-shadow: 0 0 3px 0 #333, 8px 5px 2px 3px #fff, 15px 10px 20px 3px rgba(255,255,255,0.20);
     z-index: 2;
 }
